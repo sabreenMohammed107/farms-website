@@ -45,7 +45,9 @@
             .bootstrap-tagsinput{
                 width: 100%;
             }
-
+.text-primary{
+    color: #4caf50 !important;
+}
          </style>
 
 @yield('add-style')

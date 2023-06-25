@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminContact;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +23,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/*------------------------------------------
+--------------------------------------------
+All Admin Routes List
+--------------------------------------------
+--------------------------------------------*/
+Route::group(['prefix' => 'home'], function(){
+    Route::resource('contact', AdminContact::class); //contact
+    Route::resource('home-page', HomePageController::class); //home-page
+});
+
+
