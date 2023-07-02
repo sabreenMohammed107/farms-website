@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\AboutUsIamgesController;
 use App\Http\Controllers\AdminContact;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\HomePageController;
@@ -32,6 +34,7 @@ All Admin Routes List
 Route::group(['prefix' => 'home'], function(){
     Route::resource('contact', AdminContact::class); //contact
     Route::resource('home-page', HomePageController::class); //home-page
+    Route::resource('about-page', AboutUsController::class); //about-page
 });
 
 
