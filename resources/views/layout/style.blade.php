@@ -48,6 +48,9 @@
 .text-primary{
     color: #4caf50 !important;
 }
+.cke_editable{
+    text-align: right !important
+}
          </style>
 
 @yield('add-style')

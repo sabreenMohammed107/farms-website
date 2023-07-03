@@ -97,7 +97,7 @@
                                         <label class="form-label"> تفاصيل  أهدافنا</label>
                                         <!--end::Label-->
                                         <!--begin::Editor-->
-                                        <textarea class="ckeditor form-control" name="details">{{ $row->details }} </textarea>
+                                        <textarea class="ckeditor form-control" dir="rtl" style="direction: rtl;text-align:right !important" name="details">{{ $row->details }} </textarea>
 
                                         <!--end::Editor-->
 
@@ -117,8 +117,7 @@
                                 <!--begin::Button-->
                                 <button type="submit" id="kt_ecommerce_add_category_submit" class="btn btn-primary">
                                     <span class="indicator-label">حفظ</span>
-                                    <span class="indicator-progress">يرجي الانتظار...
-                                        <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+
                                 </button>
                                 <!--end::Button-->
                             </div>
@@ -159,7 +158,16 @@
                     <!--end::Inputs-->
                 </label>
                 <!--end::Edit-->
-
+<!--begin::Cancel-->
+<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="إلغاء الصورة">
+    <i class="bi bi-x fs-2"></i>
+</span>
+<!--end::Cancel-->
+<!--begin::Remove-->
+<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="مسح الصورة">
+    <i class="bi bi-x fs-2"></i>
+</span>
+<!--end::Remove-->
             </div>
             <!--end::Image input-->
         </div>

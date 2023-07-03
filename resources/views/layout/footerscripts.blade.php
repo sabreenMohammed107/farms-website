@@ -57,6 +57,16 @@
         });
     </script>
 
+     {{--njcj23xt8ekr7ctt6pngh2qrfmh6j98s8yly5xoh3txgpdh4 --}}
+    {{-- <script src="https://cdn.tiny.cloud/1/njcj23xt8ekr7ctt6pngh2qrfmh6j98s8yly5xoh3txgpdh4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script type="text/javascript">
+    tinymce.init({
+        selector: 'textarea.ckeditor',  // change this value according to the HTML
+        menubar: false,
+        height : "180",
+        toolbar: 'undo redo | styleselect | bold italic |link image | alignleft aligncenter alignright alignjustify | outdent indent'
+      });
+    </script> --}}
      @yield('scripts')
      <!--end::Page Custom Javascript-->
      <!--end::Javascript-->

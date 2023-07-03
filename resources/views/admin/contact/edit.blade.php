@@ -6,7 +6,7 @@
             <!--begin::Info-->
             <div class="d-flex flex-column align-items-start justify-content-center flex-wrap me-2">
                 <!--begin::Title-->
-                <h1 class="text-dark fw-bolder my-1 fs-2">تواصل معنا</h1>
+                <h1 class="text-dark fw-bolder my-1 fs-2">اتصل بنا</h1>
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
@@ -14,7 +14,7 @@
                         <a href="{{ route('home') }}" class="text-muted text-hover-primary">الرئيسية</a>
                     </li>
 
-                    <li class="breadcrumb-item text-muted">تواصل معنا</li>
+                    <li class="breadcrumb-item text-muted">اتصل بنا</li>
 
 
                 </ul>
@@ -63,8 +63,8 @@
                             <div class="row"> <div class="col-md-6">
                                 <div class="mb-3">
                                     <label class="form-label">موبايل</label>
-                                    <input type="text" value="{{ $row->mobile }}" name="mobile"
-                                        class="form-control @error('mobile') is-invalid @enderror">
+                                    <input type="text" value="{{ $row->mobile }}" style="text-align: left !important" name="mobile"
+                                        class="form-control @error('mobile') is-invalid @enderror" maxlength="15">
                                     @error('mobile')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -77,8 +77,8 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">تليفون</label>
-                                        <input type="text" value="{{ $row->phone }}" name="phone"
-                                            class="form-control @error('phone') is-invalid @enderror">
+                                        <input type="text" style="text-align: left !important" value="{{ $row->phone }}" name="phone"
+                                            class="form-control @error('phone') is-invalid @enderror" maxlength="15">
                                         @error('phone')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -93,9 +93,9 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">بريد الكتروني</label>
-                                        <input type="text"
+                                        <input type="text" style="text-align: left !important"
                                             onkeypress="return/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
-                                            value="{{ $row->email }}" name="email"
+                                            value="{{ $row->email }}" name="email" maxlength="50"
                                             class="form-control @error('email') is-invalid @enderror">
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
