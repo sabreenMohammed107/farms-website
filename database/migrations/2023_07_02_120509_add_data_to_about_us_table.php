@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::table('about_us', function (Blueprint $table) {
             //
-            $table->string('image',250)->after('details')->nullable();
-            $table->string('vision_title',250)->after('image')->nullable();
-            $table->text('vision_description')->after('vision_title')->nullable();
+            $table->string('image',250)->after('text')->nullable();
+            $table->string('mission',250)->after('image')->nullable();
+            $table->text('details')->after('mission')->nullable();
         });
     }
 

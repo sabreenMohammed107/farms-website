@@ -16,10 +16,10 @@ class AboutSeeder extends Seeder
         $aboutObj = [
             [
                 'title'=>'',
-                'details'=>'',
+                'text'=>'',
                 'image'=>'',
-                'vision_title'=>'',
-                'vision_description'=>'',
+                'mission'=>'',
+                'details'=>'',
             ],
 
         ];

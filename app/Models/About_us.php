@@ -16,9 +16,9 @@ class About_us extends Model
     protected $table = 'about_us';
     protected $fillable = [
         'title',
-        'details',
+        'text',
         'image',
-        'vision_title',
-        'vision_description',
+        'mission',
+        'details',
     ];
 }

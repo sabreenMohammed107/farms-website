@@ -78,7 +78,7 @@
                                         <label class="form-label"> تفاصيل من نحن</label>
                                         <!--end::Label-->
                                         <!--begin::Editor-->
-                                        <textarea class="ckeditor form-control" name="details">{{ $row->details }} </textarea>
+                                        <textarea class="ckeditor form-control" name="text">{{ $row->text }} </textarea>
 
                                         <!--end::Editor-->
 
@@ -86,7 +86,7 @@
 
                                     <div class="mb-3">
                                         <label class="form-label">عنوان أهدافنا</label>
-                                        <input type="text" id="title" name="vision_title" value="{{ $row->vision_title }}"
+                                        <input type="text" id="title" name="mission" value="{{ $row->mission }}"
                                             class="form-control ">
 
                                     </div>
@@ -97,7 +97,7 @@
                                         <label class="form-label"> تفاصيل  أهدافنا</label>
                                         <!--end::Label-->
                                         <!--begin::Editor-->
-                                        <textarea class="ckeditor form-control" name="vision_description">{{ $row->vision_description }} </textarea>
+                                        <textarea class="ckeditor form-control" name="details">{{ $row->details }} </textarea>
 
                                         <!--end::Editor-->
 

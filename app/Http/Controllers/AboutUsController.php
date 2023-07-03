@@ -78,12 +78,12 @@ class AboutUsController extends Controller
         $this->validate($request, [
             'title' => 'required',
 
-            'vision_title' => 'required',
+            'mission' => 'required',
         ], [
             'title.required' => 'حقل عنوان من نحن  مطلوب',
 
 
-            'vision_title.required' => 'حقل عنوان الرؤية والأهداف مطلوب',
+            'mission.required' => 'حقل عنوان الرؤية والأهداف مطلوب',
 
 
         ]);
