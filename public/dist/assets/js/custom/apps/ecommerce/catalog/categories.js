@@ -16,9 +16,9 @@ var KTAppEcommerceCategories = function() {
             'pageLength': 10,
             'columnDefs': [
                 { orderable: false, targets: 0 }, // Disable ordering on column 0 (checkbox)
-                { orderable: false, targets: 7 }, // Disable ordering on column 3 (actions)
-                { orderable: false, targets: 8 },
-                { orderable: false, targets: 9 },
+                // { orderable: false, targets: 7 }, // Disable ordering on column 3 (actions)
+                // { orderable: false, targets: 8 },
+                // { orderable: false, targets: 9 },
             ]
         });
 
@@ -51,11 +51,11 @@ var KTAppEcommerceCategories = function() {
                 const parent = e.target.closest('tr');
 
                 // Get category name
-                const categoryName = parent.querySelector('[data-kt-ecommerce-category-filter="category_name"]').innerText;
+                const categoryName = parent.querySelector('[data-kt-ecommerce-category-filter="category_name"]').innerText ;
                 const categoryId = parent.querySelector('[data-kt-ecommerce-category-filter="category_id"]').value;
                 // SweetAlert2 pop up --- official docs reference: https://sweetalert2.github.io/
                 Swal.fire({
-                    text: " هل انت متأكد من حذف" + categoryName + "?",
+                    text:  " هل أنت متأكد من حذف "+"    " + categoryName + "?",
                     icon: "warning",
                     showCancelButton: true,
                     buttonsStyling: false,

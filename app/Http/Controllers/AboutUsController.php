@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\About_us;
 use Illuminate\Http\Request;
-
+use File;
 class AboutUsController extends Controller
 {
 
@@ -90,6 +90,15 @@ class AboutUsController extends Controller
 
         $input = $request->except(['_token','image']);
         if ($request->hasFile('image')) {
+            $row = About_us::where('id',$id)->first();
+
+            // Delete File ..
+            $file = $row->image;
+            $file_name = public_path('uploads/about_us/' . $file);
+
+                File::delete($file_name);
+
+
             $attach_image = $request->file('image');
 
             $input['image'] = $this->UplaodImage($attach_image);

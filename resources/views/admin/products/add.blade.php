@@ -6,14 +6,14 @@
             <!--begin::Info-->
             <div class="d-flex flex-column align-items-start justify-content-center flex-wrap me-2">
                 <!--begin::Title-->
-                <h1 class="text-dark fw-bolder my-1 fs-2">العملاء</h1>
+                <h1 class="text-dark fw-bolder my-1 fs-2">المنتجات</h1>
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
                     <li class="breadcrumb-item text-muted">
        <a href="#" class="text-muted text-hover-primary">الرئيسية</a>
                     </li>
-                    <li class="breadcrumb-item text-muted">العملاء</li>
+                    <li class="breadcrumb-item text-muted">المنتجات</li>
 
 
                 </ul>
@@ -32,7 +32,7 @@
         <div class="container-xxl">
 
             <form id="kt_ecommerce_add_category_form" class="form d-flex flex-column flex-lg-row"
-                action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
+                action="{{ route('products.store') }}" method="post" enctype="multipart/form-data">
                 @csrf
                  <!--begin::Aside column-->
                  <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
@@ -97,7 +97,7 @@
                         <!--begin:::Tab item-->
                         <li class="nav-item">
                             <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab"
-                                href="#kt_ecommerce_add_product_general">بيانات العميل</a>
+                                href="#kt_ecommerce_add_product_general">بيانات المنتج</a>
                         </li>
                         {{-- <li class="nav-item">
                             <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
@@ -121,7 +121,7 @@
 
 
                                     <div class="mb-3">
-                                        <label class="form-label">إسم العميل</label>
+                                        <label class="form-label">إسم المنتج</label>
                                         <input type="text" id="title" name="name" value="{{ old('name') }}"
                                         maxlength="50" class="form-control  @error('name') is-invalid @enderror">
                                         @error('name')
@@ -135,10 +135,10 @@
 
                                     <div class="mb-10 fv-row">
                                         <!--begin::Label-->
-                                        <label class="form-label"> العنوان</label>
+                                        <label class="form-label"> التفاصيل</label>
                                         <!--end::Label-->
                                         <!--begin::Editor-->
-                                        <textarea class=" form-control" name="address">{{ old('address') }} </textarea>
+                                        <textarea class=" form-control" name="details">{{ old('details') }} </textarea>
 
                                         <!--end::Editor-->
 
@@ -154,7 +154,7 @@
 
                             <div class="d-flex justify-content-center mt-3">
                                 <!--begin::Button-->
-                                <a href="{{ route('customers.index') }}" id="kt_ecommerce_add_product_cancel"
+                                <a href="{{ route('products.index') }}" id="kt_ecommerce_add_product_cancel"
                                     class="btn btn-light me-5" style="background: #eee">رجوع</a>
                                 <!--end::Button-->
                                 <!--begin::Button-->

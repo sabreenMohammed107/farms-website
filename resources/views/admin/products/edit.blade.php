@@ -6,14 +6,14 @@
             <!--begin::Info-->
             <div class="d-flex flex-column align-items-start justify-content-center flex-wrap me-2">
                 <!--begin::Title-->
-                <h1 class="text-dark fw-bolder my-1 fs-2">العملاء</h1>
+                <h1 class="text-dark fw-bolder my-1 fs-2">المنتجات</h1>
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
                     <li class="breadcrumb-item text-muted">
        <a href="#" class="text-muted text-hover-primary">الرئيسية</a>
                     </li>
-                    <li class="breadcrumb-item text-muted">العملاء</li>
+                    <li class="breadcrumb-item text-muted">المنتجات</li>
 
 
                 </ul>
@@ -32,8 +32,9 @@
         <div class="container-xxl">
 
             <form id="kt_ecommerce_add_category_form" class="form d-flex flex-column flex-lg-row"
-                action="{{ route('customers.store') }}" method="post" enctype="multipart/form-data">
-                @csrf
+            action="{{ route('products.update', $row->id) }}" method="post" enctype="multipart/form-data">
+            @csrf
+            @method('PUT')
                  <!--begin::Aside column-->
                  <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                     <!--begin::Thumbnail settings-->
@@ -48,41 +49,31 @@
                         </div>
                         <!--end::Card header-->
                         <!--begin::Card body-->
-                        <div class="card-body text-center pt-0">
-                            <!--begin::Image input-->
-                            <div class="image-input image-input-empty image-input-outline mb-3" data-kt-image-input="true"
-                                style="background-image: url(assets/media/svg/files/blank-image.svg)">
-                                <!--begin::Preview existing avatar-->
-                                <div class="image-input-wrapper w-150px h-150px"></div>
-                                <!--end::Preview existing avatar-->
-                                <!--begin::Label-->
-                                <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                    data-kt-image-input-action="change" data-bs-toggle="tooltip" title="تغير الصورة">
-                                    <!--begin::Icon-->
-                                    <i class="bi bi-pencil-fill fs-7"></i>
-                                    <!--end::Icon-->
-                                    <!--begin::Inputs-->
-                                    <input type="file" name="image" accept=".png, .jpg, .jpeg" />
-                                    <input type="hidden" name="avatar_remove" />
-                                    <!--end::Inputs-->
-                                </label>
-                                <!--end::Label-->
-                                <!--begin::Cancel-->
-                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                    data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="إلغاء الصورة">
-                                    <i class="bi bi-x fs-2"></i>
-                                </span>
-                                <!--end::Cancel-->
-                                <!--begin::Remove-->
-                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                    data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
-                                    <i class="bi bi-x fs-2"></i>
-                                </span>
-                                <!--end::Remove-->
+                         <!--begin::Image input wrapper-->
+                    <div class="card-body text-center pt-0">
+                        <!--begin::Image input-->
+                        <div class="image-input image-input-empty image-input-outline mb-3" data-kt-image-input="true"
+                            style="background-image: url('{{ asset('uploads/products') }}/{{ $row->image }}')">
+                            <div class="image-input-wrapper w-150px h-150px"
+                                style="background-image: url(' {{ asset('uploads/products') }}/{{ $row->image }}')">
+
                             </div>
-                            <!--end::Image input-->
+                            <!--end::Preview existing avatar-->
+                            <!--begin::Edit-->
+                            <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                data-kt-image-input-action="change" data-bs-toggle="tooltip" title="تعديل الصورة">
+                                <i class="bi bi-pencil-fill fs-7"></i>
+                                <!--begin::Inputs-->
+                                <input type="file" name="image" accept=".png, .jpg, .jpeg" />
+                                <input type="hidden" name="avatar_remove" />
+                                <!--end::Inputs-->
+                            </label>
+                            <!--end::Edit-->
 
                         </div>
+                        <!--end::Image input-->
+                    </div>
+                    <!--end::Image input wrapper-->
                         <!--end::Card body-->
                     </div>
                     <!--end::Thumbnail settings-->
@@ -97,7 +88,7 @@
                         <!--begin:::Tab item-->
                         <li class="nav-item">
                             <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab"
-                                href="#kt_ecommerce_add_product_general">بيانات العميل</a>
+                                href="#kt_ecommerce_add_product_general">بيانات المنتج</a>
                         </li>
                         {{-- <li class="nav-item">
                             <a class="nav-link text-active-primary pb-4" data-bs-toggle="tab"
@@ -121,8 +112,8 @@
 
 
                                     <div class="mb-3">
-                                        <label class="form-label">إسم العميل</label>
-                                        <input type="text" id="title" name="name" value="{{ old('name') }}"
+                                        <label class="form-label">إسم المنتج</label>
+                                        <input type="text" id="title" name="name" value="{{$row->name}}"
                                         maxlength="50" class="form-control  @error('name') is-invalid @enderror">
                                         @error('name')
                                         <span class="invalid-feedback" role="alert">
@@ -135,10 +126,10 @@
 
                                     <div class="mb-10 fv-row">
                                         <!--begin::Label-->
-                                        <label class="form-label"> العنوان</label>
+                                        <label class="form-label"> التفاصيل</label>
                                         <!--end::Label-->
                                         <!--begin::Editor-->
-                                        <textarea class=" form-control" name="address">{{ old('address') }} </textarea>
+                                        <textarea class=" form-control" name="details">{{$row->details}} </textarea>
 
                                         <!--end::Editor-->
 
@@ -154,7 +145,7 @@
 
                             <div class="d-flex justify-content-center mt-3">
                                 <!--begin::Button-->
-                                <a href="{{ route('customers.index') }}" id="kt_ecommerce_add_product_cancel"
+                                <a href="{{ route('products.index') }}" id="kt_ecommerce_add_product_cancel"
                                     class="btn btn-light me-5" style="background: #eee">رجوع</a>
                                 <!--end::Button-->
                                 <!--begin::Button-->

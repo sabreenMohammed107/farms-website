@@ -16,14 +16,14 @@
             <!--begin::Info-->
             <div class="d-flex flex-column align-items-start justify-content-center flex-wrap me-2">
                 <!--begin::Title-->
-                <h1 class="text-dark fw-bolder my-1 fs-2"> بيانات العملاء</h1>
+                <h1 class="text-dark fw-bolder my-1 fs-2"> بيانات المنتجات</h1>
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
                     <li class="breadcrumb-item text-muted">
                         <a href="{{ route('home') }}" class="text-muted text-hover-primary">الرئيسية</a>
                     </li>
-                    <li class="breadcrumb-item text-muted">العملاء</li>
+                    <li class="breadcrumb-item text-muted">المنتجات</li>
 
 
                 </ul>
@@ -72,9 +72,9 @@
                         <!--begin::Add product-->
                         <!--end::Add product-->
 
-                        <a href="{{ route('customers.create') }}"
+                        <a href="{{ route('products.create') }}"
                         class="btn btn-primary"
-                  >إضافة عميل</a>
+                  >إضافة منتج</a>
 
                         <!--end::Add customer-->
                     </div>
@@ -102,8 +102,8 @@
                                 </th>
 
                                 <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
-                                    rowspan="1" colspan="1" aria-label="العميل: activate to sort column ascending">
-                                    اسم العميل</th>
+                                    rowspan="1" colspan="1" aria-label="المنتج: activate to sort column ascending">
+                                    اسم المنتج</th>
 
                                 <th class="text-end min-w-70px sorting sorting_desc" tabindex="0"
                                     aria-controls="kt_ecommerce_category_table" rowspan="1" colspan="1"
@@ -159,7 +159,7 @@
                                         <div class="symbol  symbol-50px overflow-hidden me-3">
                                             <a href="#">
                                                 <div class="symbol-label fs-3 bg-light-danger text-danger">
-                                                    <img src="{{ asset('uploads/customers') }}/{{ $row->image }}"
+                                                    <img src="{{ asset('uploads/products') }}/{{ $row->image }}"
                                                         class="w-100" style="height: 100%" alt="">
                                                 </div>
                                             </a>
@@ -169,7 +169,7 @@
                                     </td>
 
                                     <td class="text-end pe-0">
-                                        <a href="{{ route('customers.edit', $row->id) }}"
+                                        <a href="{{ route('products.edit', $row->id) }}"
                                             class="menu-link px-3">تعديل</a>
                                     </td>
                                     <td class="text-end pe-0">
@@ -178,7 +178,7 @@
 
 
                                         <form id="delete_{{ $row->id }}"
-                                            action="{{ route('customers.destroy', $row->id) }}" method="POST"
+                                            action="{{ route('products.destroy', $row->id) }}" method="POST"
                                             style="display: none;">
                                             @csrf
                                             {{-- <input type="hidden" name="_method" value="delete"> --}}
@@ -225,7 +225,7 @@
 
                                                     <div class="mb-13 text-center">
                                                         <!--begin::Title-->
-                                                        <h1 class="mb-3">تفاصيل  العميل</h1>
+                                                        <h1 class="mb-3">تفاصيل  المنتج</h1>
                                                         <!--end::Title-->
 
                                                     </div>
@@ -237,7 +237,7 @@
                                                         <div class="col-md-4">
                                                             <!--begin::Label-->
                                                             <div class="symbol-label fs-3 bg-light-danger text-danger">
-                                                                <img src="{{ asset('uploads/customers') }}/{{ $row->image }}"
+                                                                <img src="{{ asset('uploads/products') }}/{{ $row->image }}"
                                                                     class="w-100" alt="">
                                                             </div>
                                                             <!--end::Label-->
@@ -245,7 +245,7 @@
                                                         <div class="col-md-12">
                                                             <!--begin::Label-->
                                                             <label for="name"
-                                                                class=" col-form-label text-md-end">إسم العميل :</label>
+                                                                class=" col-form-label text-md-end">إسم المنتج :</label>
                                                             <span> {{ $row->name }}
                                                             </span>
                                                             <!--end::Label-->
@@ -258,8 +258,8 @@
                                                         <div class="col-md-12">
                                                             <!--begin::Label-->
                                                             <label for="details"
-                                                                class=" col-form-label text-md-end">العنوان :</label>
-                                                            <span>  {{ $row->address }}</span>
+                                                                class=" col-form-label text-md-end">التفاصيل :</label>
+                                                            <span>  {{ $row->details }}</span>
                                                             <!--end::Label-->
                                                         </div>
 
