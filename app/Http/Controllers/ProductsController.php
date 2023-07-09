@@ -38,6 +38,7 @@ class ProductsController extends Controller
     public function create()
     {
         return view($this->viewName . 'add');
+
     }
 
     /**
