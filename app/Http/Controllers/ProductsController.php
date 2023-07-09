@@ -37,7 +37,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        // return view($this->viewName . 'add');
+        return view($this->viewName . 'add');
     }
 
     /**
@@ -81,8 +81,8 @@ class ProductsController extends Controller
      */
     public function edit(string $id)
     {
-        // $row = Product::where('id',$id)->first();
-        // return view($this->viewName . 'edit', compact(['row']));
+        $row = Product::where('id',$id)->first();
+        return view($this->viewName . 'edit', compact(['row']));
     }
 
     /**
