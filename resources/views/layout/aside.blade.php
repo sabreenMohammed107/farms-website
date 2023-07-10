@@ -260,7 +260,7 @@
     </span>
     <div class="menu-sub menu-sub-accordion">
         <div class="menu-item">
-            <a class="menu-link" href="#">
+            <a class="menu-link" href="{{ route('customers.index') }}">
 <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
                 </span>
@@ -269,7 +269,7 @@
         </div>
 
         <div class="menu-item">
-            <a class="menu-link" href="#>
+            <a class="menu-link" href="{{ route('customers.create') }}">
 <span class="menu-bullet">
                 <span class="bullet bullet-dot"></span>
                 </span>

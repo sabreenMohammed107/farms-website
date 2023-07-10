@@ -170,11 +170,11 @@
 
                                     <td class="text-end pe-0">
                                         <a href="{{ route('products.edit', $row->id) }}"
-                                            class="menu-link px-3">تعديل</a>
+                                            class="menu-link px-3"><i class="fa fa-edit"></i></a>
                                     </td>
                                     <td class="text-end pe-0">
                                         <a href="#" class="menu-link px-3"
-                                            data-kt-ecommerce-category-filter="delete_row">حذف</a>
+                                            data-kt-ecommerce-category-filter="delete_row"><i class="fa fa-trash"></i></a>
 
 
                                         <form id="delete_{{ $row->id }}"

@@ -6,6 +6,7 @@ use App\Models\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Database\QueryException;
 use File;
+use Image;
 class CustomersController extends Controller
 {
 
@@ -142,19 +143,29 @@ class CustomersController extends Controller
     public function UplaodImage($file_request)
     {
         //  This is Image Info..
-        $file = $file_request;
-        $name = $file->getClientOriginalName();
-        $ext = $file->getClientOriginalExtension();
-        $size = $file->getSize();
-        $path = $file->getRealPath();
-        $mime = $file->getMimeType();
+         $image = $file_request;
+         $name = $image->getClientOriginalName();
+        // $ext = $file->getClientOriginalExtension();
+        // $size = $file->getSize();
+        // $path = $file->getRealPath();
+        // $mime = $file->getMimeType();
 
-        // Rename The Image ..
-        $imageName = $name;
-        $uploadPath = public_path('uploads/customers');
+        // // Rename The Image ..
+         $imageName = $name;
+        // $uploadPath = public_path('uploads/customers');
 
-        // Move The image..
-        $file->move($uploadPath, $imageName);
+        // // Move The image..
+        // $file->move($uploadPath, $imageName);
+        $imageName = time().'.'.$image->extension();
+
+        $destinationPathThumbnail = public_path('uploads/customers');
+        $img = Image::make($image->path());
+        $img->resize(100, 100, function ($constraint) {
+            $constraint->aspectRatio();
+        })->save($destinationPathThumbnail.'/'.$imageName);
+
+        $destinationPath = public_path('/images');
+        $image->move($destinationPathThumbnail, $imageName);
 
         return $imageName;
     }

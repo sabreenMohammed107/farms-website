@@ -144,19 +144,50 @@ class ProductsController extends Controller
     public function UplaodImage($file_request)
     {
         //  This is Image Info..
-        $file = $file_request;
-        $name = $file->getClientOriginalName();
-        $ext = $file->getClientOriginalExtension();
-        $size = $file->getSize();
-        $path = $file->getRealPath();
-        $mime = $file->getMimeType();
+        // $file = $file_request;
+        // $name = $file->getClientOriginalName();
+        // $ext = $file->getClientOriginalExtension();
+        // $size = $file->getSize();
+        // $path = $file->getRealPath();
+        // $mime = $file->getMimeType();
 
-        // Rename The Image ..
-        $imageName = $name;
-        $uploadPath = public_path('uploads/products');
+        // // Rename The Image ..
+        // $imageName = $name;
+        // $uploadPath = public_path('uploads/products');
 
-        // Move The image..
-        $file->move($uploadPath, $imageName);
+        // // Move The image..
+        // $file->move($uploadPath, $imageName);
+
+        // return $imageName;
+
+        /**
+         * New Resize
+         */
+
+         //  This is Image Info..
+         $image = $file_request;
+         $name = $image->getClientOriginalName();
+        // $ext = $file->getClientOriginalExtension();
+        // $size = $file->getSize();
+        // $path = $file->getRealPath();
+        // $mime = $file->getMimeType();
+
+        // // Rename The Image ..
+         $imageName = $name;
+        // $uploadPath = public_path('uploads/customers');
+
+        // // Move The image..
+        // $file->move($uploadPath, $imageName);
+        $imageName = time().'.'.$image->extension();
+
+        $destinationPathThumbnail = public_path('uploads/products');
+        $img = Image::make($image->path());
+        $img->resize(200, 200, function ($constraint) {
+            $constraint->aspectRatio();
+        })->save($destinationPathThumbnail.'/'.$imageName);
+
+        $destinationPath = public_path('/images');
+        $image->move($destinationPathThumbnail, $imageName);
 
         return $imageName;
     }
