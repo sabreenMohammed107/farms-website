@@ -184,6 +184,7 @@ class ProductsController extends Controller
         $img = Image::make($image->path());
         $img->resize(200, 200, function ($constraint) {
             $constraint->aspectRatio();
+
         })->save($destinationPathThumbnail.'/'.$imageName);
 
         $destinationPath = public_path('/images');
