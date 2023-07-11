@@ -6,6 +6,7 @@ use App\Models\Product;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use File;
+use Image;
 class ProductsController extends Controller
 {
     protected $object;
