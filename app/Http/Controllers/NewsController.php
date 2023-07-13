@@ -28,9 +28,9 @@ class NewsController extends Controller
     }
     public function index()
     {
-        $rows = Website_new::orderBy("title", "asc")->get();
+        // $rows = Website_new::orderBy("title", "asc")->get();
 
-        return view($this->viewName . 'index', compact(['rows']));
+        // return view($this->viewName . 'index', compact(['rows']));
     }
 
     /**
@@ -38,7 +38,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        return view($this->viewName . 'add');
+        // return view($this->viewName . 'add');
 
     }
 
