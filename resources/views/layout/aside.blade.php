@@ -158,7 +158,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="#">
+                            <a class="menu-link" href="{{ route('jobs.index') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="#">
+                            <a class="menu-link" href="{{ route('jobs.create') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -189,7 +189,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="#>
+                            <a class="menu-link" href="{{ route('news.index') }}">
                                 <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                                 </span>
@@ -199,7 +199,7 @@
                     </div>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="#>
+                            <a class="menu-link" href="{{ route('news.create') }}">
                                 <span class="menu-bullet">
                                 <span class="bullet bullet-dot"></span>
                                 </span>
