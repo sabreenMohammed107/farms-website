@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\AboutUsIamgesController;
 use App\Http\Controllers\AdminContact;
+use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\HomePageController;
@@ -43,6 +44,7 @@ Route::group(['prefix' => 'home'], function(){
     Route::resource('customers', CustomersController::class); //customers
     Route::resource('jobs', JobsController::class); //jobs
     Route::resource('news', NewsController::class); //news
+    Route::resource('categories', CategoriesController::class); //categories
 });
 
 

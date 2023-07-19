@@ -54,7 +54,7 @@
 
 
                 <div class="menu-item">
-                    <a class="menu-link" href="{{ route('home-page.edit',1) }}">
+                    <a class="menu-link" href="{{ route('home-page.edit', 1) }}">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/abstract/abs042.svg-->
                             <span class="svg-icon svg-icon-2">
@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="menu-item">
-                    <a class="menu-link" href="{{ route('about-page.edit',1) }}">
+                    <a class="menu-link" href="{{ route('about-page.edit', 1) }}">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/abstract/abs042.svg-->
                             <span class="svg-icon svg-icon-2">
@@ -128,7 +128,7 @@
                 <!-- end Event -->
 
                 <div class="menu-item">
-                    <a class="menu-link" href="{{ route('contact.edit',1) }}">
+                    <a class="menu-link" href="{{ route('contact.edit', 1) }}">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/abstract/abs042.svg-->
                             <span class="svg-icon svg-icon-2">
@@ -191,7 +191,7 @@
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('news.index') }}">
                                 <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
+                                    <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title"> قائمة الأخبار </span>
                             </a>
@@ -201,7 +201,7 @@
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('news.create') }}">
                                 <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
+                                    <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title"> إضافة خبر </span>
                             </a>
@@ -212,6 +212,42 @@
 
 
 
+                   <!-- start order -->
+                   <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <span class="menu-link">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title"> التصنيفات</span>
+                        <span class="menu-arrow"></span>
+                    </span>
+                    <div class="menu-sub menu-sub-accordion">
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('categories.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title"> قائمة التصنيفات </span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('categories.create') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title"> إضافة تصنيف </span>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+                <!-- end Event -->
                 <!-- start order -->
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                     <span class="menu-link">
@@ -224,8 +260,8 @@
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('products.index') }}">
-                <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title"> قائمة المنتجات </span>
                             </a>
@@ -233,8 +269,8 @@
 
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('products.create') }}">
-                <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title"> إضافة منتج </span>
                             </a>
@@ -249,42 +285,42 @@
                 </div>
                 <!-- end Event -->
 
- <!-- start order -->
- <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-    <span class="menu-link">
-        <span class="menu-bullet">
-            <span class="bullet bullet-dot"></span>
-        </span>
-        <span class="menu-title"> العملاء</span>
-        <span class="menu-arrow"></span>
-    </span>
-    <div class="menu-sub menu-sub-accordion">
-        <div class="menu-item">
-            <a class="menu-link" href="{{ route('customers.index') }}">
-<span class="menu-bullet">
-                <span class="bullet bullet-dot"></span>
-                </span>
-                <span class="menu-title"> قائمة العملاء </span>
-            </a>
-        </div>
+                <!-- start order -->
+                <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+                    <span class="menu-link">
+                        <span class="menu-bullet">
+                            <span class="bullet bullet-dot"></span>
+                        </span>
+                        <span class="menu-title"> العملاء</span>
+                        <span class="menu-arrow"></span>
+                    </span>
+                    <div class="menu-sub menu-sub-accordion">
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('customers.index') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title"> قائمة العملاء </span>
+                            </a>
+                        </div>
 
-        <div class="menu-item">
-            <a class="menu-link" href="{{ route('customers.create') }}">
-<span class="menu-bullet">
-                <span class="bullet bullet-dot"></span>
-                </span>
-                <span class="menu-title"> إضافة عميل </span>
-            </a>
-        </div>
-
-
+                        <div class="menu-item">
+                            <a class="menu-link" href="{{ route('customers.create') }}">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title"> إضافة عميل </span>
+                            </a>
+                        </div>
 
 
 
 
-    </div>
-</div>
-<!-- end Event -->
+
+
+                    </div>
+                </div>
+                <!-- end Event -->
 
 
 

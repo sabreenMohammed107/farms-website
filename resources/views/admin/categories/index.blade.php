@@ -16,14 +16,14 @@
             <!--begin::Info-->
             <div class="d-flex flex-column align-items-start justify-content-center flex-wrap me-2">
                 <!--begin::Title-->
-                <h1 class="text-dark fw-bolder my-1 fs-2"> بيانات المنتجات</h1>
+                <h1 class="text-dark fw-bolder my-1 fs-2"> قائمة التصنيفات</h1>
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
                     <li class="breadcrumb-item text-muted">
                         <a href="{{ route('home') }}" class="text-muted text-hover-primary">الرئيسية</a>
                     </li>
-                    <li class="breadcrumb-item text-muted">المنتجات</li>
+                    <li class="breadcrumb-item text-muted">التصنيفات</li>
 
 
                 </ul>
@@ -72,9 +72,9 @@
                         <!--begin::Add product-->
                         <!--end::Add product-->
 
-                        <a href="{{ route('products.create') }}"
+                        <a href="{{ route('categories.create') }}"
                         class="btn btn-primary"
-                  >إضافة منتج</a>
+                  >إضافة تصنيف</a>
 
                         <!--end::Add customer-->
                     </div>
@@ -102,17 +102,13 @@
                                 </th>
 
                                 <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
-                                    rowspan="1" colspan="1" aria-label="المنتج: activate to sort column ascending">
-                                    اسم المنتج</th>
-                                    <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
                                     rowspan="1" colspan="1" aria-label="التصنيف: activate to sort column ascending">
-                                     التصنيف</th>
-                                <th class="text-end min-w-70px sorting sorting_desc" tabindex="0"
+                                   التصنيف</th>
+
+                                {{-- <th class="text-end min-w-70px sorting sorting_desc" tabindex="0"
                                     aria-controls="kt_ecommerce_category_table" rowspan="1" colspan="1"
                                     aria-label="Category Type: activate to sort column ascending" aria-sort="descending">
-                                    الصورة  </th>
-
-
+                                    الصورة  </th> --}}
 
                                 <th class="text-end min-w-70px pe-2 sorting_disabled">تعديل </th>
                                 <th class="text-end min-w-70px pe-2 sorting_disabled">حذف</th>
@@ -141,10 +137,7 @@
                                             <div class="ms-5">
                                                 <!--begin::Title-->
 
-                                                <a data-bs-toggle="modal"
-                                                data-bs-target="#kt_modal_new_targetEdit{{ $row->id }}"
-
-                                                    class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
+                                                <a class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                     data-kt-ecommerce-category-filter="category_name"
                                                     >  {{ $row->name ?? '' }} </a>
                                                 <input type="hidden" name="" id=""
@@ -154,23 +147,11 @@
                                         </div>
                                     </td>
                                     <!--end::Category=-->
-                                    <td class="text-end ">
-                                        <!--begin::Badges-->
 
-                                        <div class="d-flex">
-
-
-                                            {{ $row->category->name ?? '' }}
-
-
-                                    </div>
-
-                                        <!--end::Badges-->
-                                    </td>
                                     <!--end::SKU=-->
                                     <!--begin::Qty=-->
-                                    <td class="text-end ">
-                                        <!--begin::Badges-->
+                                    {{-- <td class="text-end ">
+
 
                                         <div class="symbol  symbol-50px overflow-hidden me-3">
                                             <a href="#">
@@ -181,13 +162,11 @@
                                             </a>
                                         </div>
 
-                                        <!--end::Badges-->
-                                    </td>
 
-
+                                    </td> --}}
 
                                     <td class="text-end pe-0">
-                                        <a href="{{ route('products.edit', $row->id) }}"
+                                        <a href="{{ route('categories.edit', $row->id) }}"
                                             class="menu-link px-3"><i class="fa fa-edit"></i></a>
                                     </td>
                                     <td class="text-end pe-0">
@@ -196,7 +175,7 @@
 
 
                                         <form id="delete_{{ $row->id }}"
-                                            action="{{ route('products.destroy', $row->id) }}" method="POST"
+                                            action="{{ route('categories.destroy', $row->id) }}" method="POST"
                                             style="display: none;">
                                             @csrf
                                             {{-- <input type="hidden" name="_method" value="delete"> --}}
@@ -206,108 +185,7 @@
                                         </form>
                                     </td>
                                     <!--end::Price=-->
-                                    <!--begin::Modal - New Target-->
-                                    <div class="modal fade" id="kt_modal_new_targetEdit{{ $row->id }}"
-                                        tabindex="-1" aria-hidden="true">
-                                        <!--begin::Modal dialog-->
-                                        <div class="modal-dialog modal-dialog-centered mw-650px">
-                                            <!--begin::Modal content-->
-                                            <div class="modal-content rounded">
-                                                <!--begin::Modal header-->
-                                                <div class="modal-header pb-0 border-0 justify-content-end">
-                                                    <!--begin::Close-->
-                                                    <div class="btn btn-sm btn-icon btn-active-color-primary"
-                                                        data-bs-dismiss="modal">
-                                                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                                                        <span class="svg-icon svg-icon-1">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" viewBox="0 0 24 24" fill="none">
-                                                                <rect opacity="0.5" x="6" y="17.3137"
-                                                                    width="16" height="2" rx="1"
-                                                                    transform="rotate(-45 6 17.3137)" fill="black" />
-                                                                <rect x="7.41422" y="6" width="16"
-                                                                    height="2" rx="1"
-                                                                    transform="rotate(45 7.41422 6)" fill="black" />
-                                                            </svg>
-                                                        </span>
-                                                        <!--end::Svg Icon-->
-                                                    </div>
-                                                    <!--end::Close-->
-                                                </div>
-                                                <!--begin::Modal header-->
-                                                <!--begin::Modal body-->
-                                                <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
-                                                    <!--begin:Form-->
 
-                                                    <!--begin::Heading-->
-
-                                                    <div class="mb-13 text-center">
-                                                        <!--begin::Title-->
-                                                        <h1 class="mb-3">تفاصيل  المنتج</h1>
-                                                        <!--end::Title-->
-
-                                                    </div>
-                                                    <!--end::Heading-->
-
-
-                                                    <div class=" mb-8 row">
-                                                        <div class="col-md-4"></div>
-                                                        <div class="col-md-4">
-                                                            <!--begin::Label-->
-                                                            <div class="symbol-label fs-3 bg-light-danger text-danger">
-                                                                <img src="{{ asset('uploads/products') }}/{{ $row->image }}"
-                                                                    class="w-100" alt="">
-                                                            </div>
-                                                            <!--end::Label-->
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <!--begin::Label-->
-                                                            <label for="name"
-                                                                class=" col-form-label text-md-end">إسم المنتج :</label>
-                                                            <span> {{ $row->name }}
-                                                            </span>
-                                                            <!--end::Label-->
-                                                        </div>
-
-                                                    </div>
-                                                    <!--end::Input group-->
-
-                                                    <div class=" mb-8 row">
-                                                        <div class="col-md-12">
-                                                            <!--begin::Label-->
-                                                            <label for="details"
-                                                                class=" col-form-label text-md-end">التفاصيل :</label>
-                                                            <span>  {{ $row->details }}</span>
-                                                            <!--end::Label-->
-                                                        </div>
-
-                                                    </div>
-
-
-
-
-
-                                                    <!--begin::Actions-->
-                                                    <div class="text-center">
-                                                        <div class="btn btn-sm btn-icon btn-active-color-primary"
-                                                            style="margin-right: 25px" data-bs-dismiss="modal">
-                                                            <button type="reset" id="kt_modal_update_target_cancel"
-                                                                class="btn btn-light me-3"
-                                                                data-dismiss="modal">الغاء</button>
-                                                        </div>
-
-                                                    </div>
-                                                    <!--end::Actions-->
-                                                    </form>
-                                                    <!--end:Form-->
-                                                </div>
-                                                <!--end::Modal body-->
-                                            </div>
-                                            <!--end::Modal content-->
-                                        </div>
-                                        <!--end::Modal dialog-->
-                                    </div>
-                                    <!--end::Modal - New Target-->
                                     <!--end::Action=-->
                                 </tr>
                                 <!--end::Table row-->

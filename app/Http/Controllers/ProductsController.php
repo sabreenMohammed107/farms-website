@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
@@ -38,7 +39,8 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        return view($this->viewName . 'add');
+        $categories=Category::all();
+        return view($this->viewName . 'add',compact('categories'));
 
     }
 
@@ -49,9 +51,12 @@ class ProductsController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
+            'cat_id' => 'required|integer',
 
         ], [
             'name.required' => 'حقل الاسم مطلوب',
+            'cat_id.required' => 'حقل التصنيف مطلوب',
+
 
         ]);
         $input = $request->except(['_token','image']);
@@ -84,7 +89,8 @@ class ProductsController extends Controller
     public function edit(string $id)
     {
         $row = Product::where('id',$id)->first();
-        return view($this->viewName . 'edit', compact(['row']));
+        $categories=Category::all();
+        return view($this->viewName . 'edit', compact(['row','categories']));
     }
 
     /**
@@ -94,9 +100,11 @@ class ProductsController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
+            'cat_id' => 'required',
 
         ], [
             'name.required' => 'حقل الاسم مطلوب',
+            'cat_id.required' => 'حقل التصنيف مطلوب',
 
         ]);
         $input = $request->except(['_token','image']);

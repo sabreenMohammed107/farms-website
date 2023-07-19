@@ -19,5 +19,12 @@ class Product extends Model
         'name',
         'details',
         'image',
+        'cat_id',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'cat_id');
+    }
+
 }

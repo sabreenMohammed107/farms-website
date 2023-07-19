@@ -11,7 +11,7 @@
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
                     <li class="breadcrumb-item text-muted">
-       <a href="#" class="text-muted text-hover-primary">الرئيسية</a>
+                        <a href="#" class="text-muted text-hover-primary">الرئيسية</a>
                     </li>
                     <li class="breadcrumb-item text-muted">المنتجات</li>
 
@@ -34,8 +34,8 @@
             <form id="kt_ecommerce_add_category_form" class="form d-flex flex-column flex-lg-row"
                 action="{{ route('products.store') }}" method="post" enctype="multipart/form-data">
                 @csrf
-                 <!--begin::Aside column-->
-                 <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
+                <!--begin::Aside column-->
+                <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                     <!--begin::Thumbnail settings-->
                     <div class="card card-flush py-4">
                         <!--begin::Card header-->
@@ -123,15 +123,38 @@
                                     <div class="mb-3">
                                         <label class="form-label">إسم المنتج</label>
                                         <input type="text" id="title" name="name" value="{{ old('name') }}"
-                                        maxlength="50" class="form-control  @error('name') is-invalid @enderror">
+                                            maxlength="50" class="form-control  @error('name') is-invalid @enderror">
                                         @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+
+
+                                    </div>
+                                    <div class="mb-3">
+
+                                        <label class="fs-6 fw-bold form-label mt-3">
+                                            <span class="required">التصنيف</span>
+
+                                        </label>
+                                        <!--end::Label-->
+                                        <select class="form-select form-select-solid @error('cat_id') is-invalid @enderror" id="cat_id" name="cat_id"
+                                            data-control="select2" data-placeholder="إختر" data-allow-clear="true">
+                                            <option selected="selected" value=""></option>
+                                            @foreach ($categories as $cat)
+                                                <option value="{{ $cat->id }}"
+                                                    {{ old('cat_id') == $cat->id ? 'selected' : '' }}>{{ $cat->name }}
+                                                </option>
+                                            @endforeach
+
+                                        </select>
+                                        @error('cat_id')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
-
                                     </div>
-
 
                                     <div class="mb-10 fv-row">
                                         <!--begin::Label-->

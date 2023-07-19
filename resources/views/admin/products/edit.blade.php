@@ -122,7 +122,23 @@
                                     @enderror
 
                                     </div>
+                                    <div class="mb-3">
+                                        <label class="fs-6 fw-bold form-label mt-3">
+                                            <span class="required">التصنيف</span>
 
+                                        </label>
+                                        <!--end::Label-->
+                                        <select  class="form-select form-select-solid" id="cat_id" name="cat_id"
+                                            data-control="select2" data-placeholder="إختر" data-allow-clear="true">
+                                            <option></option>
+                                            @foreach ($categories as $cat)
+                                                <option value="{{ $cat->id }}"
+                                                    {{ $row->cat_id == $cat->id ? 'selected' : '' }}>{{ $cat->name }}
+                                                </option>
+                                            @endforeach
+
+                                        </select>
+                                    </div>
 
                                     <div class="mb-10 fv-row">
                                         <!--begin::Label-->
