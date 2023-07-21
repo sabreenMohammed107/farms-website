@@ -38,7 +38,7 @@ License: For each use you must have a valid license purchased only from above li
 
          <div class="position-fixed top-0 end-0 p-3 z-index-3">
         <div class="toast show "  role="alert" aria-live="assertive" aria-atomic="true">
-         <div class="toast-header">
+         <div class="toast-header  text-white" style="background: #4caf50">
              <span class="svg-icon svg-icon-2 svg-icon-primary me-3"></span>
              <strong class="me-auto">الحاله !</strong>
 

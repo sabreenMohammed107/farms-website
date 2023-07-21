@@ -269,6 +269,15 @@
                                                             <!--end::Label-->
                                                         </div>
 
+                                                        <div class="col-md-12">
+                                                            <!--begin::Label-->
+                                                            <label for="name"
+                                                                class=" col-form-label text-md-end"> التصنيف :</label>
+                                                            <span> {{ $row->category->name ?? '' }}
+                                                            </span>
+                                                            <!--end::Label-->
+                                                        </div>
+
                                                     </div>
                                                     <!--end::Input group-->
 

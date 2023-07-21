@@ -322,7 +322,42 @@
                 </div>
                 <!-- end Event -->
 
+ <!-- start order -->
+ <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+    <span class="menu-link">
+        <span class="menu-bullet">
+            <span class="bullet bullet-dot"></span>
+        </span>
+        <span class="menu-title"> العلامات</span>
+        <span class="menu-arrow"></span>
+    </span>
+    <div class="menu-sub menu-sub-accordion">
+        <div class="menu-item">
+            <a class="menu-link" href="{{ route('tags.index') }}">
+                <span class="menu-bullet">
+                    <span class="bullet bullet-dot"></span>
+                </span>
+                <span class="menu-title"> قائمة العلامات </span>
+            </a>
+        </div>
 
+        <div class="menu-item">
+            <a class="menu-link" href="{{ route('tags.create') }}">
+                <span class="menu-bullet">
+                    <span class="bullet bullet-dot"></span>
+                </span>
+                <span class="menu-title"> إضافة علامة </span>
+            </a>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+<!-- end Event -->
 
 
 

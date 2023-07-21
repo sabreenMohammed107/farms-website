@@ -10,6 +10,7 @@ use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\JobsController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\TagsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,7 @@ Route::group(['prefix' => 'home'], function(){
     Route::resource('jobs', JobsController::class); //jobs
     Route::resource('news', NewsController::class); //news
     Route::resource('categories', CategoriesController::class); //categories
+    Route::resource('tags', TagsController::class); //tags
 });
 
 
