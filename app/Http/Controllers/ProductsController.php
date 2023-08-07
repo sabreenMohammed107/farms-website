@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Product_image;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use File;
@@ -137,6 +138,10 @@ class ProductsController extends Controller
         $file = $row->file_attach;
         $file_name = public_path('uploads/products/' . $file);
         try {
+            $images=Product_image::where('product_id',$id)->get();
+            foreach($images as $image){
+                $image->delete();
+            }
             File::delete($file_name);
 
 
@@ -200,5 +205,11 @@ class ProductsController extends Controller
         $image->move($destinationPathThumbnail, $imageName);
 
         return $imageName;
+    }
+
+    public function productImages($id){
+        $product = Product::where('id',$id)->first();
+        $rows = Product_image::where('product_id',$id)->get();
+        return view($this->viewName . 'gallery', compact(['product','rows']));
     }
 }

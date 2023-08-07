@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminContact;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\JobsController;
 use App\Http\Controllers\NewsController;
@@ -47,6 +48,9 @@ Route::group(['prefix' => 'home'], function(){
     Route::resource('news', NewsController::class); //news
     Route::resource('categories', CategoriesController::class); //categories
     Route::resource('tags', TagsController::class); //tags
+    //productImages
+    Route::get('productImages/{id}',[ProductsController::class, 'productImages'])->name('productImages');
+    Route::resource('gallery', GalleryController::class); //gallery
 });
 
 

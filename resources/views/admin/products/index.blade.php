@@ -112,7 +112,7 @@
                                     aria-label="Category Type: activate to sort column ascending" aria-sort="descending">
                                     الصورة  </th>
 
-
+                                    <th class="text-end min-w-70px pe-2 sorting_disabled">صور أخري </th>
 
                                 <th class="text-end min-w-70px pe-2 sorting_disabled">تعديل </th>
                                 <th class="text-end min-w-70px pe-2 sorting_disabled">حذف</th>
@@ -184,7 +184,10 @@
                                         <!--end::Badges-->
                                     </td>
 
-
+                                    <td class="text-end pe-0">
+                                        <a href="{{ route('productImages', $row->id) }}"
+                                            class="menu-link px-3"> + </a>
+                                    </td>
 
                                     <td class="text-end pe-0">
                                         <a href="{{ route('products.edit', $row->id) }}"
@@ -291,13 +294,23 @@
                                                         </div>
 
                                                     </div>
-
-
+                                                    <div class="row">
+@foreach ($row->images as $img)
+<div class="col-md-3">
+    <!--begin::Label-->
+    <div class="symbol-label fs-3 bg-light-danger text-danger">
+        <img src="{{ asset('uploads/galleries') }}/{{ $img->image }}"
+            class="w-100" alt="">
+    </div>
+    <!--end::Label-->
+</div>
+@endforeach
+                                                    </div>
 
 
 
                                                     <!--begin::Actions-->
-                                                    <div class="text-center">
+                                                    <div class="text-center mt-4">
                                                         <div class="btn btn-sm btn-icon btn-active-color-primary"
                                                             style="margin-right: 25px" data-bs-dismiss="modal">
                                                             <button type="reset" id="kt_modal_update_target_cancel"
