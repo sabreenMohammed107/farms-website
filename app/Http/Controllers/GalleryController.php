@@ -31,6 +31,16 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $input = $request->except(['_token','image']);
+        $this->validate($request, [
+            'image' => 'required',
+
+
+        ], [
+            'image.required' => 'إختر الصورة أولا',
+
+
+
+        ]);
         if ($request->hasFile('image')) {
 
             $attach_image = $request->file('image');
