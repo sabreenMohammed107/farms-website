@@ -68,7 +68,7 @@
                             <div class="row"> <div class="col-md-12">
                                 <div class="mb-3">
                                     <label class="form-label">التفاصيل</label>
-                                    <textarea  class="form-control @error('details') is-invalid @enderror" name="details" rows="3">{{ $row->details }}</textarea>
+                                    <textarea  class="ckeditor  form-control @error('details') is-invalid @enderror" name="details" rows="3">{{ $row->details }}</textarea>
 
                                     @error('details')
                                         <span class="invalid-feedback" role="alert">

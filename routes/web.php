@@ -8,6 +8,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\JobsController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductsController;
@@ -26,10 +27,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+//website routes
+Route::get('/', [IndexController::class, 'index']);
+Route::get('/about', [IndexController::class, 'about']);
+Route::get('/products', [IndexController::class, 'products']);
+Route::get('/contact-us', [IndexController::class, 'contact']);
+Route::get('/services', [IndexController::class, 'services']);
+Route::get('/news', [IndexController::class, 'news']);
+Route::get('/jobs', [IndexController::class, 'jobs']);
 Auth::routes();
 
  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+body { direction: rtl ; }
+
+/* Base;
+ *
+ */
+.noUi-pips,
+.noUi-pips * {
+-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.noUi-pips {
+	position: absolute;
+	font: 400 12px Arial;
+	color: #999;
+}
+
+/* Values;
+ *
+ */
+.noUi-value {
+	width: 40px;
+	position: absolute;
+	text-align: center;
+}
+.noUi-value-sub {
+	color: #ccc;
+	font-size: 10px;
+}
+
+/* Markings;
+ *
+ */
+.noUi-marker {
+	position: absolute;
+	background: #CCC;
+}
+.noUi-marker-sub {
+	background: #AAA;
+}
+.noUi-marker-large {
+	background: #AAA;
+}
+
+/* Horizontal layout;
+ *
+ */
+.noUi-pips-horizontal {
+	padding:10px 0;
+	height: 50px;
+	top: 100%;
+	right: 0;
+	width: 100%;
+}
+.noUi-value-horizontal {
+	margin-right: -20px;
+	padding-top: 20px;
+}
+.noUi-value-horizontal.noUi-value-sub {
+	padding-top: 15px;
+}
+
+.noUi-marker-horizontal.noUi-marker {
+	margin-right: -1px;
+	width: 2px;
+	height: 5px;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+	height: 10px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+	height: 15px;
+}
+
+/* Vertical layout;
+ *
+ */
+.noUi-pips-vertical {
+	padding:0 10px;
+	height: 100%;
+	top: 0;
+	right: 100%;
+}
+.noUi-value-vertical {
+	width: 15px;
+	margin-right: 20px;
+	margin-top: -5px;
+}
+
+.noUi-marker-vertical.noUi-marker {
+	width: 5px;
+	height: 2px;
+	margin-top: -1px;
+}
+.noUi-marker-vertical.noUi-marker-sub {
+	width: 10px;
+}
+.noUi-marker-vertical.noUi-marker-large {
+	width: 15px;
+}
+
+
+svg[class*=right], svg[class*=left], [class*=right].fas, [class*=left].fas {
+    transform: scaleX(-1) !important;
+}
+
+.product-item__badge {
+    transform: rotate(-45deg) translateZ(0) !important;
+}
+
+#st_gdpr_iframe {
+    left: 0 !important;
+    right: -5000px;
+}
+
+.product-form__item select.single-option-selector {
+    background-position: calc(23px) calc(1rem + 10px), calc(27px) calc(1rem + 10px);
+}
+
+.card__badge {
+    -ms-transform: rotate(-45deg) translateZ(0);
+    -webkit-transform: rotate(-45deg) translateZ(0);
+    transform: rotate(-45deg) translateZ(0);
+}
