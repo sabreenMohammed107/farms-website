@@ -184,26 +184,7 @@
                 }
             }
         }'>
-            <div class="wow fadeInUp" data-wow-delay="100ms">
 
-                <div class="hot-products__single">
-                    <div class="hot-products__single-inner">
-                        <div class="hot-products__img-box">
-                            <div class="hot-products__img">
-                                <img src="{{asset('webassets/assets/images/brand/logoipsum4.png')}}" alt="">
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="hot-products__content">
-
-                        <h3 class="hot-products__title">اسم العميل هنا</h3>
-
-                    </div>
-                </div>
-
-            </div>
             @foreach ($customers as $customer)
 
 
