@@ -443,7 +443,7 @@
 @foreach ($news as $obj)
 <div class="news-one__single">
     <div class="news-one__img-box">
-        <div class="news-one__img">
+        <div class="news-one__img" style="height: 100%">
             <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 100%" alt="">
         </div>
     </div>
