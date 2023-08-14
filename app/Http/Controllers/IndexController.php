@@ -21,6 +21,8 @@ class IndexController extends Controller
         return view('index', get_defined_vars());
     }
     public function about(){
+        $homedata=Home_page::firstOrFail();
+        $about=About_us::firstOrFail();
         return view('about', get_defined_vars());
     }
       public function products(){
