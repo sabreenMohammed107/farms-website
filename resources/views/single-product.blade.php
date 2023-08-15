@@ -84,7 +84,7 @@
 
   <div class="container single-product">
     <div class="sidebar__single sidebar__tags">
-      <div class="row align-items-center">
+      <div class="row align-items-center mb-3">
         @isset($tags)
         <div class="col-12">
             <h3 class="sidebar__title">Tags :</h3>
