@@ -34,6 +34,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/about', [IndexController::class, 'about']);
 Route::get('/products', [IndexController::class, 'products']);
+Route::get('/single-product/{id}',[IndexController::class, 'singleProduct'])->name('single-product');
 Route::get('/contact-us', [IndexController::class, 'contact']);
 Route::get('/services', [IndexController::class, 'services']);
 Route::get('/news', [IndexController::class, 'news']);

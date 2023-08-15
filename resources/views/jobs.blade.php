@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="page-header">
-    <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/div.hero-section.jpg)">
+    <div class="page-header-bg" style="background-image: url({{asset('webassets/assets/images/backgrounds/div.hero-section.jpg')}})">
     </div>
 
     <div class="container">
@@ -10,7 +10,7 @@
         <h2> الوظائف
         </h2>
         <ul class="thm-breadcrumb list-unstyled">
-          <li><a href="index.html">الرئيسية
+          <li><a href="{{ url('/') }}">الرئيسية
             </a></li>
           <li><span>/</span></li>
           <li> وظائف
@@ -34,258 +34,28 @@
       <div class="row">
 
         <div class="col-12 ">
+          @foreach ($jobs as $job)
           <div class="product-list__single">
             <div class="product-list__single-inner">
               <div class="product-list__img-box p-4">
                 <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
+                  <img src="{{asset('webassets/assets/images/favicons/apple-touch-icon.png')}}" alt="">
                 </div>
 
               </div>
               <div class="jobs-list__content ">
 
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
+                <h4 class="product-list__title">  {{ $job->title }}
                 </h4>
 
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
+                <p class="product-list__text"> {!! $job->details !!}
 
               </div>
             </div>
           </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
+          @endforeach
 
-              </div>
-              <div class="jobs-list__content ">
 
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
-          <div class="product-list__single">
-            <div class="product-list__single-inner">
-              <div class="product-list__img-box p-4">
-                <div class="jobs-page__img">
-                  <img src="assets/images/favicons/apple-touch-icon.png" alt="">
-                </div>
-
-              </div>
-              <div class="jobs-list__content ">
-
-                <h4 class="product-list__title">مهندس زراعي - كيماويات
-                </h4>
-
-                <p class="product-list__text">الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش أو
-                  الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو النفّيش
-                  أو الفرّأخ أو الشوش هي أسماء لشيء واحد - الفشار (بالإنجليزية: Popcorn) أو الشامية أو البوشار أو
-                  النفّيش أو الفرّأخ أو الشوش هي أسماء لشيء واحد</p>
-
-              </div>
-            </div>
-          </div>
         </div>
 
       </div>

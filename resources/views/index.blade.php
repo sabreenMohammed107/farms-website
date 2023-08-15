@@ -307,7 +307,7 @@
                         </div>
                         <div class="hot-products__content">
 
-                            <h3 class="hot-products__title"><a href="#">{{ $product->name }}</a></h3>
+                            <h3 class="hot-products__title"><a href="{{ url('/single-product/'.$product->id) }}">{{ $product->name }}</a></h3>
 
                         </div>
 
