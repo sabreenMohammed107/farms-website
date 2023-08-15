@@ -81,7 +81,7 @@
                                         <div class="hot-products__single-inner">
                                             <div class="hot-products__img-box">
                                                 <div class="hot-products__img">
-                                                    <img src="{{ asset('uploads/products') }}/{{ $product->image }}"
+                                                    <img style="height: 300px" src="{{ asset('uploads/products') }}/{{ $product->image }}"
                                                         alt="">
                                                 </div>
                                             </div>
@@ -90,8 +90,10 @@
                                                 <h3 class="hot-products__title"><a href="{{ url('/single-product/'.$product->id) }}">{{ $product->name }}</a>
                                                 </h3>
                                                 <p class="hot-products__desc">
-                                                    {{ Str::limit($product->details, 70,'') }}
+                                                    {{ Str::words($product->details, 15) }}
                                                     </p>
+
+
 
                                             </div>
 
@@ -99,6 +101,7 @@
                                     </div>
                                 </a>
                             </li>
+
                                @endforeach
 
 

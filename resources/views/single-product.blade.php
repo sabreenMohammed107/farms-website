@@ -125,7 +125,7 @@
             <div class="hot-products__single-inner">
               <div class="hot-products__img-box">
                 <div class="hot-products__img">
-                  <img src="{{ asset('uploads/products') }}/{{ $obj->image }}" alt="">
+                  <img style="height: 300px" src="{{ asset('uploads/products') }}/{{ $obj->image }}" alt="">
                 </div>
               </div>
               <div class="hot-products__content">
