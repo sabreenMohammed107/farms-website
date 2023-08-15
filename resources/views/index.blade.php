@@ -297,7 +297,7 @@
         }'>
         @foreach ($products as $product)
         <div class="wow fadeInUp" data-wow-delay="100ms">
-            <a href="product-details.html">
+            <a href="{{ url('/single-product/'.$product->id) }}">
                 <div class="hot-products__single">
                     <div class="hot-products__single-inner">
                         <div class="hot-products__img-box">
