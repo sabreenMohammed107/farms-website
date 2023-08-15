@@ -87,7 +87,7 @@
       <div class="row align-items-center ">
         @isset($tags)
         <div class="col-12">
-            <h3 class="sidebar__title mb-5">Tags :</h3>
+            <h3 class="sidebar__title mb-3">Tags :</h3>
             <div class="sidebar__tags-list">
   @foreach ($tags as $tag)
   <a href="#">{{ $tag->text }}</a>
