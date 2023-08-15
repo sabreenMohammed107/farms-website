@@ -84,10 +84,10 @@
 
   <div class="container single-product">
     <div class="sidebar__single sidebar__tags">
-      <div class="row align-items-center mb-3">
+      <div class="row align-items-center ">
         @isset($tags)
         <div class="col-12">
-            <h3 class="sidebar__title">Tags :</h3>
+            <h3 class="sidebar__title mb-5">Tags :</h3>
             <div class="sidebar__tags-list">
   @foreach ($tags as $tag)
   <a href="#">{{ $tag->text }}</a>
