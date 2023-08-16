@@ -103,13 +103,13 @@
                         "items": 1
                     },
                     "768": {
-                        "items": <?php(count($otherNews) < 2) ?echo count($otherNews): 2 ; ?>;
+                        "items": <?php (count($otherNews) < 2) ? count($otherNews): 2 ; ?>;
                     },
                     "992": {
-                        "items":  <?php (count($otherNews) < 3) ?echo count($otherNews): 3 ; ?>
+                        "items":  <?php (count($otherNews) < 3) ? count($otherNews): 3 ; ?>
                     },
                     "1200": {
-                        "items":  <?php (count($otherNews) < 3) ?echo count($otherNews): 3 ; ?>
+                        "items":  <?php (count($otherNews) < 3) ? count($otherNews): 3 ; ?>
                     }
                 }
             }'>
