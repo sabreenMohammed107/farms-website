@@ -40,6 +40,13 @@ public function singleProduct($id){
     $otherProducts=Product::where('id','!=',$id)->get();
     return view('single-product', get_defined_vars());
 }
+public function singleNews($id){
+    $row=Website_new::where('id','=',$id)->first();
+
+    $tags=Tag::where('type',0)->get();
+    $otherNews=Website_new::where('id','!=',$id)->get();
+    return view('single-news', get_defined_vars());
+}
     public function contact(){
         return view('contact', get_defined_vars());
     }
@@ -47,6 +54,7 @@ public function singleProduct($id){
         return view('services', get_defined_vars());
     }
       public function news(){
+        $rows=Website_new::get();
         return view('news', get_defined_vars());
     }
 

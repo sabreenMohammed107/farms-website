@@ -430,7 +430,7 @@
     </div>
     <div class="news-one__content-box">
 
-        <h3 class="news-one__title"><a href="news-details.html">
+        <h3 class="news-one__title"><a href="{{ url('/single-news/'.$obj->id) }}">
 
 {!! $obj->title !!}
 

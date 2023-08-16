@@ -38,6 +38,8 @@ Route::get('/single-product/{id}',[IndexController::class, 'singleProduct'])->na
 Route::get('/contact-us', [IndexController::class, 'contact']);
 Route::get('/services', [IndexController::class, 'services']);
 Route::get('/news', [IndexController::class, 'news']);
+Route::get('/single-news/{id}',[IndexController::class, 'singleNews'])->name('single-news');
+
 Route::get('/jobs', [IndexController::class, 'jobs']);
 Auth::routes();
 
