@@ -44,7 +44,7 @@ public function singleNews($id){
     $row=Website_new::where('id','=',$id)->first();
 
     $tags=Tag::where('type',0)->get();
-    $otherNews=Website_new::where('id','!=',$id)->get();
+    $otherNews=Website_new::where('id','!=',$id)->take(4)->orderBy("created_at", "desc")->get();
     return view('single-news', get_defined_vars());
 }
     public function contact(){
