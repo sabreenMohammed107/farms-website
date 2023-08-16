@@ -81,11 +81,11 @@
                             </div>
                             <div class="footer-widget__explore-list-box">
                                 <ul class="footer-widget__explore-list list-unstyled">
-                                    <li><a href="{{ url('\about') }}">عن الشركة</a></li>
-                                    <li><a href="{{ url('\services') }}">خدماتنا</a></li>
-                                    <li><a href="{{ url('\products') }}">المنتجات</a></li>
-                                    <li><a href="{{ url('\news') }}">الاخبار</a></li>
-                                    <li><a href="{{ url('\contact-us') }}">التواصل</a></li>
+                                    <li><a href="{{ url('/about') }}">عن الشركة</a></li>
+                                    <li><a href="{{ url('/services') }}">خدماتنا</a></li>
+                                    <li><a href="{{ url('/products') }}">المنتجات</a></li>
+                                    <li><a href="{{ url('/news') }}">الاخبار</a></li>
+                                    <li><a href="{{ url('/contact-us') }}">التواصل</a></li>
                                 </ul>
                             </div>
                         </div>
