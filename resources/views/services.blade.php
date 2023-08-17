@@ -2,15 +2,16 @@
 
 @section('content')
 <section class="page-header">
-    <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/div.hero-section.jpg)">
-    </div>
+    <div class="page-header-bg"
+            style="background-image: url({{ asset('webassets/assets/images/backgrounds/div.hero-section.jpg') }})">
+        </div>
 
     <div class="container">
       <div class="page-header__inner">
         <h2>الخدمات
         </h2>
         <ul class="thm-breadcrumb list-unstyled">
-          <li><a href="index.html">الرئيسية
+          <li><a href="{{ url('/') }}">الرئيسية
             </a></li>
           <li><span>/</span></li>
           <li>خدماتنا
@@ -54,15 +55,15 @@
               تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم
               بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.</p>
             <div class="about-one__btn-box">
-              <a href="all-products.html" class="about-one__btn thm-btn lite-btn-bg"> اكتشف المنتجات
+              <a href="{{ url('/products') }}" class="about-one__btn thm-btn lite-btn-bg"> اكتشف المنتجات
               </a>
-              <a href="#" class="about-one__btn thm-btn ">اكتشف اكتر
-              </a>
+              {{-- <a href="#" class="about-one__btn thm-btn ">اكتشف اكتر
+              </a> --}}
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-3 service-image">
-          <img src="assets/images/resources/banner-img-1.png" alt="" srcset="">
+          <img src="{{ asset('webassets/assets/images/resources/banner-img-1.png')}}" alt="" srcset="">
         </div>
       </div>
     </div>

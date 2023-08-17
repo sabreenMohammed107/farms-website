@@ -44,7 +44,7 @@
               <h3 class="product-details__title"> {!! $row->title !!}</h3>
             </div>
             <div class="product-details__img">
-              <img src="{{ asset('uploads/news') }}/{{ $row->image }}" alt="" />
+              <img height="500px" src="{{ asset('uploads/news') }}/{{ $row->image }}" alt="" />
             </div>
           </div>
           <div class="col-12">

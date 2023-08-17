@@ -70,6 +70,7 @@
               <img src="{{asset('webassets/assets/images/shapes/phone.svg')}}" alt="" srcset="">
             </div>
             <p class="contact-us-info-data mt-3">{!! $contact->mobile !!}</p>
+            <p class="contact-us-info-data " style="direction: ltr">{!! $contact->phone !!}</p>
 
           </div>
         </div>
@@ -98,7 +99,7 @@
     <section class="google-map">
       <div class="container">
         <iframe
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&language=ar&region=EG"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3458.4147505398228!2d31.207061775548674!3d29.9099597749916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDU0JzM1LjkiTiAzMcKwMTInMzQuNyJF!5e0!3m2!1sen!2seg!4v1692302129347!5m2!1sen!2seg"
           class="google-map__one" allowfullscreen></iframe>
 
       </div>

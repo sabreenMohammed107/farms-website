@@ -72,9 +72,7 @@
                         <!--begin::Add product-->
                         <!--end::Add product-->
 
-                        <a href="{{ route('products.create') }}"
-                        class="btn btn-primary"
-                  >إضافة منتج</a>
+                        <a href="{{ route('products.create') }}" class="btn btn-primary">إضافة منتج</a>
 
                         <!--end::Add customer-->
                     </div>
@@ -90,8 +88,8 @@
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                <th class="w-50px pe-2 sorting_disabled" rowspan="1" colspan="1"
-                                    aria-label=" " style="width: 29.25px;">
+                                <th class="w-50px pe-2 sorting_disabled" rowspan="1" colspan="1" aria-label=" "
+                                    style="width: 29.25px;">
                                     <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
                                         <input class="form-check-input" style="display: none" type="checkbox"
                                             data-kt-check="true"
@@ -104,15 +102,15 @@
                                 <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
                                     rowspan="1" colspan="1" aria-label="المنتج: activate to sort column ascending">
                                     اسم المنتج</th>
-                                    <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
+                                <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
                                     rowspan="1" colspan="1" aria-label="التصنيف: activate to sort column ascending">
-                                     التصنيف</th>
+                                    التصنيف</th>
                                 <th class="text-end min-w-70px sorting sorting_desc" tabindex="0"
                                     aria-controls="kt_ecommerce_category_table" rowspan="1" colspan="1"
                                     aria-label="Category Type: activate to sort column ascending" aria-sort="descending">
-                                    الصورة  </th>
+                                    الصورة </th>
 
-                                    <th class="text-end min-w-70px pe-2 sorting_disabled">صور أخري </th>
+                                <th class="text-end min-w-70px pe-2 sorting_disabled">صور أخري </th>
 
                                 <th class="text-end min-w-70px pe-2 sorting_disabled">تعديل </th>
                                 <th class="text-end min-w-70px pe-2 sorting_disabled">حذف</th>
@@ -131,7 +129,7 @@
                                             <input class="form-check-input" style="display: none" type="checkbox"
                                                 value="1" />
                                         </div>
-                                        {{$index+1 }}
+                                        {{ $index + 1 }}
                                     </td>
                                     <!--end::Checkbox-->
                                     <!--begin::Category=-->
@@ -142,13 +140,13 @@
                                                 <!--begin::Title-->
 
                                                 <a data-bs-toggle="modal"
-                                                data-bs-target="#kt_modal_new_targetEdit{{ $row->id }}"
-
+                                                    data-bs-target="#kt_modal_new_targetEdit{{ $row->id }}"
                                                     class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
-                                                    data-kt-ecommerce-category-filter="category_name"
-                                                    >  {{ $row->name ?? '' }} </a>
+                                                    data-kt-ecommerce-category-filter="category_name">
+                                                    {{ $row->name ?? '' }} </a>
                                                 <input type="hidden" name="" id=""
-                                                data-kt-ecommerce-category-filter="category_id" value="{{ $row->id }}">
+                                                    data-kt-ecommerce-category-filter="category_id"
+                                                    value="{{ $row->id }}">
                                                 <!--end::Title-->
                                             </div>
                                         </div>
@@ -163,7 +161,7 @@
                                             {{ $row->category->name ?? '' }}
 
 
-                                    </div>
+                                        </div>
 
                                         <!--end::Badges-->
                                     </td>
@@ -185,13 +183,12 @@
                                     </td>
 
                                     <td class="text-end pe-0">
-                                        <a href="{{ route('productImages', $row->id) }}"
-                                            class="menu-link px-3"> + </a>
+                                        <a href="{{ route('productImages', $row->id) }}" class="menu-link px-3"> + </a>
                                     </td>
 
                                     <td class="text-end pe-0">
-                                        <a href="{{ route('products.edit', $row->id) }}"
-                                            class="menu-link px-3"><i class="fa fa-edit"></i></a>
+                                        <a href="{{ route('products.edit', $row->id) }}" class="menu-link px-3"><i
+                                                class="fa fa-edit"></i></a>
                                     </td>
                                     <td class="text-end pe-0">
                                         <a href="#" class="menu-link px-3"
@@ -246,7 +243,7 @@
 
                                                     <div class="mb-13 text-center">
                                                         <!--begin::Title-->
-                                                        <h1 class="mb-3">تفاصيل  المنتج</h1>
+                                                        <h1 class="mb-3">تفاصيل المنتج</h1>
                                                         <!--end::Title-->
 
                                                     </div>
@@ -265,8 +262,8 @@
                                                         </div>
                                                         <div class="col-md-12">
                                                             <!--begin::Label-->
-                                                            <label for="name"
-                                                                class=" col-form-label text-md-end">إسم المنتج :</label>
+                                                            <label for="name" class=" col-form-label text-md-end">إسم
+                                                                المنتج :</label>
                                                             <span> {{ $row->name }}
                                                             </span>
                                                             <!--end::Label-->
@@ -274,8 +271,8 @@
 
                                                         <div class="col-md-12">
                                                             <!--begin::Label-->
-                                                            <label for="name"
-                                                                class=" col-form-label text-md-end"> التصنيف :</label>
+                                                            <label for="name" class=" col-form-label text-md-end">
+                                                                التصنيف :</label>
                                                             <span> {{ $row->category->name ?? '' }}
                                                             </span>
                                                             <!--end::Label-->
@@ -289,22 +286,22 @@
                                                             <!--begin::Label-->
                                                             <label for="details"
                                                                 class=" col-form-label text-md-end">التفاصيل :</label>
-                                                            <span>  {{ $row->details }}</span>
+                                                            <span> {{ $row->details }}</span>
                                                             <!--end::Label-->
                                                         </div>
 
                                                     </div>
                                                     <div class="row">
-@foreach ($row->images as $img)
-<div class="col-md-3">
-    <!--begin::Label-->
-    <div class="symbol-label fs-3 bg-light-danger text-danger">
-        <img src="{{ asset('uploads/galleries') }}/{{ $img->image }}"
-            class="w-100" alt="">
-    </div>
-    <!--end::Label-->
-</div>
-@endforeach
+                                                        @foreach ($row->images as $img)
+                                                            <div class="col-md-3">
+                                                                <!--begin::Label-->
+                                                                <div class="symbol-label fs-3 bg-light-danger text-danger">
+                                                                    <img src="{{ asset('uploads/galleries') }}/{{ $img->image }}"
+                                                                        class="w-100" alt="">
+                                                                </div>
+                                                                <!--end::Label-->
+                                                            </div>
+                                                        @endforeach
                                                     </div>
 
 

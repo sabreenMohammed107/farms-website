@@ -26,41 +26,44 @@
 @section('content')
 
     <!--begin::Post-->
+    <!--begin::Post-->
     <div class="post fs-6 d-flex flex-column-fluid" id="kt_post">
         <!--begin::Container-->
         <div class="container-xxl">
             <!--begin::Category-->
             <div class="card card-flush">
                 <!--begin::Card header-->
-                    <!--begin::Modal body-->
-                    <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
-                        <!--begin:Form-->
-                        <form id="kt_modal_new_target_form" class="form" action="{{ route('gallery.store') }}"
-                            method="post" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="product_id" value="{{ $product->id }}" >
-                            <!--begin::Heading-->
-                            <div class="mb-13 text-center">
-                                <!--begin::Title-->
-                                <h1 class="mb-3">صور المنتجات</h1>
-                                <!--end::Title-->
+                <!--begin::Modal body-->
+                <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
+                    <!--begin:Form-->
+                    <form id="kt_modal_new_target_form" class="form" action="{{ route('gallery.store') }}" method="post"
+                        enctype="multipart/form-data">
+                        @csrf
+                        <input type="hidden" name="product_id" value="{{ $product->id }}">
+                        <!--begin::Heading-->
+                        <div class="mb-13 text-center">
+                            <!--begin::Title-->
+                            <h1 class="mb-3">صور المنتجات</h1>
+                            <!--end::Title-->
 
-                            </div>
-                            <!--end::Heading-->
-                            <!--begin::Thumbnail settings-->
-                            <div class="card card-flush py-4">
+                        </div>
+                        <!--end::Heading-->
+                        <!--begin::Thumbnail settings-->
+                        <div class="card card-flush py-4">
 
-                                <!--begin::Card body-->
-                               <!--begin::Card body-->
+                            <!--begin::Card body-->
+                            <!--begin::Card body-->
                             <div class="card-body text-right pt-0">
                                 <!--begin::Image input-->
-                                <div class="image-input image-input-empty image-input-outline mb-3" data-kt-image-input="true"
+                                <div class="image-input image-input-empty image-input-outline mb-3"
+                                    data-kt-image-input="true"
                                     style="background-image: url(assets/media/svg/files/blank-image.svg)">
                                     <!--begin::Preview existing avatar-->
                                     <div class="image-input-wrapper w-150px h-150px"></div>
                                     <!--end::Preview existing avatar-->
                                     <!--begin::Label-->
-                                    <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    <label
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                                         data-kt-image-input-action="change" data-bs-toggle="tooltip" title="تغير الصورة">
                                         <!--begin::Icon-->
                                         <i class="bi bi-pencil-fill fs-7"></i>
@@ -72,28 +75,32 @@
                                     </label>
                                     <!--end::Label-->
                                     <!--begin::Cancel-->
-                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    <span
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                                         data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="إلغاء الصورة">
                                         <i class="bi bi-x fs-2"></i>
                                     </span>
                                     <!--end::Cancel-->
                                     <!--begin::Remove-->
-                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    <span
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
                                         data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
                                         <i class="bi bi-x fs-2"></i>
                                     </span>
                                     <!--end::Remove-->
                                 </div>
                                 <!--end::Image input-->
-                                <button style="display: block " @if(count($rows) >=4) disabled @endif type="submit" style="text-align: left" id="kt_ecommerce_add_category_submit" class="btn btn-primary">
+                                <button style="display: block " @if (count($rows) >= 4) disabled @endif
+                                    type="submit" style="text-align: left" id="kt_ecommerce_add_category_submit"
+                                    class="btn btn-primary">
                                     <span class="indicator-label">حفظ</span>
                                     <span class="indicator-progress">Please wait...
                                         <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
                                 </button>
                             </div>
                             <!--end::Card body-->
-                                <!--end::Card body-->
-                                @if (count($errors) > 0)
+                            <!--end::Card body-->
+                            @if (count($errors) > 0)
                                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
 
                                     <ul class="p-0 m-0" style="list-style: none;">
@@ -103,8 +110,8 @@
                                     </ul>
                                 </div>
                             @endif
-                            </div>
-                            <!--end::Thumbnail settings-->
+                        </div>
+                        <!--end::Thumbnail settings-->
 
 
 
@@ -112,9 +119,9 @@
 
 
 
-                        </form>
-                        <!--end:Form-->
-                    </div>
+                    </form>
+                    <!--end:Form-->
+                </div>
 
                 <!--begin::Card body-->
                 <div class="card-body pt-0">
@@ -124,8 +131,8 @@
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                <th class="w-50px pe-2 sorting_disabled" rowspan="1" colspan="1"
-                                    aria-label=" " style="width: 29.25px;">
+                                <th class="w-50px pe-2 sorting_disabled" rowspan="1" colspan="1" aria-label=" "
+                                    style="width: 29.25px;">
                                     <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
                                         <input class="form-check-input" style="display: none" type="checkbox"
                                             data-kt-check="true"
@@ -152,7 +159,7 @@
                                             <input class="form-check-input" style="display: none" type="checkbox"
                                                 value="1" />
                                         </div>
-                                        {{$index+1 }}
+                                        {{ $index + 1 }}
                                     </td>
                                     <!--end::Checkbox-->
                                     <td>
@@ -173,14 +180,13 @@
                                     <!--begin::Action=-->
                                     <td class="text-end pe-0">
 
-                                        <form
-                                            action="{{ route('gallery.destroy', $row->id) }}" method="POST"
-                                            >
+                                        <form action="{{ route('gallery.destroy', $row->id) }}" method="POST">
                                             @csrf
                                             {{-- <input type="hidden" name="_method" value="delete"> --}}
                                             @method('DELETE')
 
-                                            <button type="submit" value="" class="menu-link px-3" style="border:none"><i class="fa fa-trash"></i></button>
+                                            <button type="submit" value="" class="menu-link px-3"
+                                                style="border:none"><i class="fa fa-trash"></i></button>
                                         </form>
                                     </td>
                                     <!--end::Action=-->
@@ -201,130 +207,7 @@
         </div>
         <!--end::Container-->
     </div>
+
     <!--end::Post-->
-    <!--begin::Modal - New Target-->
-    <div class="modal fade" id="kt_modal_new_target" tabindex="-1" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content rounded">
-                <!--begin::Modal header-->
-                <div class="modal-header pb-0 border-0 justify-content-end">
-                    <!--begin::Close-->
-                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
-                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                        <span class="svg-icon svg-icon-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
-                                    rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
-                                <rect x="7.41422" y="6" width="16" height="2" rx="1"
-                                    transform="rotate(45 7.41422 6)" fill="black" />
-                            </svg>
-                        </span>
-                        <!--end::Svg Icon-->
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--begin::Modal header-->
-                <!--begin::Modal body-->
-                <div class="modal-body scroll-y px-10 px-lg-15 pt-0 pb-15">
-                    <!--begin:Form-->
-                    <form id="kt_modal_new_target_form" class="form" action="{{ route('gallery.store') }}"
-                        method="post" enctype="multipart/form-data">
-                        @csrf
-                        <!--begin::Heading-->
-                        <div class="mb-13 text-center">
-                            <!--begin::Title-->
-                            <h1 class="mb-3">صور المنتجات</h1>
-                            <!--end::Title-->
 
-                        </div>
-                        <!--end::Heading-->
-                        <!--begin::Thumbnail settings-->
-                        <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                                <!--begin::Card title-->
-                                <div class="card-title">
-                                    <h2>إختر الصورة</h2>
-                                </div>
-                                <!--end::Card title-->
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                           <!--begin::Card body-->
-                        <div class="card-body text-center pt-0">
-                            <!--begin::Image input-->
-                            <div class="image-input image-input-empty image-input-outline mb-3" data-kt-image-input="true"
-                                style="background-image: url(assets/media/svg/files/blank-image.svg)">
-                                <!--begin::Preview existing avatar-->
-                                <div class="image-input-wrapper w-150px h-150px"></div>
-                                <!--end::Preview existing avatar-->
-                                <!--begin::Label-->
-                                <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                    data-kt-image-input-action="change" data-bs-toggle="tooltip" title="تغير الصورة">
-                                    <!--begin::Icon-->
-                                    <i class="bi bi-pencil-fill fs-7"></i>
-                                    <!--end::Icon-->
-                                    <!--begin::Inputs-->
-                                    <input type="file" name="image" accept=".png, .jpg, .jpeg" />
-                                    <input type="hidden" name="avatar_remove" />
-                                    <!--end::Inputs-->
-                                </label>
-                                <!--end::Label-->
-                                <!--begin::Cancel-->
-                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                    data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="إلغاء الصورة">
-                                    <i class="bi bi-x fs-2"></i>
-                                </span>
-                                <!--end::Cancel-->
-                                <!--begin::Remove-->
-                                <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                    data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
-                                    <i class="bi bi-x fs-2"></i>
-                                </span>
-                                <!--end::Remove-->
-                            </div>
-                            <!--end::Image input-->
-
-                        </div>
-                        <!--end::Card body-->
-                            <!--end::Card body-->
-                        </div>
-                        <!--end::Thumbnail settings-->
-                        <!--begin::Input group-->
-
-
-
-                        <div class="d-flex flex-column mb-8 fv-row">
-
-
-
-                        <div class="d-flex flex-column mb-8 fv-row">
-
-
-                            <!--end::Input group-->
-
-
-                        <!--begin::Actions-->
-                        <div class="text-center">
-
-                            <button type="submit" id="kt_ecommerce_add_category_submit" class="btn btn-primary">
-                                <span class="indicator-label">حفظ</span>
-                                <span class="indicator-progress">Please wait...
-                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                            </button>
-                        </div>
-                        <!--end::Actions-->
-                    </form>
-                    <!--end:Form-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-            <!--end::Modal content-->
-        </div>
-        <!--end::Modal dialog-->
-    </div>
-    <!--end::Modal - New Target-->
 @endsection

@@ -89,9 +89,9 @@
 
                                                 <h3 class="hot-products__title"><a href="{{ url('/single-product/'.$product->id) }}">{{ $product->name }}</a>
                                                 </h3>
-                                                <p class="hot-products__desc">
+                                                {{-- <p class="hot-products__desc">
                                                     {{ Str::words($product->details, 10) }}
-                                                    </p>
+                                                    </p> --}}
 
 
 

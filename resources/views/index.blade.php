@@ -234,14 +234,14 @@
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
-                            <img src="assets/images/resources/banner-img-1.png" alt="">
+                            <img src="{{ asset('webassets/assets/images/resources/banner-img-1.png')}}" alt="">
                         </div>
 
                         <div class="banner-one__shape-2">
-                            <img src="assets/images/shapes/banner-shape-2.png" alt="">
+                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.png')}}" alt="">
                         </div>
                         <div class="banner-one__shape-3">
-                            <img src="assets/images/shapes/banner-shape-3.png" alt="">
+                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.png')}}" alt="">
                         </div>
                         <p class="banner-one__tagline">عضوي 100٪</p>
                         <h3 class="banner-one__title">توريد الخضار للفنادق
@@ -252,7 +252,7 @@
                             الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب
                             عملائنا.</p>
                         <div class="banner-one__btn-box">
-                            <a href="services.html" class="banner-one__btn thm-btn">تفاصيل الخدمة</a>
+                            <a href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل الخدمة</a>
                         </div>
                     </div>
                 </div>

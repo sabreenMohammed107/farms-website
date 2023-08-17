@@ -100,7 +100,9 @@
                             <ul class="list-unstyled footer-widget__contact-list">
                                 <li>
                                     <div class="text">
-                                        <p><a href="tel:{{$contact->phone}}"><i class="fas fa-phone px-1"></i>{{$contact->phone}}</a></p>
+                                        <p><a href="tel:{{$contact->phone}}" style="direction: ltr"><i class="fas fa-phone px-1"></i>{{$contact->phone}}</a></p>
+                                        <p><a href="tel:{{$contact->mobile}}"><i class="fas fa-phone px-1"></i>{{$contact->mobile}}</a></p>
+
                                     </div>
                                 </li>
                                 <li>
@@ -123,7 +125,7 @@
                                 <div class="container">
                                     <a href="" target="_blank">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+                                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3458.4147505398228!2d31.207061775548674!3d29.9099597749916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDU0JzM1LjkiTiAzMcKwMTInMzQuNyJF!5e0!3m2!1sen!2seg!4v1692302129347!5m2!1sen!2seg"
                                             class="google-map__one" allowfullscreen></iframe>
                                     </a>
 

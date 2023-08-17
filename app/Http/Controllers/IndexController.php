@@ -51,6 +51,7 @@ public function singleNews($id){
         return view('contact', get_defined_vars());
     }
     public function services(){
+
         return view('services', get_defined_vars());
     }
       public function news(){
