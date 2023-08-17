@@ -100,8 +100,8 @@
                             <ul class="list-unstyled footer-widget__contact-list">
                                 <li>
                                     <div class="text">
-                                        <p><a href="tel:{{$contact->phone}}" style="direction: ltr"><i class="fas fa-phone px-1"></i>{{$contact->phone}}</a></p>
-                                        <p><a href="tel:{{$contact->mobile}}"><i class="fas fa-phone px-1"></i>{{$contact->mobile}}</a></p>
+                                        <p style="direction: ltr"><a href="tel:{{$contact->phone}}" >{{$contact->phone}} <i class="fas fa-phone px-1"></i></a></p>
+                                        <p style="direction: ltr"><a href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i class="fas fa-phone px-1"></i></a></p>
 
                                     </div>
                                 </li>
