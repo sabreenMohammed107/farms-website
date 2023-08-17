@@ -422,7 +422,7 @@
             }
         }'>
 @foreach ($news as $obj)
-<div class="news-one__single">
+<div class="news-one__single mx-2">
     <div class="news-one__img-box">
         <div class="news-one__img" style="height: 100%">
             <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 450px" alt="">
