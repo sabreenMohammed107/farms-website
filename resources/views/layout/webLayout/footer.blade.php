@@ -62,7 +62,7 @@
                                 <a href="{{ url('/') }}"><img src="{{asset('webassets/assets/images/resources/footer-logo.png')}}" alt=""></a>
                             </div>
                             <div class="footer-widget__about-text-box">
-                                <p class="footer-widget__about-text" style="word-spacing: 1px;">نحن نقدم
+                                <p class="footer-widget__about-text" style="word-spacing: 2px;">نحن نقدم
                                     <br> منتجات جديدة وعالية الجودة كل يوم
                                 </p>
                             </div>
