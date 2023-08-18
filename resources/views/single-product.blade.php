@@ -42,7 +42,7 @@
                     </div>
 
                     <div class="product-details__content mt-3">
-                        <p class="product-details__content-text1"{!! $product->details !!}</p>
+                        <p class="product-details__content-text1" >{!! $product->details !!}</p>
 
 
                     </div>
