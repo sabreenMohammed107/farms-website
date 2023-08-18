@@ -49,6 +49,10 @@
                 </h4>
 
                 <p class="product-list__text"> {!! $job->details !!}
+                </p>
+                <p class="product-list__text"> ارسل السيرة الذاتية الى
+                    <span>{{ $job->email }}</span>
+                </p>
 
               </div>
             </div>
