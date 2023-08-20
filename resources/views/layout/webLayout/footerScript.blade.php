@@ -9,6 +9,7 @@
 <script async  src="{{asset('webassets/assets/vendors/nouislider/nouislider.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/odometer/odometer.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/swiper/swiper.min.js')}}"></script>
+
 <script async  src="{{asset('webassets/assets/vendors/tiny-slider/tiny-slider.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/wnumb/wNumb.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/wow/wow.js')}}"></script>
