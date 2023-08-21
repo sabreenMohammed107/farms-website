@@ -5,8 +5,8 @@
     <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
 </div><!-- /.stricky-header -->
 
- <!--Main Slider Start-->
- <section class="main-slider clearfix">
+<!--Main Slider Start-->
+<section class="main-slider clearfix">
     <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
         "pagination": {
@@ -22,9 +22,11 @@
 
             <div class="swiper-slide">
                 <div class="main-slider-bg-shape"
-                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape.png')}});"></div>
+                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape.png')}});">
+                </div>
                 <div class="main-slider-bg-shape-two"
-                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.png')}});"></div>
+                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.png')}});">
+                </div>
                 <div class="main-slider__shape-1 float-bob-y">
                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}" alt="">
                 </div>
@@ -50,20 +52,22 @@
                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}" alt="">
                 </div>
                 <div class="main-slider__img-one">
-                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.png')}}" alt="" class="img-bounce">
+                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}" alt=""
+                        class="img-bounce">
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="main-slider__content">
                                 <div class="main-slider__shape-9 float-bob-y">
-                                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}" alt="">
+                                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}"
+                                        alt="">
                                 </div>
                                 <h4 class="main-slider__sub-title"><span><img
                                             src="{{asset('webassets/assets/images/shapes/1.png.png')}}"
                                             class="main-slider__sub-title__icn" alt="" srcset=""></span>
-                                     {!! $homedata->title !!}</h4>
-                                <h2 class="main-slider__title">{!! $homedata->details !!}   </h2>
+                                    {!! $homedata->title !!}</h4>
+                                <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
                                     <a href="{{ url('/products') }}" class="thm-btn main-slider__btn-two">اكتشف
                                         المنتجات</a>
@@ -96,8 +100,7 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="about-one__left">
-                    <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
-                        data-wow-duration="2500ms">
+                    <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <!-- <div class="about-one__big-text">Gamal</div> -->
                         <div class="about-one__shape-1">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.png')}}" alt="">
@@ -202,7 +205,7 @@
                     </div>
                     <div class="hot-products__content">
 
-                        <h3 class="hot-products__title">  {!! $customer->name !!}</h3>
+                        <h3 class="hot-products__title"> {!! $customer->name !!}</h3>
 
                     </div>
                 </div>
@@ -229,12 +232,11 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="banner-one__left wow slideInLeft animated" data-wow-delay="100ms"
-                    data-wow-duration="2500ms"
+                <div class="banner-one__left wow slideInLeft animated" data-wow-delay="100ms" data-wow-duration="2500ms"
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
-                            <img src="{{ asset('webassets/assets/images/resources/banner-img-1.png')}}" alt="">
+                            <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="">
                         </div>
 
                         <div class="banner-one__shape-2">
@@ -295,27 +297,29 @@
                 }
             }
         }'>
-        @foreach ($products as $product)
-        <div class="wow fadeInUp" data-wow-delay="100ms">
-            <a href="{{ url('/single-product/'.$product->id) }}">
-                <div class="hot-products__single">
-                    <div class="hot-products__single-inner">
-                        <div class="hot-products__img-box">
-                            <div class="hot-products__img">
-                                <img style="height: 300px" src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="">
+            @foreach ($products as $product)
+            <div class="wow fadeInUp" data-wow-delay="100ms">
+                <a href="{{ url('/single-product/'.$product->id) }}">
+                    <div class="hot-products__single">
+                        <div class="hot-products__single-inner">
+                            <div class="hot-products__img-box">
+                                <div class="hot-products__img">
+                                    <img style="height: 300px"
+                                        src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="">
+                                </div>
                             </div>
+                            <div class="hot-products__content">
+
+                                <h3 class="hot-products__title"><a href="{{ url('/single-product/'.$product->id) }}">{{
+                                        $product->name }}</a></h3>
+
+                            </div>
+
                         </div>
-                        <div class="hot-products__content">
-
-                            <h3 class="hot-products__title"><a href="{{ url('/single-product/'.$product->id) }}">{{ $product->name }}</a></h3>
-
-                        </div>
-
                     </div>
-                </div>
-            </a>
-        </div>
-        @endforeach
+                </a>
+            </div>
+            @endforeach
 
 
 
@@ -341,10 +345,10 @@
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.png')}}" alt="">
     </div>
     <div class="why-choose-one__img-1 wow fadeInUp" data-wow-duration="1500ms">
-        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.png')}}" alt="">
+        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}" alt="">
     </div>
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
-        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.png')}}" alt="">
+        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}" alt="">
     </div>
     <div class="container">
         <div class="row">
@@ -353,10 +357,10 @@
                     <div class="section-title text-left">
                         <span class="section-title__tagline">لماذا تختار
                             <span class="inside-section-title">
-                            {!!$homedata ->why_us_title !!}</span></span>
+                                {!!$homedata ->why_us_title !!}</span></span>
 
                         <h2 class="section-title__title">
-               {!! $homedata ->why_us_details !!}</h2>
+                            {!! $homedata ->why_us_details !!}</h2>
                     </div>
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 ">
@@ -421,25 +425,25 @@
                 }
             }
         }'>
-@foreach ($news as $obj)
-<div class="news-one__single mx-2">
-    <div class="news-one__img-box">
-        <div class="news-one__img" style="height: 100%">
-            <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 450px" alt="">
-        </div>
-    </div>
-    <div class="news-one__content-box">
+            @foreach ($news as $obj)
+            <div class="news-one__single mx-2">
+                <div class="news-one__img-box">
+                    <div class="news-one__img" style="height: 100%">
+                        <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 450px" alt="">
+                    </div>
+                </div>
+                <div class="news-one__content-box">
 
-        <h3 class="news-one__title"><a href="{{ url('/single-news/'.$obj->id) }}">
+                    <h3 class="news-one__title"><a href="{{ url('/single-news/'.$obj->id) }}">
 
-{!! $obj->title !!}
+                            {!! $obj->title !!}
 
-        </a></h3>
+                        </a></h3>
 
 
-    </div>
-</div>
-@endforeach
+                </div>
+            </div>
+            @endforeach
 
 
 
