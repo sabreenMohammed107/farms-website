@@ -6,14 +6,16 @@
             <!--begin::Info-->
             <div class="d-flex flex-column align-items-start justify-content-center flex-wrap me-2">
                 <!--begin::Title-->
-                <h1 class="text-dark fw-bolder my-1 fs-2">صور المنتجات</h1>
+                {{-- <h1 class="text-dark fw-bolder my-1 fs-2">المنتجات</h1> --}}
                 <!--end::Title-->
                 <!--begin::Breadcrumb-->
                 <ul class="breadcrumb fw-bold fs-base my-1">
                     <li class="breadcrumb-item text-muted">
-                        <a href="{{ route('home') }}" class="text-muted text-hover-primary">الرئيسية</a>
+                        <a href="{{ route('products.index') }}" class="text-muted text-hover-primary">المنتجات</a>
                     </li>
-                    <li class="breadcrumb-item text-muted">صور المنتجات</li>
+                    <li class="breadcrumb-item text-muted">{{ $product->name }}</li>
+
+
                 </ul>
                 <!--end::Breadcrumb-->
             </div>
@@ -26,8 +28,8 @@
 @section('content')
 
     <!--begin::Post-->
-    <!--begin::Post-->
-    <div class="post fs-6 d-flex flex-column-fluid" id="kt_post">
+      <!--begin::Post-->
+      <div class="post fs-6 d-flex flex-column-fluid" id="kt_post">
         <!--begin::Container-->
         <div class="container-xxl">
             <!--begin::Category-->
@@ -43,7 +45,7 @@
                         <!--begin::Heading-->
                         <div class="mb-13 text-center">
                             <!--begin::Title-->
-                            <h1 class="mb-3">صور المنتجات</h1>
+                            <h1 class="mb-3">صور منتج : {{ $product->name }}</h1>
                             <!--end::Title-->
 
                         </div>
