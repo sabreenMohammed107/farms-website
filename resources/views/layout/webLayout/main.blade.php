@@ -11,7 +11,7 @@
         href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
     <link rel="icon" type="image/png" sizes="16x16"
         href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    {{-- <link rel="manifest" href="assets/images/favicons/site.webmanifest" /> --}}
     <meta name="description"
         content="تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
@@ -30,9 +30,9 @@
 
 
 
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="preloader__image"></div>
-    </div>
+    </div> --}}
     <!-- /.preloader -->
     <div class="page-wrapper">
         @include('layout.webLayout.header')
