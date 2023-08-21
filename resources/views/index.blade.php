@@ -16,7 +16,7 @@
         },
 
         "autoplay": {
-        "delay": 5000
+        "delay": 1000
         }}'>
         <div class="swiper-wrapper">
 
@@ -100,7 +100,7 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="about-one__left">
-                    <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
+                    <div class="about-one__img-box wow slideInLeft" data-wow-delay="50ms" data-wow-duration="2500ms">
                         <!-- <div class="about-one__big-text">Gamal</div> -->
                         <div class="about-one__shape-1">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.png')}}" alt="">
@@ -170,7 +170,7 @@
             "nav": false,
             "dots": false,
             "smartSpeed": 500,
-            "autoplayTimeout": 3000,
+            "autoplayTimeout": 1000,
             "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
             "responsive": {
                 "0": {
@@ -191,7 +191,7 @@
             @foreach ($customers as $customer)
 
 
-            <div class="wow fadeInUp" data-wow-delay="100ms">
+            <div class="wow fadeInUp" data-wow-delay="50ms">
 
                 <div class="hot-products__single">
                     <div class="hot-products__single-inner">
@@ -232,7 +232,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="banner-one__left wow slideInLeft animated" data-wow-delay="100ms" data-wow-duration="2500ms"
+                <div class="banner-one__left wow slideInLeft animated" data-wow-delay="50ms" data-wow-duration="2500ms"
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
@@ -280,7 +280,7 @@
             "nav": true,
             "dots": false,
             "smartSpeed": 500,
-            "autoplayTimeout": 3000,
+            "autoplayTimeout": 1000,
             "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
             "responsive": {
                 "0": {
@@ -298,7 +298,7 @@
             }
         }'>
             @foreach ($products as $product)
-            <div class="wow fadeInUp" data-wow-delay="100ms">
+            <div class="wow fadeInUp" data-wow-delay="50ms">
                 <a href="{{ url('/single-product/'.$product->id) }}">
                     <div class="hot-products__single">
                         <div class="hot-products__single-inner">
@@ -408,7 +408,7 @@
             "nav": false,
             "dots": false,
             "smartSpeed": 500,
-            "autoplayTimeout": 2000,
+            "autoplayTimeout": 1000,
             "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
             "responsive": {
                 "0": {
