@@ -2,7 +2,8 @@
     <div class="main-header__wrapper">
         <div class="main-header__wrapper-inner">
             <div class="main-header__logo">
-                <a href="{{ url('/') }}"><img src="{{asset('webassets/assets/images/resources/logo-1.png')}}" alt=""></a>
+                <a href="{{ url('/') }}"><img src="{{asset('webassets/assets/images/resources/logo-1.webp')}}"
+                        alt=""></a>
             </div>
             <div class="main-header__right">
                 <div class="main-header__top">
@@ -48,8 +49,8 @@
                                         <!-- <a class="main-header__logo__nestedNav" href="index.html"><img
                                                 src="assets/images/resources/logo-1.png" alt=""></a> -->
 
-                                        <li class="{{ Request::segment(1) == null ? 'current' : '' }}" >
-                                            <a href="{{ url('/') }}"  >الرئيسية </a>
+                                        <li class="{{ Request::segment(1) == null ? 'current' : '' }}">
+                                            <a href="{{ url('/') }}">الرئيسية </a>
                                         </li>
                                         <li class="{{ Request::segment(1) == 'about' ? 'current' : '' }}">
                                             <a href="{{ url('/about') }}">من نحن</a>
@@ -86,4 +87,3 @@
         </div>
     </div>
 </header>
-
