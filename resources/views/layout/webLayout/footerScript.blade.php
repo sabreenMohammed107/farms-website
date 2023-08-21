@@ -12,7 +12,7 @@
 
 <script async  src="{{asset('webassets/assets/vendors/tiny-slider/tiny-slider.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/wnumb/wNumb.min.js')}}"></script>
-<script async  src="{{asset('webassets/assets/vendors/wow/wow.js')}}"></script>
+{{-- <script async  src="{{asset('webassets/assets/vendors/wow/wow.js')}}"></script> --}}
 <script async  src="{{asset('webassets/assets/vendors/isotope/isotope.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/countdown/jquery.countdown.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
