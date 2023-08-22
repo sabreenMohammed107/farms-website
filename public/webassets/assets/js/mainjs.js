@@ -42,27 +42,31 @@
         }
     }
 
-    //   // Price Filter
-    //   function priceFilter() {
-    //     if ($(".price-ranger").length) {
-    //       $(".price-ranger #slider-range").slider({
-    //         range: true,
-    //         min: 50,
-    //         max: 500,
-    //         values: [11, 300],
-    //         slide: function (event, ui) {
-    //           $(".price-ranger .ranger-min-max-block .min").val("$" + ui.values[0]);
-    //           $(".price-ranger .ranger-min-max-block .max").val("$" + ui.values[1]);
-    //         },
-    //       });
-    //       $(".price-ranger .ranger-min-max-block .min").val(
-    //         "$" + $(".price-ranger #slider-range").slider("values", 0)
-    //       );
-    //       $(".price-ranger .ranger-min-max-block .max").val(
-    //         "$" + $(".price-ranger #slider-range").slider("values", 1)
-    //       );
-    //     }
-    //   }
+    // Price Filter
+    function priceFilter() {
+        if ($(".price-ranger").length) {
+            $(".price-ranger #slider-range").slider({
+                range: true,
+                min: 50,
+                max: 500,
+                values: [11, 300],
+                slide: function (event, ui) {
+                    $(".price-ranger .ranger-min-max-block .min").val(
+                        "$" + ui.values[0]
+                    );
+                    $(".price-ranger .ranger-min-max-block .max").val(
+                        "$" + ui.values[1]
+                    );
+                },
+            });
+            $(".price-ranger .ranger-min-max-block .min").val(
+                "$" + $(".price-ranger #slider-range").slider("values", 0)
+            );
+            $(".price-ranger .ranger-min-max-block .max").val(
+                "$" + $(".price-ranger #slider-range").slider("values", 1)
+            );
+        }
+    }
 
     //=== CountDownTimer===
     if ($(".time-countdown").length) {
@@ -196,22 +200,24 @@
         });
     }
 
-    //   //Pricing Tabs
-    //   if ($(".pricing-tabs").length) {
-    //     $(".pricing-tabs .tab-btns .tab-btn").on("click", function (e) {
-    //       e.preventDefault();
-    //       var target = $($(this).attr("data-tab"));
+    //Pricing Tabs
+    if ($(".pricing-tabs").length) {
+        $(".pricing-tabs .tab-btns .tab-btn").on("click", function (e) {
+            e.preventDefault();
+            var target = $($(this).attr("data-tab"));
 
-    //       if ($(target).hasClass("actve-tab")) {
-    //         return false;
-    //       } else {
-    //         $(".pricing-tabs .tab-btns .tab-btn").removeClass("active-btn");
-    //         $(this).addClass("active-btn");
-    //         $(".pricing-tabs .pr-content .pr-tab").removeClass("active-tab");
-    //         $(target).addClass("active-tab");
-    //       }
-    //     });
-    //   }
+            if ($(target).hasClass("actve-tab")) {
+                return false;
+            } else {
+                $(".pricing-tabs .tab-btns .tab-btn").removeClass("active-btn");
+                $(this).addClass("active-btn");
+                $(".pricing-tabs .pr-content .pr-tab").removeClass(
+                    "active-tab"
+                );
+                $(target).addClass("active-tab");
+            }
+        });
+    }
 
     //   // Type Effect
     //   if ($(".typed-effect").length) {
@@ -243,54 +249,56 @@
     //   }
 
     //Progress Bar / Levels
-    //   if ($(".progress-levels .progress-box .bar-fill").length) {
-    //     $(".progress-box .bar-fill").each(
-    //       function () {
-    //         $(".progress-box .bar-fill").appear(function () {
-    //           var progressWidth = $(this).attr("data-percent");
-    //           $(this).css("width", progressWidth + "%");
-    //         });
-    //       },
-    //       {
-    //         accY: 0,
-    //       }
-    //     );
-    //   }
+    if ($(".progress-levels .progress-box .bar-fill").length) {
+        $(".progress-box .bar-fill").each(
+            function () {
+                $(".progress-box .bar-fill").appear(function () {
+                    var progressWidth = $(this).attr("data-percent");
+                    $(this).css("width", progressWidth + "%");
+                });
+            },
+            {
+                accY: 0,
+            }
+        );
+    }
 
-    //   //Fact Counter + Text Count
-    //   if ($(".count-box").length) {
-    //     $(".count-box").appear(
-    //       function () {
-    //         var $t = $(this),
-    //           n = $t.find(".count-text").attr("data-stop"),
-    //           r = parseInt($t.find(".count-text").attr("data-speed"), 10);
+    //Fact Counter + Text Count
+    if ($(".count-box").length) {
+        $(".count-box").appear(
+            function () {
+                var $t = $(this),
+                    n = $t.find(".count-text").attr("data-stop"),
+                    r = parseInt($t.find(".count-text").attr("data-speed"), 10);
 
-    //         if (!$t.hasClass("counted")) {
-    //           $t.addClass("counted");
-    //           $({
-    //             countNum: $t.find(".count-text").text(),
-    //           }).animate(
-    //             {
-    //               countNum: n,
-    //             },
-    //             {
-    //               duration: r,
-    //               easing: "linear",
-    //               step: function () {
-    //                 $t.find(".count-text").text(Math.floor(this.countNum));
-    //               },
-    //               complete: function () {
-    //                 $t.find(".count-text").text(this.countNum);
-    //               },
-    //             }
-    //           );
-    //         }
-    //       },
-    //       {
-    //         accY: 0,
-    //       }
-    //     );
-    //   }
+                if (!$t.hasClass("counted")) {
+                    $t.addClass("counted");
+                    $({
+                        countNum: $t.find(".count-text").text(),
+                    }).animate(
+                        {
+                            countNum: n,
+                        },
+                        {
+                            duration: r,
+                            easing: "linear",
+                            step: function () {
+                                $t.find(".count-text").text(
+                                    Math.floor(this.countNum)
+                                );
+                            },
+                            complete: function () {
+                                $t.find(".count-text").text(this.countNum);
+                            },
+                        }
+                    );
+                }
+            },
+            {
+                accY: 0,
+            }
+        );
+    }
 
     //   // Accrodion
     //   if ($(".accrodion-grp").length) {
