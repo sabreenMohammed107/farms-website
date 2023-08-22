@@ -12,8 +12,9 @@
         href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
     <link rel="icon" type="image/png" sizes="16x16"
         href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    {{-- <link rel="manifest" href="assets/images/favicons/site.webmanifest" /> --}}
-    <meta name="description"
+        {{-- <link rel="manifest" href="assets/images/favicons/site.webmanifest" /> --}}
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+            <meta name="description"
         content="تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
     تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب عملائنا." />
@@ -53,8 +54,8 @@
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/nice-select/nice-select.css')}}" />
 
 
-<link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.css')}}" />
-<link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.css')}}" />
+<link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
+<link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
 @extends('layout.webLayout.main')
 
@@ -363,7 +364,7 @@
                             <div class="hot-products__img-box">
                                 <div class="hot-products__img">
                                     <img style="height: 300px"
-                                        src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="">
+                                        src="{{ asset('uploads/products/'.$product->image ) }}" alt="">
                                 </div>
                             </div>
                             <div class="hot-products__content">
@@ -539,4 +540,4 @@
 <script async  src="{{asset('webassets/assets/vendors/circleType/jquery.lettering.min.js')}}"></script>
 <script async  src="{{asset('webassets/assets/vendors/nice-select/jquery.nice-select.min.js')}}"></script>
 
-<script async  src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+<script async  src="{{asset('webassets/assets/js/mainjs.min.js')}}"></script>
