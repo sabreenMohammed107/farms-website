@@ -106,4 +106,4 @@ License: For each use you must have a valid license purchased only from above li
         <!--end::Page-->
     </div>
     <!--end::Root-->
-    @include('layout.footerscripts')
+    {{-- @include('layout.footerscripts') --}}

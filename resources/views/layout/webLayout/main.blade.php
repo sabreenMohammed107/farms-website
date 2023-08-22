@@ -38,6 +38,6 @@
         @include('layout.webLayout.header')
         @yield('content')
         @include('layout.webLayout.footer')
-        @include('layout.webLayout.footerScript')
+        {{-- @include('layout.webLayout.footerScript') --}}
     </body>
 </html>
