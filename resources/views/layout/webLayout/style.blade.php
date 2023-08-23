@@ -45,8 +45,8 @@
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/bxslider/jquery.bxslider.css')}}" />
-<link rel="stylesheet" href="{{asset('webassets/assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
-<link rel="stylesheet" href="{{asset('webassets/assets/vendors/vegas/vegas.min.css')}}" />
+{{-- <link rel="stylesheet" href="{{asset('webassets/assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" /> --}}
+{{-- <link rel="stylesheet" href="{{asset('webassets/assets/vendors/vegas/vegas.min.css')}}" /> --}}
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/jquery-ui/jquery-ui.css')}}" />
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/timepicker/timePicker.css')}}" />
 <link rel="stylesheet" href="{{asset('webassets/assets/vendors/nice-select/nice-select.css')}}" />

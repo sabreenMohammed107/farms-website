@@ -896,7 +896,7 @@
         thmSwiperInit();
         thmOwlInit();
         projectMasonaryLayout();
-        priceFilter();
+        // priceFilter();
 
         if ($(".curved-circle--item").length) {
             $(".curved-circle--item").circleType();
