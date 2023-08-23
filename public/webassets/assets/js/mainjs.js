@@ -102,14 +102,14 @@
         });
     }
 
-    //   // Cart Touch Spin
-    //   if ($(".quantity-spinner").length) {
-    //     $("input.quantity-spinner").TouchSpin({
-    //       verticalbuttons: true,
-    //     });
-    //   }
+    // Cart Touch Spin
+    if ($(".quantity-spinner").length) {
+        $("input.quantity-spinner").TouchSpin({
+            verticalbuttons: true,
+        });
+    }
 
-    // custom coursor
+    //custom coursor
     if ($(".custom-cursor").length) {
         var cursor = document.querySelector(".custom-cursor__cursor");
         var cursorinner = document.querySelector(".custom-cursor__cursor-two");
@@ -190,7 +190,7 @@
         $("#datepicker-inline").datepicker();
     }
 
-    $('input[name="time"]').ptTimeSelect();
+    // $('input[name="time"]').ptTimeSelect();
 
     if ($(".banner-bg-slide").length) {
         $(".banner-bg-slide").each(function () {
@@ -219,34 +219,34 @@
         });
     }
 
-    //   // Type Effect
-    //   if ($(".typed-effect").length) {
-    //     $(".typed-effect").each(function () {
-    //       var typedStrings = $(this).data("strings");
-    //       var typedTag = $(this).attr("id");
-    //       var typed = new Typed("#" + typedTag, {
-    //         typeSpeed: 100,
-    //         backSpeed: 100,
-    //         fadeOut: true,
-    //         loop: true,
-    //         strings: typedStrings.split(","),
-    //       });
-    //     });
-    //   }
+    // Type Effect
+    if ($(".typed-effect").length) {
+        $(".typed-effect").each(function () {
+            var typedStrings = $(this).data("strings");
+            var typedTag = $(this).attr("id");
+            var typed = new Typed("#" + typedTag, {
+                typeSpeed: 100,
+                backSpeed: 100,
+                fadeOut: true,
+                loop: true,
+                strings: typedStrings.split(","),
+            });
+        });
+    }
 
-    //   // Popular Causes Progress Bar
-    //   if ($(".count-bar").length) {
-    //     $(".count-bar").appear(
-    //       function () {
-    //         var el = $(this);
-    //         var percent = el.data("percent");
-    //         $(el).css("width", percent).addClass("counted");
-    //       },
-    //       {
-    //         accY: -50,
-    //       }
-    //     );
-    //   }
+    // Popular Causes Progress Bar
+    if ($(".count-bar").length) {
+        $(".count-bar").appear(
+            function () {
+                var el = $(this);
+                var percent = el.data("percent");
+                $(el).css("width", percent).addClass("counted");
+            },
+            {
+                accY: -50,
+            }
+        );
+    }
 
     //Progress Bar / Levels
     if ($(".progress-levels .progress-box .bar-fill").length) {
@@ -300,35 +300,38 @@
         );
     }
 
-    //   // Accrodion
-    //   if ($(".accrodion-grp").length) {
-    //     var accrodionGrp = $(".accrodion-grp");
-    //     accrodionGrp.each(function () {
-    //       var accrodionName = $(this).data("grp-name");
-    //       var Self = $(this);
-    //       var accordion = Self.find(".accrodion");
-    //       Self.addClass(accrodionName);
-    //       Self.find(".accrodion .accrodion-content").hide();
-    //       Self.find(".accrodion.active").find(".accrodion-content").show();
-    //       accordion.each(function () {
-    //         $(this)
-    //           .find(".accrodion-title")
-    //           .on("click", function () {
-    //             if ($(this).parent().hasClass("active") === false) {
-    //               $(".accrodion-grp." + accrodionName)
-    //                 .find(".accrodion")
-    //                 .removeClass("active");
-    //               $(".accrodion-grp." + accrodionName)
-    //                 .find(".accrodion")
-    //                 .find(".accrodion-content")
-    //                 .slideUp();
-    //               $(this).parent().addClass("active");
-    //               $(this).parent().find(".accrodion-content").slideDown();
-    //             }
-    //           });
-    //       });
-    //     });
-    //   }
+    // Accrodion
+    if ($(".accrodion-grp").length) {
+        var accrodionGrp = $(".accrodion-grp");
+        accrodionGrp.each(function () {
+            var accrodionName = $(this).data("grp-name");
+            var Self = $(this);
+            var accordion = Self.find(".accrodion");
+            Self.addClass(accrodionName);
+            Self.find(".accrodion .accrodion-content").hide();
+            Self.find(".accrodion.active").find(".accrodion-content").show();
+            accordion.each(function () {
+                $(this)
+                    .find(".accrodion-title")
+                    .on("click", function () {
+                        if ($(this).parent().hasClass("active") === false) {
+                            $(".accrodion-grp." + accrodionName)
+                                .find(".accrodion")
+                                .removeClass("active");
+                            $(".accrodion-grp." + accrodionName)
+                                .find(".accrodion")
+                                .find(".accrodion-content")
+                                .slideUp();
+                            $(this).parent().addClass("active");
+                            $(this)
+                                .parent()
+                                .find(".accrodion-content")
+                                .slideDown();
+                        }
+                    });
+            });
+        });
+    }
 
     if ($(".scroll-to-target").length) {
         $(".scroll-to-target").on("click", function () {
@@ -345,75 +348,75 @@
         });
     }
 
-    //   if ($(".contact-form-validated").length) {
-    //     $(".contact-form-validated").validate({
-    //       // initialize the plugin
-    //       rules: {
-    //         name: {
-    //           required: true,
-    //         },
-    //         email: {
-    //           required: true,
-    //           email: true,
-    //         },
-    //         message: {
-    //           required: true,
-    //         },
-    //         subject: {
-    //           required: true,
-    //         },
-    //       },
-    //       submitHandler: function (form) {
-    //         // sending value with ajax request
-    //         $.post(
-    //           $(form).attr("action"),
-    //           $(form).serialize(),
-    //           function (response) {
-    //             $(form).parent().find(".result").append(response);
-    //             $(form).find('input[type="text"]').val("");
-    //             $(form).find('input[type="email"]').val("");
-    //             $(form).find("textarea").val("");
-    //           }
-    //         );
-    //         return false;
-    //       },
-    //     });
-    //   }
+    if ($(".contact-form-validated").length) {
+        $(".contact-form-validated").validate({
+            // initialize the plugin
+            rules: {
+                name: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                    email: true,
+                },
+                message: {
+                    required: true,
+                },
+                subject: {
+                    required: true,
+                },
+            },
+            submitHandler: function (form) {
+                // sending value with ajax request
+                $.post(
+                    $(form).attr("action"),
+                    $(form).serialize(),
+                    function (response) {
+                        $(form).parent().find(".result").append(response);
+                        $(form).find('input[type="text"]').val("");
+                        $(form).find('input[type="email"]').val("");
+                        $(form).find("textarea").val("");
+                    }
+                );
+                return false;
+            },
+        });
+    }
 
-    //   // mailchimp form
-    //   if ($(".mc-form").length) {
-    //     $(".mc-form").each(function () {
-    //       var Self = $(this);
-    //       var mcURL = Self.data("url");
-    //       var mcResp = Self.parent().find(".mc-form__response");
+    // mailchimp form
+    if ($(".mc-form").length) {
+        $(".mc-form").each(function () {
+            var Self = $(this);
+            var mcURL = Self.data("url");
+            var mcResp = Self.parent().find(".mc-form__response");
 
-    //       Self.ajaxChimp({
-    //         url: mcURL,
-    //         callback: function (resp) {
-    //           // appending response
-    //           mcResp.append(function () {
-    //             return '<p class="mc-message">' + resp.msg + "</p>";
-    //           });
-    //           // making things based on response
-    //           if (resp.result === "success") {
-    //             // Do stuff
-    //             Self.removeClass("errored").addClass("successed");
-    //             mcResp.removeClass("errored").addClass("successed");
-    //             Self.find("input").val("");
+            Self.ajaxChimp({
+                url: mcURL,
+                callback: function (resp) {
+                    // appending response
+                    mcResp.append(function () {
+                        return '<p class="mc-message">' + resp.msg + "</p>";
+                    });
+                    // making things based on response
+                    if (resp.result === "success") {
+                        // Do stuff
+                        Self.removeClass("errored").addClass("successed");
+                        mcResp.removeClass("errored").addClass("successed");
+                        Self.find("input").val("");
 
-    //             mcResp.find("p").fadeOut(10000);
-    //           }
-    //           if (resp.result === "error") {
-    //             Self.removeClass("successed").addClass("errored");
-    //             mcResp.removeClass("successed").addClass("errored");
-    //             Self.find("input").val("");
+                        mcResp.find("p").fadeOut(10000);
+                    }
+                    if (resp.result === "error") {
+                        Self.removeClass("successed").addClass("errored");
+                        mcResp.removeClass("successed").addClass("errored");
+                        Self.find("input").val("");
 
-    //             mcResp.find("p").fadeOut(10000);
-    //           }
-    //         },
-    //       });
-    //     });
-    //   }
+                        mcResp.find("p").fadeOut(10000);
+                    }
+                },
+            });
+        });
+    }
 
     if ($(".video-popup").length) {
         $(".video-popup").magnificPopup({
@@ -551,15 +554,15 @@
         $(".dynamic-year").html(date.getFullYear());
     }
 
-    // if ($(".wow").length) {
-    //     var wow = new WOW({
-    //         boxClass: "wow", // animated element css class (default is wow)
-    //         animateClass: "animated", // animation css class (default is animated)
-    //         mobile: true, // trigger animations on mobile devices (default is true)
-    //         live: true, // act on asynchronously loaded content (default is true)
-    //     });
-    //     wow.init();
-    // }
+    if ($(".wow").length) {
+        var wow = new WOW({
+            boxClass: "wow", // animated element css class (default is wow)
+            animateClass: "animated", // animation css class (default is animated)
+            mobile: true, // trigger animations on mobile devices (default is true)
+            live: true, // act on asynchronously loaded content (default is true)
+        });
+        wow.init();
+    }
 
     if ($("#donate-amount__predefined").length) {
         let donateInput = $("#donate-amount");
@@ -651,27 +654,27 @@
         });
     }
 
-    //   if ($(".range-slider-price").length) {
-    //     var priceRange = document.getElementById("range-slider-price");
+    if ($(".range-slider-price").length) {
+        var priceRange = document.getElementById("range-slider-price");
 
-    //     noUiSlider.create(priceRange, {
-    //       start: [30, 150],
-    //       limit: 200,
-    //       behaviour: "drag",
-    //       connect: true,
-    //       range: {
-    //         min: 10,
-    //         max: 200,
-    //       },
-    //     });
+        noUiSlider.create(priceRange, {
+            start: [30, 150],
+            limit: 200,
+            behaviour: "drag",
+            connect: true,
+            range: {
+                min: 10,
+                max: 200,
+            },
+        });
 
-    //     var limitFieldMin = document.getElementById("min-value-rangeslider");
-    //     var limitFieldMax = document.getElementById("max-value-rangeslider");
+        var limitFieldMin = document.getElementById("min-value-rangeslider");
+        var limitFieldMax = document.getElementById("max-value-rangeslider");
 
-    //     priceRange.noUiSlider.on("update", function (values, handle) {
-    //       (handle ? $(limitFieldMax) : $(limitFieldMin)).text(values[handle]);
-    //     });
-    //   }
+        priceRange.noUiSlider.on("update", function (values, handle) {
+            (handle ? $(limitFieldMax) : $(limitFieldMin)).text(values[handle]);
+        });
+    }
 
     function thmTinyInit() {
         // tiny slider
@@ -764,29 +767,31 @@
         }
     }
 
-    //   // ===Checkout Payment===
-    //   if ($(".checkout__payment__title").length) {
-    //     $(".checkout__payment__item").find(".checkout__payment__content").hide();
-    //     $(".checkout__payment__item--active")
-    //       .find(".checkout__payment__content")
-    //       .show();
+    // ===Checkout Payment===
+    if ($(".checkout__payment__title").length) {
+        $(".checkout__payment__item")
+            .find(".checkout__payment__content")
+            .hide();
+        $(".checkout__payment__item--active")
+            .find(".checkout__payment__content")
+            .show();
 
-    //     $(".checkout__payment__title").on("click", function (e) {
-    //       e.preventDefault();
+        $(".checkout__payment__title").on("click", function (e) {
+            e.preventDefault();
 
-    //       $(this)
-    //         .parents(".checkout__payment")
-    //         .find(".checkout__payment__item")
-    //         .removeClass("checkout__payment__item--active");
-    //       $(this)
-    //         .parents(".checkout__payment")
-    //         .find(".checkout__payment__content")
-    //         .slideUp();
+            $(this)
+                .parents(".checkout__payment")
+                .find(".checkout__payment__item")
+                .removeClass("checkout__payment__item--active");
+            $(this)
+                .parents(".checkout__payment")
+                .find(".checkout__payment__content")
+                .slideUp();
 
-    //       $(this).parent().addClass("checkout__payment__item--active");
-    //       $(this).parent().find(".checkout__payment__content").slideDown();
-    //     });
-    //   }
+            $(this).parent().addClass("checkout__payment__item--active");
+            $(this).parent().find(".checkout__payment__content").slideDown();
+        });
+    }
 
     //Single Vertical Carousel
     if ($(".single-vertical-carousel").length) {
