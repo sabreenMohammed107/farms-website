@@ -110,13 +110,13 @@ class ProductsController extends Controller
         ]);
         $input = $request->except(['_token','image']);
         if ($request->hasFile('image')) {
-            $row = Product::where('id',$id)->first();
+            // $row = Product::where('id',$id)->first();
 
-            // Delete File ..
-            $file = $row->image;
-            $file_name = public_path('uploads/products/' . $file);
+            // // Delete File ..
+            // $file = $row->image;
+            // $file_name = public_path('uploads/products/' . $file);
 
-                File::delete($file_name);
+            //     File::delete($file_name);
 
             $attach_image = $request->file('image');
 

@@ -99,13 +99,13 @@ class CustomersController extends Controller
         ]);
         $input = $request->except(['_token','image']);
         if ($request->hasFile('image')) {
-            $row = Customer::where('id',$id)->first();
+            // $row = Customer::where('id',$id)->first();
 
-            // Delete File ..
-            $file = $row->image;
-            $file_name = public_path('uploads/customers/' . $file);
+            // // Delete File ..
+            // $file = $row->image;
+            // $file_name = public_path('uploads/customers/' . $file);
 
-                File::delete($file_name);
+            //     File::delete($file_name);
 
             $attach_image = $request->file('image');
 
