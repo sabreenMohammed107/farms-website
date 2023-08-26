@@ -2,8 +2,9 @@
     <div class="main-header__wrapper">
         <div class="main-header__wrapper-inner">
             <div class="main-header__logo">
-                <a href="{{ url('/') }}"><img src="{{asset('webassets/assets/images/resources/logo-1.webp')}}"
-                        alt=""></a>
+                <a href="{{ url('/') }}">
+                    <img src="{{asset('webassets/assets/images/resources/logo-1.webp')}}"
+                        alt="logo-1.webp"> </a>
             </div>
             <div class="main-header__right">
                 <div class="main-header__top">

@@ -130,31 +130,31 @@
                     style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.png')}});">
                 </div>
                 <div class="main-slider__shape-1 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}" alt="main-slider-shape-1.png">
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}" alt="main-slider-shape-2.png">
                 </div>
                 <div class="main-slider__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}" alt="main-slider-shape-3.png">
                 </div>
                 <div class="main-slider__shape-4 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}" alt="main-slider-shape-4.png">
                 </div>
                 <div class="main-slider__shape-5 zoominout">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}" alt="main-slider-shape-5.png">
                 </div>
                 <div class="main-slider__shape-6 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}" alt="main-slider-shape-6.png">
                 </div>
                 <div class="main-slider__shape-7 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}" alt="main-slider-shape-7.png">
                 </div>
                 <div class="main-slider__shape-8 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}" alt="main-slider-shape-8.png">
                 </div>
                 <div class="main-slider__img-one">
-                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}" alt=""
+                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}" alt="main-slider-img-1.webp"
                         class="img-bounce">
                 </div>
                 <div class="container">
@@ -163,11 +163,11 @@
                             <div class="main-slider__content">
                                 <div class="main-slider__shape-9 float-bob-y">
                                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}"
-                                        alt="">
+                                        alt="main-slider-shape-9.png">
                                 </div>
                                 <h4 class="main-slider__sub-title"><span><img
                                             src="{{asset('webassets/assets/images/shapes/1.png.png')}}"
-                                            class="main-slider__sub-title__icn" alt="" srcset=""></span>
+                                            class="main-slider__sub-title__icn" alt="1.png.png" srcset=""></span>
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
