@@ -239,7 +239,7 @@
                 <div class="about-one__right">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">من نحن</span>
-                        <h2 class="section-title__title">{!! $about->title !!} </h2>
+                        <h1 class="section-title__title">{!! $about->title !!} </h1>
                     </div>
 
                     <p class="about-one__text-1">

@@ -105,8 +105,8 @@
 
     <div class="container">
         <div class="page-header__inner">
-            <h2>الخدمات
-            </h2>
+            <h3>الخدمات
+            </h3>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{ url('/') }}">الرئيسية
                     </a></li>

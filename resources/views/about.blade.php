@@ -115,8 +115,8 @@
     </div>
     <div class="container">
         <div class="page-header__inner">
-            <h2>من نحن
-            </h2>
+            <h1>من نحن
+            </h1>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{ url('/') }}">الرئيسية
                     </a></li>

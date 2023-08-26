@@ -115,8 +115,8 @@
 
     <div class="container">
         <div class="page-header__inner">
-            <h2>تواصل معنا
-            </h2>
+            <h1>تواصل معنا
+            </h1>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="index.html">الرئيسية
                     </a></li>

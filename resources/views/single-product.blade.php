@@ -105,8 +105,8 @@
 
     <div class="container">
         <div class="page-header__inner">
-            <h2>{!! $product->name !!}
-            </h2>
+            <h1>{!! $product->name !!}
+            </h1>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{ url('/') }}">الرئيسية
                     </a></li>
