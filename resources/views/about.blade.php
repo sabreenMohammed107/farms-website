@@ -314,4 +314,5 @@
 <script async src="{{asset('webassets/assets/vendors/circleType/jquery.lettering.min.js')}}"></script>
 <script async src="{{asset('webassets/assets/vendors/nice-select/jquery.nice-select.min.js')}}"></script> --}}
 
-<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+<script async src="{{asset('webassets/assets/js/mainjs.about.js')}}"></script>
+{{-- <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script> --}}
