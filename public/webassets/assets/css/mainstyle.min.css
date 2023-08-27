@@ -2028,8 +2028,8 @@ ul {
 }
 .main-slider__sub-title,
 .main-slider__title {
-    -webkit-transition: opacity 2s, -webkit-transform 2s;
-    transition: transform 2s, opacity 2s, -webkit-transform 2s;
+    -webkit-transition: opacity 0.25s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 .main-slider__shape-9 {
     position: absolute;
@@ -2066,8 +2066,8 @@ ul {
     align-items: center;
     -webkit-transform: translateY(120px);
     transform: translateY(120px);
-    -webkit-transition: opacity 2s, -webkit-transform 2s;
-    transition: transform 2s, opacity 2s, -webkit-transform 2s;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 .main-slider-two__btn-two,
 .main-slider__btn-two {

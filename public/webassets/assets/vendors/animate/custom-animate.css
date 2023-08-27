@@ -154,7 +154,7 @@ body { direction: rtl ; }
 
 
 
-/*** 
+/***
 =============================================
     circle Css
 =============================================
@@ -191,7 +191,7 @@ body { direction: rtl ; }
   }
 }
 
-/*** 
+/***
 =============================================
     Zoom In Out Css
 =============================================
@@ -246,7 +246,7 @@ body { direction: rtl ; }
 
 
 
-/*** 
+/***
 =============================================
     Zoom In Out Css
 =============================================
@@ -500,7 +500,7 @@ body { direction: rtl ; }
 }
 
 
-/*** 
+/***
 =============================================
     Animation1 Css
 =============================================
@@ -547,7 +547,7 @@ body { direction: rtl ; }
 
 
 
-/*** 
+/***
 =============================================
     Animation2 Css
 =============================================
@@ -842,7 +842,7 @@ body { direction: rtl ; }
 
 
 
-/*** 
+/***
 =============================================
     Float Bob Y Animation Css
 =============================================
@@ -878,8 +878,8 @@ body { direction: rtl ; }
 .float-bob-y {
   -webkit-animation-name: float-bob-y;
   animation-name: float-bob-y;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -1648,8 +1648,8 @@ body { direction: rtl ; }
 .float-bob-x {
   -webkit-animation-name: float-bob-x;
   animation-name: float-bob-x;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -1657,7 +1657,7 @@ body { direction: rtl ; }
 }
 
 
-/*** 
+/***
 =============================================
     Float Bob Y Animation Css
 =============================================
@@ -1699,8 +1699,8 @@ body { direction: rtl ; }
 .float-bob-y-2 {
   -webkit-animation-name: float-bob-y-2;
   animation-name: float-bob-y-2;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
