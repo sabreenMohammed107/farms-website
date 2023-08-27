@@ -95,7 +95,7 @@
             <h1>من نحن
             </h1>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ url('/') }}">الرئيسية
+                <li><a title="main" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>من نحن

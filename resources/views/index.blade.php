@@ -160,7 +160,7 @@
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
-                                    <a href="{{ url('/products') }}" class="thm-btn main-slider__btn-two">اكتشف
+                                    <a href="{{ url('/products') }}" title="إكتشف" class="thm-btn main-slider__btn-two">اكتشف
                                         المنتجات</a>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@
                         {!! $about->text !!}
 
                     <div class="about-one__btn-box">
-                        <a href="{{ url('/about') }}" class="about-one__btn thm-btn">إكتشف أكثر
+                        <a title="about" href="{{ url('/about') }}" class="about-one__btn thm-btn">إكتشف أكثر
                         </a>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
         <div class="section-title text-center">
             <span class="section-title__tagline">شركاء النجاح</span>
             <h2 class="section-title__title">
-                <a href="Partners.html">عملاؤنا الحالين</a>
+                <a title="clients" href="#">عملاؤنا الحالين</a>
             </h2>
         </div>
         <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
@@ -318,7 +318,7 @@
         <div class="section-title text-center">
             <span class="section-title__tagline">ما نقدمه لعملاؤنا</span>
             <h2 class="section-title__title">
-                <a href="#">خدماتنا المميزة</a>
+                <a title="prof" href="#">خدماتنا المميزة</a>
             </h2>
         </div>
         <div class="row">
@@ -345,7 +345,7 @@
                             الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب
                             عملائنا.</p>
                         <div class="banner-one__btn-box">
-                            <a href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل الخدمة</a>
+                            <a title="service" href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل الخدمة</a>
                         </div>
                     </div>
                 </div>
@@ -360,7 +360,7 @@
         <div class="section-title text-center">
             <span class="section-title__tagline">تحقق من المنتجات الجديدة</span>
             <h2 class="section-title__title">
-                <a href="all-products.html">كل المنتجات </a>
+                <a title="pro" href="{{ url('/products') }}">كل المنتجات </a>
             </h2>
         </div>
         <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
@@ -401,7 +401,7 @@
                             </div>
                             <div class="hot-products__content">
 
-                                <h3 class="hot-products__title"><a href="{{ url('/single-product/'.$product->id) }}">{{
+                                <h3 class="hot-products__title"><a title="single product" href="{{ url('/single-product/'.$product->id) }}">{{
                                         $product->name }}</a></h3>
 
                             </div>
@@ -525,7 +525,7 @@
                 </div>
                 <div class="news-one__content-box">
 
-                    <h3 class="news-one__title"><a href="{{ url('/single-news/'.$obj->id) }}">
+                    <h3 class="news-one__title"><a title="product" href="{{ url('/single-news/'.$obj->id) }}">
 
                             {!! $obj->title !!}
 

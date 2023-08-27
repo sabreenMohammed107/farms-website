@@ -100,7 +100,7 @@
             <h1>{!! $product->name !!}
             </h1>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ url('/') }}">الرئيسية
+                <li><a title="home" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>منتجاتنا
@@ -180,7 +180,7 @@
                 <h3 class="sidebar__title mb-3">Tags :</h3>
                 <div class="sidebar__tags-list">
                     @foreach ($tags as $tag)
-                    <a href="#">{{ $tag->text }}</a>
+                    <a title="text" href="#">{{ $tag->text }}</a>
                     @endforeach
 
 
@@ -210,7 +210,7 @@
 
                             @foreach ($otherProducts as $obj)
                             <li class="wow fadeInUp" data-wow-delay="100ms">
-                                <a href="{{ url('/single-product/' . $obj->id) }}">
+                                <a title="product" href="{{ url('/single-product/' . $obj->id) }}">
                                     <div class="hot-products__single">
                                         <div class="hot-products__single-inner">
                                             <div class="hot-products__img-box">
@@ -222,7 +222,7 @@
                                             <div class="hot-products__content">
 
                                                 <h3 class="hot-products__title"><a
-                                                        href="{{ url('/single-product/' . $obj->id) }}">{{ $obj->name
+                                                    title="name"    href="{{ url('/single-product/' . $obj->id) }}">{{ $obj->name
                                                         }}</a>
                                                 </h3>
 

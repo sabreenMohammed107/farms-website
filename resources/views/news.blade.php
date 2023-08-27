@@ -98,7 +98,7 @@
             <h1>الأخبار
             </h1>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ url('/') }}">الرئيسية
+                <li><a title="home" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>الأخبار
@@ -128,7 +128,7 @@
                     </div>
                     <div class="news-one__content-box">
 
-                        <h3 class="news-one__title"><a href="{{ url('/single-news/'.$row->id) }}">
+                        <h3 class="news-one__title"><a title="single" href="{{ url('/single-news/'.$row->id) }}">
                                 {!! $row->title !!} </a></h3>
 
 

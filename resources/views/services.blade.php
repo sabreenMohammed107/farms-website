@@ -99,7 +99,7 @@
             <h3>الخدمات
             </h3>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ url('/') }}">الرئيسية
+                <li><a title="home" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>خدماتنا
@@ -151,7 +151,7 @@
                         تتسم
                         بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.</p>
                     <div class="about-one__btn-box">
-                        <a href="{{ url('/products') }}" class="about-one__btn thm-btn lite-btn-bg"> اكتشف المنتجات
+                        <a title="product" href="{{ url('/products') }}" class="about-one__btn thm-btn lite-btn-bg"> اكتشف المنتجات
                         </a>
                         {{-- <a href="#" class="about-one__btn thm-btn ">اكتشف اكتر
                         </a> --}}

@@ -95,7 +95,7 @@
             <h1>تواصل معنا
             </h1>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="index.html">الرئيسية
+                <li><a title="home" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>اتصل بنا

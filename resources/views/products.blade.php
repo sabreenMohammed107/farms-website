@@ -100,7 +100,7 @@
             <h1>كل المنتجات
             </h1>
             <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ url('/') }}">الرئيسية
+                <li><a title="home" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>منتجاتنا
@@ -165,7 +165,7 @@
                         <ul class="hot-products__inner list-unstyled">
                             @foreach ($products as $product)
                             <li class="wow fadeInUp" data-wow-delay="100ms">
-                                <a href="{{ url('/single-product/'.$product->id) }}">
+                                <a title="single" href="{{ url('/single-product/'.$product->id) }}">
                                     <div class="hot-products__single">
                                         <div class="hot-products__single-inner">
                                             <div class="hot-products__img-box">
@@ -177,7 +177,7 @@
                                             </div>
                                             <div class="hot-products__content">
 
-                                                <h3 class="hot-products__title"><a
+                                                <h3 class="hot-products__title"><a title="name"
                                                         href="{{ url('/single-product/'.$product->id) }}">{{
                                                         $product->name }}</a>
                                                 </h3>
@@ -198,129 +198,7 @@
 
 
                         </ul>
-                        {{-- <ul class="hot-products__inner list-unstyled">
 
-                            <li class="wow fadeInUp" data-wow-delay="100ms">
-                                <a href="product-details.html">
-                                    <div class="hot-products__single">
-                                        <div class="hot-products__single-inner">
-                                            <div class="hot-products__img-box">
-                                                <div class="hot-products__img">
-                                                    <img src="assets/images/resources/hot-product-1-1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="hot-products__content">
-
-                                                <h3 class="hot-products__title"><a href="product-details.html">موز</a>
-                                                </h3>
-                                                <p class="hot-products__desc">الفشار (بالإنجليزية: Popcorn) أو الشامية
-                                                    أو البوشار أو النفّيش
-                                                    أو الفرّأخ أو الشوش هي أسماء لشيء واحد وهو الذرة المفرقعة بالحرارة
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="200ms">
-                                <a href="product-details.html">
-                                    <div class="hot-products__single">
-                                        <div class="hot-products__single-inner">
-                                            <div class="hot-products__img-box">
-                                                <div class="hot-products__img">
-                                                    <img src="assets/images/resources/hot-product-1-2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="hot-products__content">
-
-                                                <h3 class="hot-products__title"><a href="product-details.html">بطاطا</a>
-                                                </h3>
-                                                <p class="hot-products__desc">الفشار (بالإنجليزية: Popcorn) أو الشامية
-                                                    أو البوشار أو النفّيش
-                                                    أو الفرّأخ أو الشوش هي أسماء لشيء واحد وهو الذرة المفرقعة بالحرارة
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="300ms">
-                                <a href="product-details.html">
-                                    <div class="hot-products__single">
-                                        <div class="hot-products__single-inner">
-                                            <div class="hot-products__img-box">
-                                                <div class="hot-products__img">
-                                                    <img src="assets/images/resources/hot-product-1-3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="hot-products__content">
-
-                                                <h3 class="hot-products__title"><a href="product-details.html">تفاح</a>
-                                                </h3>
-                                                <p class="hot-products__desc">الفشار (بالإنجليزية: Popcorn) أو الشامية
-                                                    أو البوشار أو النفّيش
-                                                    أو الفرّأخ أو الشوش هي أسماء لشيء واحد وهو الذرة المفرقعة بالحرارة
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="400ms">
-                                <a href="product-details.html">
-                                    <div class="hot-products__single">
-                                        <div class="hot-products__single-inner">
-                                            <div class="hot-products__img-box">
-                                                <div class="hot-products__img">
-                                                    <img src="assets/images/resources/hot-product-1-4.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="hot-products__content">
-
-                                                <h3 class="hot-products__title"><a href="product-details.html">ليتوس</a>
-                                                </h3>
-                                                <p class="hot-products__desc">الفشار (بالإنجليزية: Popcorn) أو الشامية
-                                                    أو البوشار أو النفّيش
-                                                    أو الفرّأخ أو الشوش هي أسماء لشيء واحد وهو الذرة المفرقعة بالحرارة
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="500ms">
-                                <a href="product-details.html">
-                                    <div class="hot-products__single">
-                                        <div class="hot-products__single-inner">
-                                            <div class="hot-products__img-box">
-                                                <div class="hot-products__img">
-                                                    <img src="assets/images/resources/hot-product-1-5.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="hot-products__content">
-
-                                                <h3 class="hot-products__title"><a href="product-details.html">برقوق</a>
-                                                </h3>
-                                                <p class="hot-products__desc">الفشار (بالإنجليزية: Popcorn) أو الشامية
-                                                    أو البوشار أو النفّيش
-                                                    أو الفرّأخ أو الشوش هي أسماء لشيء واحد وهو الذرة المفرقعة بالحرارة
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul> --}}
                     </div>
                 </div>
             </div>
