@@ -16,7 +16,7 @@
     تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="{{ url()->current() }}" />
-
+ 
     <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
     <meta property="og:image"
         content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
