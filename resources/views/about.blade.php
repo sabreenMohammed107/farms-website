@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-    <html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}">
 
-    <head>
-        <title> Gamal Gomaa Farms - مزارع جمال جمعة </title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- facebook meta tags -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
-        <meta property="og:description"
-            content="Gamal Gomaa Farms - مزارع جمال جمعة
+<head>
+    <title> Gamal Gomaa Farms - مزارع جمال جمعة </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- facebook meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+    <meta property="og:description"
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
             تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
     تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-            <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-            <link rel="canonical" href="{{ url()->current() }}" />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="{{ url()->current() }}" />
 
-            <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
-        <meta property="og:image" content= href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-        <meta property="og:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
-        <meta property="og:site_name" content="farms-website.com" />
-        <!-- twitter meta tags -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="farms-website.com">
-        <meta name="twitter:creator" content="farms-website.com">
-        <meta name="twitter:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
-        <meta name="twitter:description"
+    <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
+    <meta property="og:image"
+        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
+    <meta property="og:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+    <meta property="og:site_name" content="farms-website.com" />
+    <!-- twitter meta tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="farms-website.com">
+    <meta name="twitter:creator" content="farms-website.com">
+    <meta name="twitter:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+    <meta name="twitter:description"
         content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-        <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
-        <meta name="twitter:image" content= href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-        <meta property="twitter:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
-        <!-- general meta tags  -->
-        <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
-        <meta name="title"  content="Gamal Gomaa Farms - مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-        <meta name="description"
+    <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
+    <meta name="twitter:image"
+        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
+    <meta property="twitter:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+    <!-- general meta tags  -->
+    <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
+    <meta name="title"
         content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-        <meta name="image"  content="Gamal Gomaa Farms - مزارع جمال جمعة
+    <meta name="description"
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-        <meta property="image:alt"  content="Gamal Gomaa Farms - مزارع جمال جمعة
+    <meta name="image"
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-        <meta name="keywords"
-            content="Farms مزارع جمال خضار  vegetable market سوبر ماركت  farmers union مزارعين بصل potato farm بطاطس مزارع بساتين organic farms near me experience   " />
+    <meta property="image:alt"
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
-            <meta name="csrf-token" content="{{ csrf_token() }}">
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+    <meta name="keywords"
+        content="Farms مزارع جمال خضار  vegetable market سوبر ماركت  farmers union مزارعين بصل potato farm بطاطس مزارع بساتين organic farms near me experience   " />
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -299,11 +304,4 @@
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script async src="{{asset('webassets/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-<<<<<<< HEAD
-<script async src="{{asset('webassets/assets/vendors/countdown/jquery.countdown.min.js')}}"></script>
-
 <script async src="{{asset('webassets/assets/js/mainjs.about.js')}}"></script>
-=======
-<script async src="{{asset('webassets/assets/js/mainjs.about.js')}}"></script>
-{{-- <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script> --}}
->>>>>>> 5fdb0b71c9e4cde68d290cd39de07bc6a39297ee
