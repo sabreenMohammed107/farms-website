@@ -169,6 +169,7 @@
                                             src="{{asset('webassets/assets/images/shapes/1.png.png')}}"
                                             class="main-slider__sub-title__icn" alt="1.png.png" srcset=""></span>
                                     {!! $homedata->title !!}</h4>
+
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
                                     <a href="{{ url('/products') }}" class="thm-btn main-slider__btn-two">اكتشف
