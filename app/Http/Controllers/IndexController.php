@@ -40,6 +40,7 @@ public function singleProduct($id){
     $otherProducts=Product::where('id','!=',$id)->get();
     return view('single-product', get_defined_vars());
 }
+
 public function singleNews($id){
     $row=Website_new::where('id','=',$id)->first();
 

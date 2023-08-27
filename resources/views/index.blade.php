@@ -1,24 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="{{ config('app.locale') }}">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Gamal Gomaa Farm </title>
+    <head>
+        <title> Gamal Gomaa Farms - مزارع جمال جمعة </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- facebook meta tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+        <meta property="og:description"
+            content="Gamal Gomaa Farms - مزارع جمال جمعة
+            تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    {{--
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" /> --}}
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description"
-        content="تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
+    تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+            <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+            <link rel="canonical" href="{{ url()->current() }}" />
 
-    تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب عملائنا." />
+            <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
+        <meta property="og:image" content= href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
+        <meta property="og:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+        <meta property="og:site_name" content="farms-website.com" />
+        <!-- twitter meta tags -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="farms-website.com">
+        <meta name="twitter:creator" content="farms-website.com">
+        <meta name="twitter:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+        <meta name="twitter:description"
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
+        <meta name="twitter:image" content= href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
+        <meta property="twitter:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+        <!-- general meta tags  -->
+        <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
+        <meta name="title"  content="Gamal Gomaa Farms - مزارع جمال جمعة
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
+
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        <meta name="description"
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
+
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        <meta name="image"  content="Gamal Gomaa Farms - مزارع جمال جمعة
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
+
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        <meta property="image:alt"  content="Gamal Gomaa Farms - مزارع جمال جمعة
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
+
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        <meta name="keywords"
+            content="Farms مزارع جمال خضار  vegetable market سوبر ماركت  farmers union مزارعين بصل potato farm بطاطس مزارع بساتين organic farms near me experience   " />
+
+            <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -92,31 +130,31 @@
                     style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.png')}});">
                 </div>
                 <div class="main-slider__shape-1 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}" alt="main-slider-shape-1.png">
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}" alt="main-slider-shape-2.png">
                 </div>
                 <div class="main-slider__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}" alt="main-slider-shape-3.png">
                 </div>
                 <div class="main-slider__shape-4 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}" alt="main-slider-shape-4.png">
                 </div>
                 <div class="main-slider__shape-5 zoominout">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}" alt="main-slider-shape-5.png">
                 </div>
                 <div class="main-slider__shape-6 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}" alt="main-slider-shape-6.png">
                 </div>
                 <div class="main-slider__shape-7 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}" alt="main-slider-shape-7.png">
                 </div>
                 <div class="main-slider__shape-8 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}" alt="main-slider-shape-8.png">
                 </div>
                 <div class="main-slider__img-one">
-                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}" alt=""
+                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}" alt="main-slider-img-1.webp"
                         class="img-bounce">
                 </div>
                 <div class="container">
@@ -125,11 +163,11 @@
                             <div class="main-slider__content">
                                 <div class="main-slider__shape-9 float-bob-y">
                                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}"
-                                        alt="">
+                                        alt="main-slider-shape-9.png">
                                 </div>
                                 <h4 class="main-slider__sub-title"><span><img
                                             src="{{asset('webassets/assets/images/shapes/1.png.png')}}"
-                                            class="main-slider__sub-title__icn" alt="" srcset=""></span>
+                                            class="main-slider__sub-title__icn" alt="1.png.png" srcset=""></span>
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
@@ -201,7 +239,7 @@
                 <div class="about-one__right">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">من نحن</span>
-                        <h2 class="section-title__title">{!! $about->title !!} </h2>
+                        <h1 class="section-title__title">{!! $about->title !!} </h1>
                     </div>
 
                     <p class="about-one__text-1">
