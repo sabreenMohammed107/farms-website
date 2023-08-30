@@ -2,20 +2,20 @@
 <html lang="ar">
 
 <head>
-    <title>مزارع جمال جمعة - منتجات زراعية</title>
+    <title> مزارع جمال جمعة - منتجات خضروات زراعية تنافسية عالمية</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- facebook meta tags -->
+    <link itemprop="مزارع جمال جمعة" rel="shortcut icon" href="favicon.ico"
+        type="{{ asset('webassets/assets/images/loader.png') }}">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="مزارع جمال جمعة" />
-    <meta property="og:description"
-        content="مزارع جمال جمعة
+    <meta property="og:description" content="مزارع جمال جمعة
             تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-    تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-    <link rel="canonical" href="{{ url()->current() }}" />
+    <link itemprop="مزارع جمال جمعة" rel="canonical" href="{{ url()->current() }}" />
 
     <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
     <meta property="og:image"
@@ -27,65 +27,59 @@
     <meta name="twitter:site" content="farms-website.com">
     <meta name="twitter:creator" content="farms-website.com">
     <meta name="twitter:title" content="مزارع جمال جمعة" />
-    <meta name="twitter:description"
-        content="مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+    <meta name="twitter:description" content=" مزارع جمال جمعة - منتجات خضروات زراعية تنافسية عالمية" />
     <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
     <meta name="twitter:image"
         content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
     <meta property="twitter:image:alt" content="مزارع جمال جمعة" />
     <!-- general meta tags  -->
     <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
-    <meta name="title"
-        content="مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-    <meta name="description"
-        content="مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة" />
+    <meta name="title" content=" مزارع جمال جمعة - منتجات خضروات زراعية تنافسية عالمية" />
+    <meta name="description" content=" مزارع جمال جمعة - منتجات خضروات زراعية تنافسية عالمية" />
     <meta name="image"
         content="مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية." />
     <meta property="image:alt"
         content="مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-    <meta name="keywords"
-        content=" مزارع جمال خضار   سوبر ماركت   مزارعين بصل بطاطس مزارع بساتين  " />
+        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية." />
+    <meta name="keywords" content=" مزارع جمال خضار   سوبر ماركت   مزارعين بصل بطاطس مزارع بساتين  " />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link itemprop="مزارع جمال جمعة" rel="preconnect" href="https://fonts.googleapis.com/">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link itemprop="مزارع جمال جمعة" rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
     {{--
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> --}}
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link itemprop="مزارع جمال جمعة" rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> --}}
+    <link itemprop="مزارع جمال جمعة"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-    <link
+    <link itemprop="مزارع جمال جمعة"
         href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/bootstrap/css/bootstrap.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/bootstrap/css/bootstrap.min.css')}}" />
 
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/animate/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/animate/custom-animate.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/fontawesome/css/all.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/swiper/swiper.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/ogenix-icons/style.css')}}">
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/reey-font/stylesheet.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/animate/animate.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/animate/custom-animate.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/fontawesome/css/all.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/swiper/swiper.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/ogenix-icons/style.css')}}">
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/reey-font/stylesheet.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
+    <link itemprop="مزارع جمال جمعة" rel="stylesheet"
+        href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
 @extends('layout.webLayout.main')
 
@@ -111,39 +105,48 @@
                     style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.png')}});">
                 </div>
                 <div class="main-slider__shape-1 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}"
                         alt="main-slider-shape-1.png">
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}"
                         alt="main-slider-shape-2.png">
                 </div>
                 <div class="main-slider__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}"
                         alt="main-slider-shape-3.png">
                 </div>
                 <div class="main-slider__shape-4 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}"
                         alt="main-slider-shape-4.png">
                 </div>
                 <div class="main-slider__shape-5 zoominout">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}"
                         alt="main-slider-shape-5.png">
                 </div>
                 <div class="main-slider__shape-6 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}"
                         alt="main-slider-shape-6.png">
                 </div>
                 <div class="main-slider__shape-7 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}"
                         alt="main-slider-shape-7.png">
                 </div>
                 <div class="main-slider__shape-8 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}"
                         alt="main-slider-shape-8.png">
                 </div>
                 <div class="main-slider__img-one">
-                    <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}"
+                    <img itemprop="مزارع جمال جمعة"
+                        src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}"
                         alt="main-slider-img-1.webp" class="img-bounce">
                 </div>
                 <div class="container">
@@ -151,16 +154,18 @@
                         <div class="col-xl-12">
                             <div class="main-slider__content">
                                 <div class="main-slider__shape-9 float-bob-y">
-                                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}"
+                                    <img itemprop="مزارع جمال جمعة"
+                                        src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}"
                                         alt="main-slider-shape-9.png">
                                 </div>
-                                <h4 class="main-slider__sub-title"><span><img
+                                <h4 class="main-slider__sub-title"><span><img itemprop="مزارع جمال جمعة"
                                             src="{{asset('webassets/assets/images/shapes/1.png.png')}}"
                                             class="main-slider__sub-title__icn" alt="1.png.png" srcset=""></span>
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
-                                    <a href="{{ url('/products') }}" title="إكتشف" class="thm-btn main-slider__btn-two">اكتشف
+                                    <a href="{{ url('/products') }}" title="إكتشف"
+                                        class="thm-btn main-slider__btn-two">اكتشف
                                         المنتجات</a>
                                 </div>
                             </div>
@@ -185,7 +190,8 @@
 <!--About One Start-->
 <section class="about-one">
     <div class="about-one__shape-11 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.png')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/shapes/about-one-shape-11.png')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="container">
         <div class="row">
@@ -194,31 +200,46 @@
                     <div class="about-one__img-box wow slideInLeft" data-wow-delay="50ms" data-wow-duration="2500ms">
                         <!-- <div class="about-one__big-text">Gamal</div> -->
                         <div class="about-one__shape-1">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-1.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
                         <div class="about-one__shape-2">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-2.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
 
                         <div class="about-one__shape-4 float-bob-y">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-4.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-4.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
                         <div class="about-one__shape-5 zoominout">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-5.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-5.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
 
                         <div class="about-one__shape-7 zoominout">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-7.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-7.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
                         <div class="about-one__shape-8 float-bob-y">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-8.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-8.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
                         <div class="about-one__shape-9">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-9.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{asset('webassets/assets/images/shapes/about-one-shape-9.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
 
                         <div class="about-one__img">
-                            <img src="{{ asset('uploads/about_us') }}/{{ $about->image }}" alt="">
+                            <img itemprop="مزارع جمال جمعة" src="{{ asset('uploads/about_us') }}/{{ $about->image }}"
+                                alt="مزارع جمال جمعة">
                         </div>
 
                     </div>
@@ -288,7 +309,8 @@
                     <div class="hot-products__single-inner">
                         <div class="hot-products__img-box">
                             <div class="hot-products__img">
-                                <img src="{{ asset('uploads/customers') }}/{{ $customer->image }}" alt="">
+                                <img itemprop="مزارع جمال جمعة"
+                                    src="{{ asset('uploads/customers') }}/{{ $customer->image }}" alt="مزارع جمال جمعة">
                             </div>
                         </div>
 
@@ -327,14 +349,20 @@
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
-                            <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
 
                         <div class="banner-one__shape-2">
-                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{ asset('webassets/assets/images/shapes/banner-shape-2.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
                         <div class="banner-one__shape-3">
-                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.png')}}" alt="">
+                            <img itemprop="مزارع جمال جمعة"
+                                src="{{ asset('webassets/assets/images/shapes/banner-shape-3.png')}}"
+                                alt="مزارع جمال جمعة">
                         </div>
                         <p class="banner-one__tagline">عضوي 100٪</p>
                         <h3 class="banner-one__title">توريد الخضار للفنادق
@@ -345,7 +373,8 @@
                             الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب
                             عملائنا.</p>
                         <div class="banner-one__btn-box">
-                            <a title="service" href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل الخدمة</a>
+                            <a title="service" href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل
+                                الخدمة</a>
                         </div>
                     </div>
                 </div>
@@ -395,13 +424,14 @@
                         <div class="hot-products__single-inner">
                             <div class="hot-products__img-box">
                                 <div class="hot-products__img">
-                                    <img style="height: 300px" src="{{ asset('uploads/products/'.$product->image ) }}"
-                                        alt="">
+                                    <img itemprop="مزارع جمال جمعة" style="height: 300px"
+                                        src="{{ asset('uploads/products/'.$product->image ) }}" alt="مزارع جمال جمعة">
                                 </div>
                             </div>
                             <div class="hot-products__content">
 
-                                <h3 class="hot-products__title"><a title="single product" href="{{ url('/single-product/'.$product->id) }}">{{
+                                <h3 class="hot-products__title"><a title="single product"
+                                        href="{{ url('/single-product/'.$product->id) }}">{{
                                         $product->name }}</a></h3>
 
                             </div>
@@ -424,22 +454,28 @@
         style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.jpg')}});">
     </div>
     <div class="why-choose-one__shape-1 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.png')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.png')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.png')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.png')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="why-choose-one__shape-3">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.png')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.png')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="why-choose-one__shape-4">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.png')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.png')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="why-choose-one__img-1 wow fadeInUp" data-wow-duration="1500ms">
-        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
-        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}" alt="">
+        <img itemprop="مزارع جمال جمعة" src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}"
+            alt="مزارع جمال جمعة">
     </div>
     <div class="container">
         <div class="row">
@@ -459,7 +495,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-organic-food"></span>
                                 </div>
-                                <h4 class="why-choose-one__title" >منتجات عضوية</h4>
+                                <h4 class="why-choose-one__title">منتجات عضوية</h4>
 
                             </div>
                         </div>
@@ -470,7 +506,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-salad"></span>
                                 </div>
-                                <h4 class="why-choose-one__title" >العناصر الطبيعية</h4>
+                                <h4 class="why-choose-one__title">العناصر الطبيعية</h4>
 
                             </div>
                         </div>
@@ -520,7 +556,8 @@
             <div class="news-one__single mx-2">
                 <div class="news-one__img-box">
                     <div class="news-one__img" style="height: 100%">
-                        <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 450px" alt="">
+                        <img itemprop="مزارع جمال جمعة" src="{{ asset('uploads/news') }}/{{ $obj->image }}"
+                            style="height: 450px" alt="مزارع جمال جمعة">
                     </div>
                 </div>
                 <div class="news-one__content-box">
@@ -545,10 +582,10 @@
 <!--Blog One End-->
 
 @endsection
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+<script defer src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
 </script>
-<script async src="{{asset('webassets/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/vendors/swiper/swiper.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+<script defer src="{{asset('webassets/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script defer src="{{asset('webassets/assets/vendors/swiper/swiper.min.js')}}"></script>
+<script defer src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script defer src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
