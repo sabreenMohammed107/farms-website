@@ -3,20 +3,20 @@
     <div class="container">
         <div class="subscribe-one__inner">
             <div class="subscribe-one__shape-1 float-bob-x">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-1.png')}}" alt="">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-1.png')}}" alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__shape-2 float-bob-y">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-2.png')}}" alt="">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-2.png')}}" alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__shape-4 float-bob-y">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-4.png')}}" alt="">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-4.png')}}" alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__shape-5 zoominout">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-5.png')}}" alt="">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-5.png')}}" alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__inner-content">
                 <div class="subscribe-one__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-3.png')}}" alt="">
+                    <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-3.png')}}" alt="subscribe-one-shape">
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -26,7 +26,7 @@
                                 <div class="footer-widget__logo">
                                     <a href="{{ url('/') }}"><img
                                             src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
-                                            alt=""></a>
+                                            alt="footer-logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                     <div class="col-md-6 text-center">
                         <div class="subscribe-one__right">
                             <div class="subscribe-one__shape-6 float-bob-x">
-                                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.png')}}" alt="">
+                                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.png')}}" alt="footer-logo">
                             </div>
                             <div class="subscribe-one__form-box">
 
@@ -62,7 +62,7 @@
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__logo">
                             <a href="{{ url('/') }}"><img
-                                    src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}" alt=""></a>
+                                    src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}" alt="footer-logo"></a>
                         </div>
                         <div class="footer-widget__about-text-box">
                             <p class="footer-widget__about-text" style="word-spacing: 2px;">نحن نقدم
