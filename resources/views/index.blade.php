@@ -43,8 +43,7 @@
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-    <meta name="description"
-        content="مزارع جمال جمعة
+    <meta name="description" content="مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة" />
@@ -58,8 +57,7 @@
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-    <meta name="keywords"
-        content=" مزارع جمال خضار   سوبر ماركت   مزارعين بصل بطاطس مزارع بساتين  " />
+    <meta name="keywords" content=" مزارع جمال خضار   سوبر ماركت   مزارعين بصل بطاطس مزارع بساتين  " />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -160,7 +158,8 @@
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
-                                    <a href="{{ url('/products') }}" title="إكتشف" class="thm-btn main-slider__btn-two">اكتشف
+                                    <a href="{{ url('/products') }}" title="إكتشف"
+                                        class="thm-btn main-slider__btn-two">اكتشف
                                         المنتجات</a>
                                 </div>
                             </div>
@@ -345,7 +344,8 @@
                             الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب
                             عملائنا.</p>
                         <div class="banner-one__btn-box">
-                            <a title="service" href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل الخدمة</a>
+                            <a title="service" href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل
+                                الخدمة</a>
                         </div>
                     </div>
                 </div>
@@ -401,7 +401,8 @@
                             </div>
                             <div class="hot-products__content">
 
-                                <h3 class="hot-products__title"><a title="single product" href="{{ url('/single-product/'.$product->id) }}">{{
+                                <h3 class="hot-products__title"><a title="single product"
+                                        href="{{ url('/single-product/'.$product->id) }}">{{
                                         $product->name }}</a></h3>
 
                             </div>
@@ -459,7 +460,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-organic-food"></span>
                                 </div>
-                                <h4 class="why-choose-one__title" >منتجات عضوية</h4>
+                                <h4 class="why-choose-one__title">منتجات عضوية</h4>
 
                             </div>
                         </div>
@@ -470,7 +471,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-salad"></span>
                                 </div>
-                                <h4 class="why-choose-one__title" >العناصر الطبيعية</h4>
+                                <h4 class="why-choose-one__title">العناصر الطبيعية</h4>
 
                             </div>
                         </div>
