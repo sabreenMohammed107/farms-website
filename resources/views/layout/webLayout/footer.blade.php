@@ -70,10 +70,10 @@
                             </p>
                         </div>
                         <div class="footer-widget__social-box">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            {{-- <a href="#"><i class="fab fa-twitter"></i></a> --}}
+                            <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" title="facebook" ><i class="fab fa-facebook"></i></a>
+                            {{-- <a href="#"><i class="fab fa-pinterest-p"></i></a> --}}
+                            <a href="https://www.instagram.com/gamalgomaafarms/?igshid=MzRlODBiNWFlZA%3D%3D" title="instagram" ><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -84,11 +84,11 @@
                         </div>
                         <div class="footer-widget__explore-list-box">
                             <ul class="footer-widget__explore-list list-unstyled">
-                                <li><a href="{{ url('/about') }}">عن الشركة</a></li>
-                                <li><a href="{{ url('/services') }}">خدماتنا</a></li>
-                                <li><a href="{{ url('/products') }}">المنتجات</a></li>
-                                <li><a href="{{ url('/news') }}">الاخبار</a></li>
-                                <li><a href="{{ url('/contact-us') }}">التواصل</a></li>
+                                <li><a title="about" href="{{ url('/about') }}">عن الشركة</a></li>
+                                <li><a title="services" href="{{ url('/services') }}">خدماتنا</a></li>
+                                <li><a title="products" href="{{ url('/products') }}">المنتجات</a></li>
+                                <li><a title="news" href="{{ url('/news') }}">الاخبار</a></li>
+                                <li><a title="jobs" href="{{ url('/jobs') }}">الوظائف</a></li>
                             </ul>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                         <!--Google Map Start-->
                         <section class="footer-google-map">
                             <div class="container">
-                                <a href="" target="_blank">
+                                <a href="#" title="gogle" target="_blank">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3458.4147505398228!2d31.207061775548674!3d29.9099597749916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDU0JzM1LjkiTiAzMcKwMTInMzQuNyJF!5e0!3m2!1sen!2seg!4v1692302129347!5m2!1sen!2seg"
                                         class="google-map__one" allowfullscreen></iframe>
