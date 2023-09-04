@@ -64,7 +64,7 @@
     </div>
     <div id="containerfooter">
         <div class="text-dark order-2 order-md-1" style="margin: auto;padding:20px 0;text-align: center">
-            <span class="text-muted fw-bold me-2">2023©</span>
+            <span class="text-muted fw-bold me-2"><script>document.write(new Date().getFullYear())</script>©</span>
             <a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Senior Consulting </a>
         </div>
     </div>

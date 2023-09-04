@@ -149,7 +149,7 @@
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
                         <div class="site-footer__bottom-left">
-                            <p class="site-footer__bottom-text"> حقوق الطبع والنشر © 2023
+                            <p class="site-footer__bottom-text"> حقوق الطبع والنشر © <script>document.write(new Date().getFullYear())</script>
                             </p>
                         </div>
 
