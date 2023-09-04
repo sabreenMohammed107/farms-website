@@ -106,14 +106,14 @@
                                 <div class="text">
                                     <p style="direction: ltr"><a href="tel:{{$contact->phone}}">{{$contact->phone}} <i
                                                 class="fas fa-phone px-1"></i></a></p>
-                                    <p style="direction: ltr"><a href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i
+                                    <p style="direction: ltr"><a title="htel" href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i
                                                 class="fas fa-phone px-1"></i></a></p>
 
                                 </div>
                             </li>
                             <li>
                                 <div class="text">
-                                    <p><a href="mailto:{{ $contact->email }} "><i class="fas fa-envelope px-1"></i>{{
+                                    <p><a title="to" href="mailto:{{ $contact->email }} "><i class="fas fa-envelope px-1"></i>{{
                                             $contact->email }}</a></p>
                                 </div>
                             </li>
