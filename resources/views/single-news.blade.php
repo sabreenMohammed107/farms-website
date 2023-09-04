@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="{{ config('app.locale') }}">
 
 <head>
-       <title>مزارع جمال جمعة - منتجات زراعية</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- facebook meta tags -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="مزارع جمال جمعة" />
+    <meta property="og:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
     <meta property="og:description"
-        content="مزارع جمال جمعة
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
             تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
     تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
@@ -20,49 +19,49 @@
     <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
     <meta property="og:image"
         content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    <meta property="og:image:alt" content="مزارع جمال جمعة" />
+    <meta property="og:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
     <meta property="og:site_name" content="farms-website.com" />
     <!-- twitter meta tags -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="farms-website.com">
     <meta name="twitter:creator" content="farms-website.com">
-    <meta name="twitter:title" content="مزارع جمال جمعة" />
+    <meta name="twitter:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
     <meta name="twitter:description"
-        content="مزارع جمال جمعة
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
     <meta name="twitter:image"
         content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    <meta property="twitter:image:alt" content="مزارع جمال جمعة" />
+    <meta property="twitter:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
     <!-- general meta tags  -->
     <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
     <meta name="title"
-        content="مزارع جمال جمعة
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta name="description"
-        content="مزارع جمال جمعة
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة" />
+تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta name="image"
-        content="مزارع جمال جمعة
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta property="image:alt"
-        content="مزارع جمال جمعة
+        content="Gamal Gomaa Farms - مزارع جمال جمعة
         تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
 
 تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta name="keywords"
-        content=" مزارع جمال خضار   سوبر ماركت   مزارعين بصل بطاطس مزارع بساتين  " />
+        content="Farms مزارع جمال خضار  vegetable market سوبر ماركت  farmers union مزارعين بصل potato farm بطاطس مزارع بساتين organic farms near me experience   " />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    <title> Gamal Gomaa Farms - مزارع جمال جمعة </title>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
 
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -82,7 +81,10 @@
 
     <link rel="stylesheet" href="{{asset('webassets/assets/vendors/ogenix-icons/style.css')}}">
 
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/reey-font/stylesheet.css')}}" />
+    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
+
+    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/jquery-ui/jquery-ui.css')}}" />
 
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
@@ -97,8 +99,8 @@
 
     <div class="container">
         <div class="page-header__inner">
-            <h2>{!! $row->name !!}
-            </h2>
+            <h1>{!! $row->name !!}
+            </h1>
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{{ url('/') }}">الرئيسية
                     </a></li>
@@ -230,6 +232,10 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script async src="{{asset('webassets/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/vendors/jarallax/jarallax.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script>
 
+
+<script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+
+<script async src="{{asset('webassets/assets/vendors/jquery-ui/jquery-ui.js')}}"></script>
+
+<script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script>
