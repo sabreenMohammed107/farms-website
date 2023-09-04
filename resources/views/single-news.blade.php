@@ -231,5 +231,5 @@
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script async src="{{asset('webassets/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script async src="{{asset('webassets/assets/vendors/jarallax/jarallax.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/js/mainjs.single_product.js')}}"></script>
+<script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script>
 
