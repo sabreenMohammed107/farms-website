@@ -2,6 +2,7 @@
 <html lang="ar">
 
 <head>
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/logo.PNG') }}">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,6 @@
     <meta property="og:title" content="مزارع جمال جمعة" />
     <meta property="og:description"
         content="مزارع جمال جمعة
-            تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
     تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="{{ url()->current() }}" />
