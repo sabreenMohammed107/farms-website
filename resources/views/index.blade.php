@@ -459,7 +459,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-salad"></span>
                                 </div>
-                                <h4 class="why-choose-one__title">العناصر الطبيعية</h4>
+                                <p class="why-choose-one__title">العناصر الطبيعية</p>
 
                             </div>
                         </div>
@@ -543,7 +543,7 @@
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
     integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{{-- <script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script> --}}
+<script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
 <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 <script>
     $(document).ready(function(){
