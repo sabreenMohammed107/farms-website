@@ -449,7 +449,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-organic-food"></span>
                                 </div>
-                                <h4 class="why-choose-one__title">منتجات عضوية</h4>
+                                <h4 class="why-choose-one__title" >منتجات عضوية</h4>
 
                             </div>
                         </div>
