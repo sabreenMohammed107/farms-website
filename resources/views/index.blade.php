@@ -85,6 +85,13 @@
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
+<style>
+    .pre-init .hot-products__single {
+        display: none;
+    }
+</style>
+
+</script>
 @extends('layout.webLayout.main')
 
 @section('content')
@@ -253,31 +260,8 @@
                 <a title="clients" href="#">عملاؤنا الحالين</a>
             </h2>
         </div>
-        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
-            data-owl-options='{
-            "loop": true,
-            "autoplay": true,
-            "margin": 30,
-            "nav": false,
-            "dots": false,
-            "smartSpeed": 500,
-            "autoplayTimeout": 1000,
-            "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-            "responsive": {
-                "0": {
-                    "items": 1
-                },
-                "768": {
-                    "items": 3
-                },
-                "992": {
-                    "items": 5
-                },
-                "1200": {
-                    "items": 7
-                }
-            }
-        }'>
+        <div
+            class="hot-products__inner list-unstyled partners hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel pre-init">
 
             @foreach ($customers as $customer)
 
@@ -554,3 +538,36 @@
 <script async src="{{asset('webassets/assets/vendors/swiper/swiper.min.js')}}"></script>
 <script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
 <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+<script>
+    $(document).ready(function(){
+    $(".partners-section .hot-product-three__carousel").owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        smartSpeed: 500,
+        autoplayTimeout: 1000,
+        navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+        responsive: {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 3
+            },
+            "992": {
+                "items": 5
+            },
+            "1200": {
+                "items": 7
+            }
+        },
+        onInitialized: function() {
+            $('.hot-product-three__carousel').removeClass('pre-init');
+            $('.hot-product-three__carousel .hot-products__single').css('display', 'block');
+        }
+    });
+});
+
+</script>
