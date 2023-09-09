@@ -3,7 +3,7 @@
 
 <head>
     <title>مزارع جمال جمعة: توريد منتجات زراعية طازجة وآمنة</title>
-    <link rel="shortcut icon" href="{{ asset('img/logo.PNG') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo.webp') }}" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 
     <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
     <meta property="og:image"
-        content="{{ asset('webassets/assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png')}}"
+        content="{{ asset('webassets/assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.webp')}}"
         alt="مزارع جمال جمعة: منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta property="og:image:alt" content="مزارع جمال جمعة" />
     <meta property="og:site_name" content="farms-website.com" />
@@ -30,7 +30,7 @@
         content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
     <meta name="twitter:image"
-        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
+        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.webp" />
     <meta property="twitter:image:alt" content="مزارع جمال جمعة" />
     <!-- general meta tags  -->
     <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
@@ -108,42 +108,42 @@
 
             <div class="swiper-slide">
                 <div class="main-slider-bg-shape"
-                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape.png')}});">
+                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape.webp')}});">
                 </div>
                 <div class="main-slider-bg-shape-two"
-                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.png')}});">
+                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.webp')}});">
                 </div>
                 <div class="main-slider__shape-1 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.png')}}"
-                        alt="main-slider-shape-1.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.webp')}}"
+                        alt="main-slider-shape-1.webp">
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.png')}}"
-                        alt="main-slider-shape-2.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.webp')}}"
+                        alt="main-slider-shape-2.webp">
                 </div>
                 <div class="main-slider__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.png')}}"
-                        alt="main-slider-shape-3.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.webp')}}"
+                        alt="main-slider-shape-3.webp">
                 </div>
                 <div class="main-slider__shape-4 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.png')}}"
-                        alt="main-slider-shape-4.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.webp')}}"
+                        alt="main-slider-shape-4.webp">
                 </div>
                 <div class="main-slider__shape-5 zoominout">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.png')}}"
-                        alt="main-slider-shape-5.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.webp')}}"
+                        alt="main-slider-shape-5.webp">
                 </div>
                 <div class="main-slider__shape-6 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.png')}}"
-                        alt="main-slider-shape-6.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.webp')}}"
+                        alt="main-slider-shape-6.webp">
                 </div>
                 <div class="main-slider__shape-7 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.png')}}"
-                        alt="main-slider-shape-7.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.webp')}}"
+                        alt="main-slider-shape-7.webp">
                 </div>
                 <div class="main-slider__shape-8 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.png')}}"
-                        alt="main-slider-shape-8.png">
+                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.webp')}}"
+                        alt="main-slider-shape-8.webp">
                 </div>
                 <div class="main-slider__img-one">
                     <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}"
@@ -154,12 +154,12 @@
                         <div class="col-xl-12">
                             <div class="main-slider__content">
                                 <div class="main-slider__shape-9 float-bob-y">
-                                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.png')}}"
-                                        alt="main-slider-shape-9.png">
+                                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.webp')}}"
+                                        alt="main-slider-shape-9.webp">
                                 </div>
                                 <h4 class="main-slider__sub-title"><span><img
-                                            src="{{asset('webassets/assets/images/shapes/1.png.png')}}"
-                                            class="main-slider__sub-title__icn" alt="1.png.png" srcset=""></span>
+                                            src="{{asset('webassets/assets/images/shapes/1.webp.webp')}}"
+                                            class="main-slider__sub-title__icn" alt="1.webp.webp" srcset=""></span>
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
@@ -190,7 +190,7 @@
 <!--About One Start-->
 <section class="about-one">
     <div class="about-one__shape-11 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.png')}}" alt="about-one-shape-11.png">
+        <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="about-one-shape-11.webp">
     </div>
     <div class="container">
         <div class="row">
@@ -199,38 +199,39 @@
                     <div class="about-one__img-box wow slideInLeft" data-wow-delay="50ms" data-wow-duration="2500ms">
                         <!-- <div class="about-one__big-text">Gamal</div> -->
                         <div class="about-one__shape-1">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
                         <div class="about-one__shape-2">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
 
                         <div class="about-one__shape-4 float-bob-y">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-4.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-4.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
                         <div class="about-one__shape-5 zoominout">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-5.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-5.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
 
                         <div class="about-one__shape-7 zoominout">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-7.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-7.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
                         <div class="about-one__shape-8 float-bob-y">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-8.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-8.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
                         <div class="about-one__shape-9">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-9.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-9.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
 
                         <div class="about-one__img">
-                            <img src="{{ asset('uploads/about_us') }}/{{ $about->image }}" alt="about-one-shape-11.png">
+                            <img src="{{ asset('uploads/about_us') }}/{{ $about->image }}"
+                                alt="about-one-shape-11.webp">
                         </div>
 
                     </div>
@@ -278,7 +279,7 @@
                         <div class="hot-products__img-box">
                             <div class="hot-products__img">
                                 <img src="{{ asset('uploads/customers') }}/{{ $customer->image }}"
-                                    alt="about-one-shape-11.png">
+                                    alt="about-one-shape-11.webp">
                             </div>
                         </div>
 
@@ -318,16 +319,16 @@
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
                             <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}"
-                                alt="about-one-shape-11.png">
+                                alt="about-one-shape-11.webp">
                         </div>
 
                         <div class="banner-one__shape-2">
-                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
                         <div class="banner-one__shape-3">
-                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.png')}}"
-                                alt="about-one-shape-11.png">
+                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.webp')}}"
+                                alt="about-one-shape-11.webp">
                         </div>
                         <p class="banner-one__tagline">عضوي 100٪</p>
                         <h3 class="banner-one__title">توريد الخضار للفنادق
@@ -363,6 +364,7 @@
             "autoplay": true,
             "margin": 30,
             "nav": true,
+            "rtl":true,
             "dots": false,
             "smartSpeed": 500,
             "autoplayTimeout": 1000,
@@ -390,7 +392,7 @@
                             <div class="hot-products__img-box">
                                 <div class="hot-products__img">
                                     <img style="height: 300px" src="{{ asset('uploads/products/'.$product->image ) }}"
-                                        alt="about-one-shape-11.png">
+                                        alt="about-one-shape-11.webp">
                                 </div>
                             </div>
                             <div class="hot-products__content">
@@ -426,27 +428,31 @@
 <!--Why Choose One Start-->
 <section class="why-choose-one">
     <div class="why-choose-one__bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.jpg')}});">
+        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.webp')}});">
     </div>
     <div class="why-choose-one__shape-1 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.png')}}" alt="about-one-shape-11.png">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.png')}}" alt="about-one-shape-11.png">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-3">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.png')}}" alt="about-one-shape-11.png">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-4">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.png')}}" alt="about-one-shape-11.png">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__img-1 wow fadeInUp" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}"
-            alt="about-one-shape-11.png">
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}"
-            alt="about-one-shape-11.png">
+            alt="about-one-shape-11.webp">
     </div>
     <div class="container">
         <div class="row">
@@ -506,6 +512,7 @@
             "nav": false,
             "dots": false,
             "smartSpeed": 500,
+            "rtl":true,
             "autoplayTimeout": 1000,
             "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
             "responsive": {
@@ -528,7 +535,7 @@
                 <div class="news-one__img-box">
                     <div class="news-one__img" style="height: 100%">
                         <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 450px"
-                            alt="about-one-shape-11.png">
+                            alt="about-one-shape-11.webp">
                     </div>
                 </div>
                 <div class="news-one__content-box">
@@ -562,7 +569,9 @@
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
     integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 
 <script>
@@ -572,10 +581,11 @@
         autoplay: true,
         margin: 30,
         nav: false,
+        rtl:true,
         dots: false,
         smartSpeed: 500,
         autoplayTimeout: 1000,
-        navText: ["<img src='left-arrow.png' alt='Left arrow' class=\"icon-left-arrow\">","<img src='right-arrow.png' alt='Right arrow' class=\"icon-right-arrow\">"],
+        navText: ["<img src='left-arrow.webp' alt='Left arrow' class=\"icon-left-arrow\">","<img src='right-arrow.webp' alt='Right arrow' class=\"icon-right-arrow\">"],
         responsive: {
             "0": {
                 "items": 1
