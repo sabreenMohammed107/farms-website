@@ -29,7 +29,7 @@
 
                             <div class="subscribe-one__title-box">
                                 <div class="footer-widget__logo">
-                                    <a href="{{ url('/') }}"><img
+                                    <a title="gmal" href="{{ url('/') }}"><img
                                             src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
                                             alt="footer-logo"></a>
                                 </div>
@@ -67,7 +67,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__logo">
-                            <a href="{{ url('/') }}"><img
+                            <a title="gmal" href="{{ url('/') }}"><img
                                     src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
                                     alt="footer-logo"></a>
                         </div>
@@ -113,7 +113,7 @@
                         <ul class="list-unstyled footer-widget__contact-list">
                             <li>
                                 <div class="text">
-                                    <p style="direction: ltr"><a href="tel:{{$contact->phone}}">{{$contact->phone}} <i
+                                    <p style="direction: ltr"><a title="tel" href="tel:{{$contact->phone}}">{{$contact->phone}} <i
                                                 class="fas fa-phone px-1"></i></a></p>
                                     <p style="direction: ltr"><a title="htel"
                                             href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i
