@@ -384,10 +384,9 @@
                     </div>
                 </a>
             </div>
-
             @endforeach
 
-            <script type="application/ld+json">
+            {{-- <script type="application/ld+json">
                 {
                   "@context": "https://schema.org/",
                   "@type": "Product",
@@ -396,7 +395,7 @@
                   "sku": "123456789",
 
                 }
-            </script>
+            </script> --}}
 
         </div>
     </div>
@@ -538,7 +537,7 @@
         rtl:true,
         smartSpeed: 500,
         autoplayTimeout: 1000,
-        navText: ["<img src='left-arrow.png' alt='Left arrow' class=\"icon-left-arrow\">","<img src='right-arrow.png' alt='Right arrow' class=\"icon-right-arrow\">"],
+        navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
         responsive: {
             "0": {
                 "items": 1
@@ -566,7 +565,7 @@
         nav: true,
         dots: false,
         rtl:true,
-        smartSpeed: 500,
+        smartSpeed: 1500,
         autoplayTimeout: 1000,
         navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
         responsive: {
