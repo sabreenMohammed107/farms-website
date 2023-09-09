@@ -85,6 +85,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+        <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
@@ -92,6 +97,9 @@
     .pre-init .hot-products__single {
         display: none;
     }
+    .owl-carousel{
+ direction: ltr !important;
+}
 </style>
 
 </script>
@@ -263,8 +271,31 @@
                 <a title="clients" href="#">عملاؤنا الحالين</a>
             </h2>
         </div>
-        <div
-            class="hot-products__inner list-unstyled partners hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel pre-init">
+        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
+        data-owl-options='{
+        "loop": true,
+        "autoplay": true,
+        "margin": 30,
+        "nav": true,
+        "dots": false,
+        "smartSpeed": 500,
+        "autoplayTimeout": 1000,
+        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 3
+            },
+            "992": {
+                "items": 4
+            },
+            "1200": {
+                "items": 5
+            }
+        }
+    }'>
 
             @foreach ($customers as $customer)
 
@@ -543,38 +574,24 @@
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
     integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
-<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+{{-- <script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script> --}}
+
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
+   <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 <script>
-    $(document).ready(function(){
-    $(".partners-section .hot-product-three__carousel").owlCarousel({
-        loop: true,
-        autoplay: true,
-        margin: 30,
-        nav: false,
-        dots: false,
-        smartSpeed: 500,
-        autoplayTimeout: 1000,
-        navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-        responsive: {
-            "0": {
-                "items": 1
-            },
-            "768": {
-                "items": 3
-            },
-            "992": {
-                "items": 5
-            },
-            "1200": {
-                "items": 7
-            }
-        },
-        onInitialized: function() {
-            $('.hot-product-three__carousel').removeClass('pre-init');
-            $('.hot-product-three__carousel .hot-products__single').css('display', 'block');
-        }
-    });
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+  // items change number for slider display on desktop
+
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
 });
 
 </script>
