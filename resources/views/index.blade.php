@@ -555,7 +555,7 @@
         nav: false,
         dots: false,
         rtl:true,
-        smartSpeed: 500,
+        smartSpeed: 1500,
         autoplayTimeout: 1000,
         navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
         responsive: {
@@ -610,7 +610,7 @@
             margin: 30,
             nav: false,
             dots: false,
-            smartSpeed: 500,
+            smartSpeed: 1500,
             rtl:true,
             autoplayTimeout: 1000,
             navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
