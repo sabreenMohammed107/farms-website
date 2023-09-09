@@ -80,12 +80,23 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet">
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
 <style>
     .pre-init .hot-products__single {
         display: none;
+    }
+
+    .owl-carousel {
+        direction: ltr !important;
     }
 </style>
 
@@ -266,8 +277,31 @@
                 <a title="العملاء" href="#">عملاؤنا الحالين</a>
             </h2>
         </div>
-        <div
-            class="hot-products__inner list-unstyled partners hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel pre-init">
+        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
+            data-owl-options='{
+        "loop": true,
+        "autoplay": true,
+        "margin": 30,
+        "nav": true,
+        "dots": false,
+        "smartSpeed": 500,
+        "autoplayTimeout": 1000,
+        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 3
+            },
+            "992": {
+                "items": 4
+            },
+            "1200": {
+                "items": 5
+            }
+        }
+    }'>
 
             @foreach ($customers as $customer)
 
@@ -581,11 +615,10 @@
         autoplay: true,
         margin: 30,
         nav: false,
-        rtl:true,
         dots: false,
         smartSpeed: 500,
         autoplayTimeout: 1000,
-        navText: ["<img src='left-arrow.webp' alt='Left arrow' class=\"icon-left-arrow\">","<img src='right-arrow.webp' alt='Right arrow' class=\"icon-right-arrow\">"],
+        navText: ["<img src='left-arrow.png' alt='Left arrow' class=\"icon-left-arrow\">","<img src='right-arrow.png' alt='Right arrow' class=\"icon-right-arrow\">"],
         responsive: {
             "0": {
                 "items": 1
