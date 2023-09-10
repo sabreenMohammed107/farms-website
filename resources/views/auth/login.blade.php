@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">تسجيل الدخول</div>
+                <div class="card-header" style="font-weight: bold" >تسجيل الدخول</div>
 
                 <div class="card-body">
 
@@ -13,10 +13,10 @@
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end"> البريد الإلكتروني</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end" style="font-weight: bold" > البريد الإلكتروني</label>
 
                             <div class="col-md-6">
-                                <input id="email"  type="email" style="text-align: left" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" autofocus>
+                                <input id="email"  type="email" style="text-align: left;direction: ltr" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -27,10 +27,10 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">كلمة المرور</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end" style="font-weight: bold" >كلمة المرور</label>
 
                             <div class="col-md-6">
-                                <input id="password" maxlength="50" style="text-align: left" type="password" class="form-control @error('password') is-invalid @enderror" name="password"  autocomplete="current-password">
+                                <input id="password" maxlength="50" style="text-align: left;direction: ltr" type="password" class="form-control @error('password') is-invalid @enderror" name="password"  autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -54,12 +54,12 @@
 
                         <div class="row mb-0">
                             <div class="col-md-3 offset-md-4">
-                                <button type="submit" class="btn btn-primary my-2">
+                                <button type="submit" class="btn btn-primary my-2" style="font-weight: bold" >
                                   تسجيل دخول
                                 </button>
                             </div>
                                 <div class="col-md-4 ">
-                                    <button type="reset" class="btn btn-danger px-4 my-2">
+                                    <button type="reset" class="btn btn-danger px-4 my-2" style="font-weight: bold" >
                                      إلغاء
                                     </button>
                                 </div>

@@ -23,7 +23,7 @@
                 <!--begin::Logo-->
                 <a href="#" class="d-lg-none">
 
-                    <img alt="Logo" src="{{ asset('img/logo.PNG')}}" class="mh-40px" />
+                    <img alt="Logo" src="{{ asset('img/logo.webp')}}" class="mh-40px" />
                 </a>
                 <!--end::Logo-->
                 <!--begin::Aside toggler-->
