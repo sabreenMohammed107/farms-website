@@ -37,7 +37,7 @@ public function singleProduct($id){
     $product=Product::where('id','=',$id)->first();
     $galleries=Product_image::where('product_id','=',$id)->get();
     $tags=Tag::where('type','=','1')->get();
-    $otherProducts=Product::where('id','!=',$id)->get();
+    $otherProducts=Product::where('id','!=',$id)->inRandomOrder()->take(10)->get();
     return view('single-product', get_defined_vars());
 }
 
@@ -45,7 +45,7 @@ public function singleNews($id){
     $row=Website_new::where('id','=',$id)->first();
 
     $tags=Tag::where('type','!=','1')->get();
-    $otherNews=Website_new::where('id','!=',$id)->take(4)->orderBy("created_at", "desc")->get();
+    $otherNews=Website_new::where('id','!=',$id)->take(6)->orderBy("created_at", "desc")->get();
     return view('single-news', get_defined_vars());
 }
     public function contact(){
