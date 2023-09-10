@@ -3,7 +3,6 @@
 
 <head>
     <title>مزارع جمال جمعة: توريد منتجات زراعية طازجة وآمنة</title>
-    <link rel="shortcut icon" href="{{ asset('img/logo.webp') }}" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,6 @@
 
     <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
     <meta property="og:image"
-        content="{{ asset('webassets/assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.webp')}}"
         alt="مزارع جمال جمعة: منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta property="og:image:alt" content="مزارع جمال جمعة" />
     <meta property="og:site_name" content="farms-website.com" />
@@ -30,7 +28,7 @@
         content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
     <meta name="twitter:image"
-        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.webp" />
+        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
     <meta property="twitter:image:alt" content="مزارع جمال جمعة" />
     <!-- general meta tags  -->
     <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
@@ -81,6 +79,10 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+        <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
@@ -88,6 +90,9 @@
     .pre-init .hot-products__single {
         display: none;
     }
+    .owl-carousel{
+ direction: ltr !important;
+}
 </style>
 
 </script>
@@ -109,42 +114,32 @@
 
             <div class="swiper-slide">
                 <div class="main-slider-bg-shape"
-                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape.webp')}});">
                 </div>
                 <div class="main-slider-bg-shape-two"
-                    style="background-image: url({{asset('webassets/assets/images/shapes/main-slider-bg-shape-two.webp')}});">
                 </div>
                 <div class="main-slider__shape-1 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-1.webp')}}"
-                        alt="main-slider-shape-1.webp">
+
                 </div>
                 <div class="main-slider__shape-2 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-2.webp')}}"
-                        alt="main-slider-shape-2.webp">
+
                 </div>
                 <div class="main-slider__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-3.webp')}}"
-                        alt="main-slider-shape-3.webp">
+
                 </div>
                 <div class="main-slider__shape-4 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-4.webp')}}"
-                        alt="main-slider-shape-4.webp">
+
                 </div>
                 <div class="main-slider__shape-5 zoominout">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-5.webp')}}"
-                        alt="main-slider-shape-5.webp">
+
                 </div>
                 <div class="main-slider__shape-6 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-6.webp')}}"
-                        alt="main-slider-shape-6.webp">
+
                 </div>
                 <div class="main-slider__shape-7 float-bob-y">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-7.webp')}}"
-                        alt="main-slider-shape-7.webp">
+
                 </div>
                 <div class="main-slider__shape-8 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.webp')}}"
-                        alt="main-slider-shape-8.webp">
+
                 </div>
                 <div class="main-slider__img-one">
                     <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}"
@@ -155,12 +150,10 @@
                         <div class="col-xl-12">
                             <div class="main-slider__content">
                                 <div class="main-slider__shape-9 float-bob-y">
-                                    <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.webp')}}"
-                                        alt="main-slider-shape-9.webp">
+
                                 </div>
                                 <h4 class="main-slider__sub-title"><span><img
-                                            src="{{asset('webassets/assets/images/shapes/1.webp.webp')}}"
-                                            class="main-slider__sub-title__icn" alt="1.webp.webp" srcset=""></span>
+
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">
@@ -191,7 +184,6 @@
 <!--About One Start-->
 <section class="about-one">
     <div class="about-one__shape-11 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="about-one-shape-11.webp">
     </div>
     <div class="container">
         <div class="row">
@@ -200,39 +192,30 @@
                     <div class="about-one__img-box wow slideInLeft" data-wow-delay="50ms" data-wow-duration="2500ms">
                         <!-- <div class="about-one__big-text">Gamal</div> -->
                         <div class="about-one__shape-1">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
                         <div class="about-one__shape-2">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
 
                         <div class="about-one__shape-4 float-bob-y">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-4.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
                         <div class="about-one__shape-5 zoominout">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-5.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
 
                         <div class="about-one__shape-7 zoominout">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-7.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
                         <div class="about-one__shape-8 float-bob-y">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-8.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
                         <div class="about-one__shape-9">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-9.webp')}}"
-                                alt="about-one-shape-11.webp">
+
                         </div>
 
                         <div class="about-one__img">
-                            <img src="{{ asset('uploads/about_us') }}/{{ $about->image }}"
-                                alt="about-one-shape-11.webp">
                         </div>
 
                     </div>
@@ -267,8 +250,31 @@
                 <a title="العملاء" href="#">عملاؤنا الحالين</a>
             </h2>
         </div>
-        <div
-            class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel">
+        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
+        data-owl-options='{
+        "loop": true,
+        "autoplay": true,
+        "margin": 30,
+        "nav": true,
+        "dots": false,
+        "smartSpeed": 500,
+        "autoplayTimeout": 1000,
+        "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 3
+            },
+            "992": {
+                "items": 4
+            },
+            "1200": {
+                "items": 5
+            }
+        }
+    }'>
 
             @foreach ($customers as $customer)
 
@@ -280,7 +286,7 @@
                         <div class="hot-products__img-box">
                             <div class="hot-products__img">
                                 <img src="{{ asset('uploads/customers') }}/{{ $customer->image }}"
-                                    alt="about-one-shape-11.webp">
+                                    alt="about-one-shape-11.png">
                             </div>
                         </div>
 
@@ -320,16 +326,16 @@
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
                             <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}"
-                                alt="about-one-shape-11.webp">
+                                alt="about-one-shape-11.png">
                         </div>
 
                         <div class="banner-one__shape-2">
-                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.webp')}}"
-                                alt="about-one-shape-11.webp">
+                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.png')}}"
+                                alt="about-one-shape-11.png">
                         </div>
                         <div class="banner-one__shape-3">
-                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.webp')}}"
-                                alt="about-one-shape-11.webp">
+                            <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.png')}}"
+                                alt="about-one-shape-11.png">
                         </div>
                         <p class="banner-one__tagline">عضوي 100٪</p>
                         <h3 class="banner-one__title">توريد الخضار للفنادق
@@ -338,27 +344,7 @@
                             للبيئة،
                             نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة
                             الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها في الوقت المناسب بحيث ترضي مطالب
-                            عملائنا.
-                            هدفنا هو تقديم خدمة متميزة للعميل بجودة عالية من المحاصيل الزراعية العضوية
-
-                            يسعدنا إرضاء العملاء من خلال جودة محصولنا المتميز
-
-                            تأسست الشركة سنة 2000 ، لتوريد الخضروات العضوية الطازجة الى الفنادق العالمية
-
-                            ومقر الشركة طريق سقارة السياحي - بالجيزة
-
-                            يتكون مجلس الادارة من 5 أعضاء
-                            تأسست الشركة سنة 2000 ، لتوريد الخضروات العضوية الطازجة الى الفنادق العالمية
-
-                            ومقر الشركة طريق سقارة السياحي - بالجيزة
-
-                            يتكون مجلس الادارة من 5 أعضاء
-
-                            تأسست الشركة سنة 2000 ، لتوريد الخضروات العضوية الطازجة الى الفنادق العالمية
-
-                            ومقر الشركة طريق سقارة السياحي - بالجيزة
-
-                            يتكون مجلس الادارة من 5 أعضاء</p>
+                            عملائنا.</p>
                         <div class="banner-one__btn-box">
                             <a title="خدمة" href="{{ url('/services') }}" class="banner-one__btn thm-btn">تفاصيل
                                 الخدمة</a>
@@ -379,8 +365,31 @@
                 <a title="منتجاتنا" href="{{ url('/products') }}">كل المنتجات </a>
             </h2>
         </div>
-        <div
-            class=" hot-products hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel">
+        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
+            data-owl-options='{
+            "loop": true,
+            "autoplay": true,
+            "margin": 30,
+            "nav": true,
+            "dots": false,
+            "smartSpeed": 500,
+            "autoplayTimeout": 1000,
+            "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+                "768": {
+                    "items": 3
+                },
+                "992": {
+                    "items": 4
+                },
+                "1200": {
+                    "items": 5
+                }
+            }
+        }'>
             @foreach ($products as $product)
             <div class="wow fadeInUp" data-wow-delay="50ms">
                 <a title="منتج" href="{{ url('/single-product/'.$product->id) }}">
@@ -389,7 +398,7 @@
                             <div class="hot-products__img-box">
                                 <div class="hot-products__img">
                                     <img style="height: 300px" src="{{ asset('uploads/products/'.$product->image ) }}"
-                                        alt="about-one-shape-11.webp">
+                                        alt="about-one-shape-11.png">
                                 </div>
                             </div>
                             <div class="hot-products__content">
@@ -404,9 +413,10 @@
                     </div>
                 </a>
             </div>
+
             @endforeach
 
-            {{-- <script type="application/ld+json">
+            <script type="application/ld+json">
                 {
                   "@context": "https://schema.org/",
                   "@type": "Product",
@@ -415,7 +425,7 @@
                   "sku": "123456789",
 
                 }
-            </script> --}}
+            </script>
 
         </div>
     </div>
@@ -424,31 +434,27 @@
 <!--Why Choose One Start-->
 <section class="why-choose-one">
     <div class="why-choose-one__bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.webp')}});">
+        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.jpg')}});">
     </div>
     <div class="why-choose-one__shape-1 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
-            alt="about-one-shape-11.webp">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.png')}}" alt="about-one-shape-11.png">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}"
-            alt="about-one-shape-11.webp">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.png')}}" alt="about-one-shape-11.png">
     </div>
     <div class="why-choose-one__shape-3">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.webp')}}"
-            alt="about-one-shape-11.webp">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.png')}}" alt="about-one-shape-11.png">
     </div>
     <div class="why-choose-one__shape-4">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.webp')}}"
-            alt="about-one-shape-11.webp">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.png')}}" alt="about-one-shape-11.png">
     </div>
     <div class="why-choose-one__img-1 wow fadeInUp" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}"
-            alt="about-one-shape-11.webp">
+            alt="about-one-shape-11.png">
     </div>
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}"
-            alt="about-one-shape-11.webp">
+            alt="about-one-shape-11.png">
     </div>
     <div class="container">
         <div class="row">
@@ -468,7 +474,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-organic-food"></span>
                                 </div>
-                                <p class="why-choose-one__title">منتجات عضوية</p>
+                                <h4 class="why-choose-one__title">منتجات عضوية</h4>
 
                             </div>
                         </div>
@@ -501,13 +507,37 @@
                 <br>والمقالات
             </h2>
         </div>
-        <div class="news-one owl-carousel owl-theme thm-owl__carousel">
+        <div class=" owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
+            "loop": true,
+            "autoplay": true,
+            "margin": 30,
+            "nav": false,
+            "dots": false,
+            "smartSpeed": 500,
+            "autoplayTimeout": 1000,
+            "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+
+                "768": {
+                    "items": <?php (count($news) < 2) ? count($news): 2 ; ?>
+                },
+                "992": {
+                    "items": <?php (count($news) < 3) ? count($news): 3 ; ?>
+                },
+                "1200": {
+                    "items": <?php (count($news) < 3) ? count($news): 3 ; ?>
+                }
+            }
+        }'>
             @foreach ($news as $obj)
             <div class="news-one__single mx-2">
                 <div class="news-one__img-box">
                     <div class="news-one__img" style="height: 100%">
                         <img src="{{ asset('uploads/news') }}/{{ $obj->image }}" style="height: 450px"
-                            alt="about-one-shape-11.webp">
+                            alt="about-one-shape-11.png">
                     </div>
                 </div>
                 <div class="news-one__content-box">
@@ -541,95 +571,24 @@
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
     integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+{{-- <script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script> --}}
 
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
+   <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 <script>
-    $(document).ready(function(){
-    $(".partners-section .hot-product-three__carousel").owlCarousel({
-        loop: true,
-        autoplay: true,
-        margin: 30,
-        nav: false,
-        mouseDrag:false,
-        touchDrag:false,
-        pullDrag:false,
-        dots: false,
-        rtl:true,
-        smartSpeed: 1500,
-        autoplayTimeout: 1000,
-        navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-        responsive: {
-            "0": {
-                "items": 1
-            },
-            "768": {
-                "items": 3
-            },
-            "992": {
-                "items": 5
-            },
-            "1200": {
-                "items": 7
-            }
-        },
-        onInitialized: function() {
-            $('.hot-product-three__carousel').removeClass('pre-init');
-            $('.hot-product-three__carousel .hot-products__single').css('display', 'block');
-        }
-    });
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:4,
+  // items change number for slider display on desktop
 
-    $(".hot-products.owl-carousel").owlCarousel({
-        loop: true,
-        autoplay: true,
-        margin: 30,
-        nav: true,
-        dots: false,
-        rtl:true,
-        smartSpeed: 1500,
-        autoplayTimeout: 1000,
-        navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-        responsive: {
-            "0": {
-                "items": 1
-            },
-            "768": {
-                "items": 3
-            },
-            "992": {
-                "items": 4
-            },
-            "1200": {
-                "items": 5
-            }
-        }
-    });
-
-    $(".news-one.owl-carousel").owlCarousel({
-            loop: true,
-            autoplay: true,
-            margin: 30,
-            nav: false,
-            dots: false,
-            smartSpeed: 1500,
-            rtl:true,
-            autoplayTimeout: 1000,
-            navText: ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-            responsive: {
-                "0": {
-                    "items": 1
-                },
-                "768": {
-                    "items": {{ (count($news) < 2) ? count($news) : 2 }}
-                },
-                "992": {
-                    "items": {{ (count($news) < 3) ? count($news) : 3 }}
-                },
-                "1200": {
-                    "items": {{ (count($news) < 3) ? count($news) : 3 }}
-                }
-            }});
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
 });
 </script>
+
