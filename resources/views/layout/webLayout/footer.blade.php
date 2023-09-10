@@ -3,20 +3,25 @@
     <div class="container">
         <div class="subscribe-one__inner">
             <div class="subscribe-one__shape-1 float-bob-x">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-1.png')}}" alt="subscribe-one-shape">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-1.webp')}}"
+                    alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__shape-2 float-bob-y">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-2.png')}}" alt="subscribe-one-shape">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-2.webp')}}"
+                    alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__shape-4 float-bob-y">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-4.png')}}" alt="subscribe-one-shape">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-4.webp')}}"
+                    alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__shape-5 zoominout">
-                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-5.png')}}" alt="subscribe-one-shape">
+                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-5.webp')}}"
+                    alt="subscribe-one-shape">
             </div>
             <div class="subscribe-one__inner-content">
                 <div class="subscribe-one__shape-3 float-bob-x">
-                    <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-3.png')}}" alt="subscribe-one-shape">
+                    <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-3.webp')}}"
+                        alt="subscribe-one-shape">
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -24,7 +29,7 @@
 
                             <div class="subscribe-one__title-box">
                                 <div class="footer-widget__logo">
-                                    <a href="{{ url('/') }}"><img
+                                    <a title="gmal" href="{{ url('/') }}"><img
                                             src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
                                             alt="footer-logo"></a>
                                 </div>
@@ -34,7 +39,8 @@
                     <div class="col-md-6 text-center">
                         <div class="subscribe-one__right">
                             <div class="subscribe-one__shape-6 float-bob-x">
-                                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.png')}}" alt="footer-logo">
+                                <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.webp')}}"
+                                    alt="footer-logo">
                             </div>
                             <div class="subscribe-one__form-box">
 
@@ -52,17 +58,18 @@
 <!--Site Footer Start-->
 <footer class="site-footer">
     <div class="site-footer__bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/site-footer-bg-img.png')}});"></div>
+        style="background-image: url({{asset('webassets/assets/images/backgrounds/site-footer-bg-img.webp')}});"></div>
     <div class="site-footer__ripped-paper"
-        style="background-image: url({{asset('webassets/assets/images/shapes/site-footer-ripped-paper.png')}});"></div>
+        style="background-image: url({{asset('webassets/assets/images/shapes/site-footer-ripped-paper.webp')}});"></div>
     <div class="container">
         <div class="site-footer__top">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__logo">
-                            <a href="{{ url('/') }}"><img
-                                    src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}" alt="footer-logo"></a>
+                            <a title="gmal" href="{{ url('/') }}"><img
+                                    src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
+                                    alt="footer-logo"></a>
                         </div>
                         <div class="footer-widget__about-text-box">
                             <p class="footer-widget__about-text" style="word-spacing: 2px;">نحن نقدم
@@ -71,9 +78,11 @@
                         </div>
                         <div class="footer-widget__social-box">
                             {{-- <a href="#"><i class="fab fa-twitter"></i></a> --}}
-                            <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" target="_blank" title="facebook" ><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" target="_blank"
+                                title="facebook"><i class="fab fa-facebook"></i></a>
                             {{-- <a href="#"><i class="fab fa-pinterest-p"></i></a> --}}
-                            <a href="https://www.instagram.com/gamalgomaafarms/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" title="instagram" ><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/gamalgomaafarms/?igshid=MzRlODBiNWFlZA%3D%3D"
+                                target="_blank" title="instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -104,16 +113,18 @@
                         <ul class="list-unstyled footer-widget__contact-list">
                             <li>
                                 <div class="text">
-                                    <p style="direction: ltr"><a href="tel:{{$contact->phone}}">{{$contact->phone}} <i
+                                    <p style="direction: ltr"><a title="tel" href="tel:{{$contact->phone}}">{{$contact->phone}} <i
                                                 class="fas fa-phone px-1"></i></a></p>
-                                    <p style="direction: ltr"><a title="htel" href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i
+                                    <p style="direction: ltr"><a title="htel"
+                                            href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i
                                                 class="fas fa-phone px-1"></i></a></p>
 
                                 </div>
                             </li>
                             <li>
                                 <div class="text">
-                                    <p><a title="to" href="mailto:{{ $contact->email }} "><i class="fas fa-envelope px-1"></i>{{
+                                    <p><a title="to" href="mailto:{{ $contact->email }} "><i
+                                                class="fas fa-envelope px-1"></i>{{
                                             $contact->email }}</a></p>
                                 </div>
                             </li>
@@ -149,7 +160,9 @@
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
                         <div class="site-footer__bottom-left">
-                            <p class="site-footer__bottom-text"> حقوق الطبع والنشر © <script>document.write(new Date().getFullYear())</script>
+                            <p class="site-footer__bottom-text"> حقوق الطبع والنشر © <script>
+                                    document.write(new Date().getFullYear())
+                                </script>
                             </p>
                         </div>
 
@@ -192,9 +205,11 @@
         <div class="mobile-nav__top">
             <div class="mobile-nav__social">
                 {{-- <a href="#" class="fab fa-twitter"></a> --}}
-                <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" target="_blank" title="face" class="fab fa-facebook-square"></a>
+                <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" target="_blank" title="face"
+                    class="fab fa-facebook-square"></a>
                 {{-- <a href="#" class="fab fa-pinterest-p"></a> --}}
-                <a href="https://www.instagram.com/gamalgomaafarms/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" title="insta" class="fab fa-instagram"></a>
+                <a href="https://www.instagram.com/gamalgomaafarms/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                    title="insta" class="fab fa-instagram"></a>
             </div><!-- /.mobile-nav__social -->
         </div><!-- /.mobile-nav__top -->
 

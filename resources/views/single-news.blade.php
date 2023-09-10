@@ -1,63 +1,48 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="ar">
 
 <head>
-    <link rel="shortcut icon" href="{{ asset('img/logo.PNG') }}" type="image/x-icon">
+    <title>مزارع جمال جمعة: توريد منتجات زراعية طازجة وآمنة</title>
+    <link rel="shortcut icon" href="{{ asset('img/logo.webp') }}" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- facebook meta tags -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+    <meta property="og:title" content="مزارع جمال جمعة" />
     <meta property="og:description"
-        content="Gamal Gomaa Farms - مزارع جمال جمعة
-    تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="{{ url()->current() }}" />
 
     <meta property="og:url" content="http://farms-website.seniorsteps.net/" />
     <meta property="og:image"
-        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    <meta property="og:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+        content="{{ asset('webassets/assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.webp')}}"
+        alt="مزارع جمال جمعة: منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
+    <meta property="og:image:alt" content="مزارع جمال جمعة" />
     <meta property="og:site_name" content="farms-website.com" />
     <!-- twitter meta tags -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="farms-website.com">
     <meta name="twitter:creator" content="farms-website.com">
-    <meta name="twitter:title" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+    <meta name="twitter:title" content="مزارع جمال جمعة" />
     <meta name="twitter:description"
-        content="Gamal Gomaa Farms - مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta name="twitter:url" content="http://farms-website.seniorsteps.net/" />
     <meta name="twitter:image"
-        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.png" />
-    <meta property="twitter:image:alt" content="Gamal Gomaa Farms - مزارع جمال جمعة" />
+        content=href="assets/images/resources/232659713_204434118362200_47229516744215480_n_1-1-removebg-preview.webp" />
+    <meta property="twitter:image:alt" content="مزارع جمال جمعة" />
     <!-- general meta tags  -->
     <meta name="canonical_tag" content="http://farms-website.seniorsteps.net/" />
     <meta name="title"
-        content="Gamal Gomaa Farms - مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta name="description"
-        content="Gamal Gomaa Farms - مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta name="image"
-        content="Gamal Gomaa Farms - مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
+        content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
     <meta property="image:alt"
-        content="Gamal Gomaa Farms - مزارع جمال جمعة
-        تأسست الشركة بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية.
-
-تأسست الشركة بهدف استجابة منا لشغفنا بالتجديد المستمر واحترامنا للبيئة، نراهن على التكنولوجيات الحديثة التي تسهل أن نضع في السوق منتجات تتسم بالجودة الممتازة وتمت تعبئتها تحت إشراف صارم ويتم توريدها" />
-    <meta name="keywords"
-        content="Farms مزارع جمال خضار  vegetable market سوبر ماركت  farmers union مزارعين بصل potato farm بطاطس مزارع بساتين organic farms near me experience   " />
+        content="مزارع جمال جمعة تأسست بهدف إنتاج وتوريد منتجات البساتين الطازجة ذات الجودة الممتازة والآمنة والصحية والتي تتسم بالاستدامة لعملائنا طوال السنة بأسعار تتسم بالتنافسية العالية. توفر مزارع جمال جمعة منتجات زراعية طازجة وآمنة ومتطورة لعملائها." />
+    <meta name="keywords" content=" مزارع جمال خضار   سوبر ماركت   مزارعين بصل بطاطس مزارع بساتين  " />
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title> Gamal Gomaa Farms - مزارع جمال جمعة </title>
@@ -73,17 +58,29 @@
         href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/bootstrap/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/animate/animate.min.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css"
+        integrity="sha512-NZ19NrT58XPK5sXqXnnvtf9T5kLXSzGQlVZL9taZWeTBtXoN3xIfTdxbkQh6QSoJfJgpojRqMfhyqBAAEeiXcA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css"
+        integrity="sha512-N1pZGwfHKJQyWCPTZu7hYPWAb2zKS0yYCHsGXb3Mnnb0CWQlT8kukIsw4OQAmA1ZJtDCg0zyNWXF7yJ3qQewOw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{asset('webassets/assets/vendors/animate/custom-animate.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/fontawesome/css/all.min.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="{{asset('webassets/assets/vendors/ogenix-icons/style.css')}}">
 
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
-
-    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/jquery-ui/jquery-ui.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{--
+    <link rel="stylesheet" href="{{asset('webassets/assets/vendors/jquery-ui/jquery-ui.css')}}" /> --}}
 
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
@@ -186,6 +183,7 @@
                 "margin": 30,
                 "nav": false,
                 "dots": false,
+                "rtl":true,
                 "smartSpeed": 500,
                 "autoplayTimeout": 2000,
                 "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
@@ -229,12 +227,13 @@
 <!--Blog One End-->
 @endsection
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-<script async src="{{asset('webassets/assets/vendors/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
-
-<script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
-
-<script async src="{{asset('webassets/assets/vendors/jquery-ui/jquery-ui.js')}}"></script>
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
+    integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script>
