@@ -1,6 +1,6 @@
 
 		<link rel="canonical" href="https://preview.keenthemes.com/craft" />
-		<link rel="shortcut icon" href="{{ asset('img/logo.PNG') }}" />
+		<link rel="shortcut icon" href="{{ asset('img/logo.webp') }}" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700" />
 		<!--end::Fonts-->

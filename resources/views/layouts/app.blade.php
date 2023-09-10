@@ -35,7 +35,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
 
-                   <img alt="Logo" src="{{ asset('img/logo.PNG') }}" class="max-h-50px logo-default "
+                   <img alt="Logo" src="{{ asset('img/logo.webp') }}" class="max-h-50px logo-default "
                     style="height: 120px" />
                 </a>
                 <div class="row" style="width: 70%">
