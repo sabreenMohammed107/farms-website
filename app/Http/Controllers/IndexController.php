@@ -20,8 +20,8 @@ class IndexController extends Controller
         $homedata=Home_page::firstOrFail();
         $about=About_us::firstOrFail();
         $customers=Customer::get();
-        $products=Product::get();
-        $news=Website_new::get();
+        $products=Product::inRandomOrder()->take(10)->get();
+        $news=Website_new::orderBy('created_at', 'desc')->take(6)->get();
         return view('index', get_defined_vars());
     }
     public function about(){
