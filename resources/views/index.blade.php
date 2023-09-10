@@ -438,28 +438,33 @@
     </div>
 </section>
 <!--Hot Products End-->
-<!--Why Choose One Start-->
 <section class="why-choose-one">
     <div class="why-choose-one__bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.jpg')}});">
+        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.webp')}});">
     </div>
     <div class="why-choose-one__shape-1 float-bob-y">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}" alt="">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}" alt="">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-3">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.webp')}}" alt="">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-4">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.webp')}}" alt="">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__img-1 wow fadeInUp" data-wow-duration="1500ms">
-        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}" alt="">
+        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
-        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}" alt="">
+        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}"
+            alt="about-one-shape-11.webp">
     </div>
     <div class="container">
         <div class="row">
@@ -479,7 +484,7 @@
                                 <div class="why-choose-one__icon">
                                     <span class="icon-organic-food"></span>
                                 </div>
-                                <h4 class="why-choose-one__title" >منتجات عضوية</h4>
+                                <p class="why-choose-one__title">منتجات عضوية</p>
 
                             </div>
                         </div>
