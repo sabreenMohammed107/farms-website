@@ -13,6 +13,7 @@ use App\Models\Website_job;
 use App\Models\Website_new;
 use Illuminate\Http\Request;
 
+
 class IndexController extends Controller
 {
     //
