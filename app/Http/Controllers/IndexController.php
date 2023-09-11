@@ -12,7 +12,10 @@ use App\Models\Tag;
 use App\Models\Website_job;
 use App\Models\Website_new;
 use Illuminate\Http\Request;
-
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Throwable;
 
 class IndexController extends Controller
 {
@@ -35,19 +38,39 @@ class IndexController extends Controller
         return view('products', get_defined_vars());
     }
 public function singleProduct($id){
-    $product=Product::where('id','=',$id)->firstOrFail();
+
+    try {
+        $product=Product::where('id','=',$id)->firstOrFail();
     $galleries=Product_image::where('product_id','=',$id)->get();
     $tags=Tag::where('type','=','1')->get();
     $otherProducts=Product::where('id','!=',$id)->inRandomOrder()->take(10)->get();
     return view('single-product', get_defined_vars());
+    } catch (ModelNotFoundException $e) {
+
+        return redirect('/products');
+    }
 }
 
 public function singleNews($id){
-    $row=Website_new::where('id','=',$id)->firstOrFail();
 
-    $tags=Tag::where('type','!=','1')->get();
-    $otherNews=Website_new::where('id','!=',$id)->take(6)->orderBy("created_at", "desc")->get();
-    return view('single-news', get_defined_vars());
+    try {
+        $row=Website_new::where('id','=',$id)->firstOrFail();
+
+        $tags=Tag::where('type','!=','1')->get();
+        $otherNews=Website_new::where('id','!=',$id)->take(6)->orderBy("created_at", "desc")->get();
+        return view('single-news', get_defined_vars());
+    } catch (ModelNotFoundException $e) {
+        // $redirect_available = SettingRedirect::where('deleted_link', Request::url())->first();
+        // if ($redirect_available)
+        //     return redirect($redirect_available->redirect_link);
+
+        // throw $e;
+        return redirect('/news');
+    }
+
+
+
+
 }
     public function contact(){
         return view('contact', get_defined_vars());
