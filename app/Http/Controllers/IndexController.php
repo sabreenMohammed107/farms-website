@@ -35,7 +35,7 @@ class IndexController extends Controller
         return view('products', get_defined_vars());
     }
 public function singleProduct($id){
-    $product=Product::where('id','=',$id)->first();
+    $product=Product::where('id','=',$id)->firstOrFail();
     $galleries=Product_image::where('product_id','=',$id)->get();
     $tags=Tag::where('type','=','1')->get();
     $otherProducts=Product::where('id','!=',$id)->inRandomOrder()->take(10)->get();
@@ -43,7 +43,7 @@ public function singleProduct($id){
 }
 
 public function singleNews($id){
-    $row=Website_new::where('id','=',$id)->first();
+    $row=Website_new::where('id','=',$id)->firstOrFail();
 
     $tags=Tag::where('type','!=','1')->get();
     $otherNews=Website_new::where('id','!=',$id)->take(6)->orderBy("created_at", "desc")->get();
