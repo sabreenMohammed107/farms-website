@@ -76,6 +76,40 @@
                                         @enderror
 
                                     </div>
+  <!--begin::Input group-->
+  <div class="mb-10 fv-row">
+    <!--begin::Label-->
+    <label class=" form-label"> تاريخ إعلان الوظيفة</label>
+    <!--end::Label-->
+    <!--begin::Input-->
+    <input class="form-control  form-control-solid dPick @error('start_date') is-invalid @enderror" name="start_date"
+        value="{{ old('start_date') }}" placeholder=" تاريخ الإعلان" id="kt_datepicker_3" />
+        @error('start_date')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
+
+</div>
+<!--end::Input-->
+<!--begin::Input group-->
+<div class="mb-10 fv-row">
+    <!--begin::Label-->
+    <label class=" form-label"> تاريخ إنتهاء إعلان الوظيفة</label>
+    <!--end::Label-->
+    <!--begin::Input-->
+    <input class="form-control  form-control-solid dPick @error('end_date') is-invalid @enderror" name="end_date"
+        value="{{ old('end_date') }}" placeholder="تاريخ الإنتهاء " id="kt_datepicker_4" />
+        @error('end_date')
+        <span class="invalid-feedback" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+
+
+</div>
+<!--end::Input-->
 
 
                                     <div class="mb-10 fv-row">
@@ -133,4 +167,13 @@
         <!--end::Container-->
     </div>
     <!--end::Post-->
+@endsection
+@section('scripts')
+    <script>
+        $(document).ready(function() {
+            $(".dPick").flatpickr();
+            $("#kt_datepicker_3").flatpickr();
+            $("#kt_datepicker_4").flatpickr();
+        });
+    </script>
 @endsection

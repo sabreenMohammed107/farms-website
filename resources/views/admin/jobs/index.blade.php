@@ -104,6 +104,12 @@
                                 <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
                                     rowspan="1" colspan="1" aria-label="الوظيفة: activate to sort column ascending">
                                    الوظيفة</th>
+                                   <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
+                                   rowspan="1" colspan="1" aria-label="الوظيفة: activate to sort column ascending">
+                                  تاريخ الإعلان</th>
+                                  <th class="min-w-150px sorting" tabindex="0" aria-controls="kt_ecommerce_category_table"
+                                  rowspan="1" colspan="1" aria-label="الوظيفة: activate to sort column ascending">
+                                 تاريخ الإنتهاء</th>
 
                                 {{-- <th class="text-end min-w-70px sorting sorting_desc" tabindex="0"
                                     aria-controls="kt_ecommerce_category_table" rowspan="1" colspan="1"
@@ -150,7 +156,12 @@
                                         </div>
                                     </td>
                                     <!--end::Category=-->
-
+                                    <td class="text-start pe-0">
+                                       <span>{{ $row->start_date }}</span>
+                                    </td>
+                                    <td class="text-start pe-0">
+                                        <span>{{ $row->end_date }}</span>
+                                     </td>
                                     <!--end::SKU=-->
                                     <!--begin::Qty=-->
                                     {{-- <td class="text-end ">
@@ -269,7 +280,27 @@
 
                                                     </div>
 
+                                                    <div class=" mb-8 row">
+                                                        <div class="col-md-12">
+                                                            <!--begin::Label-->
+                                                            <label for="details"
+                                                                class=" col-form-label text-md-end">تاريخ الإعلان :</label>
+                                                            <span>  {{ $row->start_date }}</span>
+                                                            <!--end::Label-->
+                                                        </div>
 
+                                                    </div>
+
+                                                    <div class=" mb-8 row">
+                                                        <div class="col-md-12">
+                                                            <!--begin::Label-->
+                                                            <label for="details"
+                                                                class=" col-form-label text-md-end">تاريخ الإنتهاء :</label>
+                                                            <span>  {{ $row->end_date }}</span>
+                                                            <!--end::Label-->
+                                                        </div>
+
+                                                    </div>
 
                                                     <!--begin::Actions-->
                                                     <div class="text-center">

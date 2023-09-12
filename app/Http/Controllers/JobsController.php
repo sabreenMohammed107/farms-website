@@ -48,10 +48,15 @@ class JobsController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'email' => 'required',
+            'start_date' => 'required|date',
+            'end_date' => 'required|date|after:start_date',
 
         ], [
             'title.required' => 'حقل الوظيفة مطلوب',
             'email.required' => 'حقل البريد الإلكتروني مطلوب',
+            'start_date.required' => 'حقل تاريخ الإعلان مطلوب',
+            'end_date.required' => 'حقل إنتهاء تاريخ الإعلان مطلوب',
+            'end_date.after' => 'حقل إنتهاء تاريخ الإعلان يجب ان يكون بعد تاريخ بدء الإعلان',
 
         ]);
         $input = $request->except(['_token']);
@@ -85,10 +90,14 @@ class JobsController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'email' => 'required',
-
+            'start_date' => 'required|date',
+            'end_date' => 'required|date|after:start_date',
         ], [
             'title.required' => 'حقل الوظيفة مطلوب',
             'email.required' => 'حقل البريد الإلكتروني مطلوب',
+            'start_date.required' => 'حقل تاريخ الإعلان مطلوب',
+            'end_date.required' => 'حقل إنتهاء تاريخ الإعلان مطلوب',
+            'end_date.after' => 'حقل إنتهاء تاريخ الإعلان يجب ان يكون بعد تاريخ بدء الإعلان',
         ]);
         $input = $request->except(['_token']);
 

@@ -13,5 +13,7 @@ class Website_job extends Model
         'title',
         'details',
         'email',
+        'start_date',
+        'end_date',
     ];
 }
