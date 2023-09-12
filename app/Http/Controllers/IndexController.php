@@ -80,12 +80,12 @@ public function singleNews($id){
         return view('services', get_defined_vars());
     }
       public function news(){
-        $rows=Website_new::get();
+        $rows=Website_new::orderBy("start_date", "desc")->get();
         return view('news', get_defined_vars());
     }
 
     public function jobs(){
-        $jobs=Website_job::get();
+        $jobs=Website_job::orderBy("start_date", "desc")->get();
         return view('jobs', get_defined_vars());
     }
 
