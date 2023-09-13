@@ -88,21 +88,18 @@
 
 
 
-    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
-        rel="stylesheet">
-    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css"
-        rel="stylesheet">
+        <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
 <style>
-    .pre-init {
+    .pre-init .hot-products__single {
         display: none;
     }
-
-    .owl-carousel {
-        direction: ltr !important;
-    }
+    .owl-carousel{
+ direction: ltr !important;
+}
 </style>
 
 </script>
@@ -274,8 +271,8 @@
                 <a title="clients" href="#">عملاؤنا الحالين</a>
             </h2>
         </div>
-        <div class="hot-products__inner list-unstyled pre-init hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
-            data-owl-options='{
+        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
+        data-owl-options='{
         "loop": true,
         "autoplay": true,
         "margin": 30,
@@ -385,7 +382,7 @@
                 <a title="pro" href="{{ url('/products') }}">كل المنتجات </a>
             </h2>
         </div>
-        <div class="hot-products__inner list-unstyled pre-init hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
+        <div class="hot-products__inner list-unstyled hot-product-three__carousel owl-carousel owl-theme thm-owl__carousel"
             data-owl-options='{
             "loop": true,
             "autoplay": true,
@@ -520,7 +517,7 @@
                 <br>والمقالات
             </h2>
         </div>
-        <div class=" owl-carousel pre-init owl-theme thm-owl__carousel" data-owl-options='{
+        <div class=" owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
             "loop": true,
             "autoplay": true,
             "margin": 30,
@@ -586,11 +583,11 @@
 
 <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
 </script>
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
-</script>
-<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
+ <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+   </script>
+   <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 <script>
-    var owl = $('.owl-carousel');
+var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:4,
   // items change number for slider display on desktop
@@ -599,11 +596,7 @@ owl.owlCarousel({
     margin:10,
     autoplay:true,
     autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    onInitialized: function() {
-            $('.hot-product-three__carousel').removeClass('pre-init');
-            $('.hot-product-three__carousel .hot-products__single').css('display', 'block');
-        }
+    autoplayHoverPause:true
 });
 
 </script>
