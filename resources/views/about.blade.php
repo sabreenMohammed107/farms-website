@@ -77,7 +77,7 @@
 @section('content')
 <section class="page-header">
     <div class="page-header-bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/div.hero-section.webp')}})">
+        style="background-image: url({{asset('webassets/assets/images/backgrounds/47.hero.jpg')}})">
     </div>
     <div class="container">
         <div class="page-header__inner">

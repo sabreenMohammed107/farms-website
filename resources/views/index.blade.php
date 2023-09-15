@@ -160,6 +160,7 @@
                 <div class="main-slider__shape-8 float-bob-x">
                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-8.webp')}}"
                         alt="main-slider-shape-8.webp">
+
                 </div>
                 <div class="main-slider__img-one">
                     <img src="{{asset('webassets/assets/images/resources/main-slider-img-1.webp')}}"
