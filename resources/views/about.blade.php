@@ -275,9 +275,9 @@
                         <div class="about-us-one__shape-10 float-bob-x">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-10.webp')}}" alt="">
                         </div>
-                        <div class="about-us-one__img">
+                        {{-- <div class="about-us-one__img">
                             <img src="{{asset('webassets/assets/images/resources/about-one-img-1.webp.webp')}}" alt="">
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
