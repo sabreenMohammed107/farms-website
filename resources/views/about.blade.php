@@ -276,7 +276,7 @@
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-10.webp')}}" alt="">
                         </div>
                         <div class="about-us-one__img">
-                            <img src="{{asset('webassets/assets/images/backgrounds/47.hero.jpg')}}" alt="">
+                            <img src="{{asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="">
                         </div>
 
                     </div>
