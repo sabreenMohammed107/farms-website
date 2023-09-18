@@ -535,13 +535,13 @@
                     "items": 1
                 },
                 "768": {
-                    "items": <?php (count($news) < 2) ? count($news): 2 ; ?>
+                    "items": 3
                 },
                 "992": {
-                    "items": <?php (count($news) < 3) ? count($news): 3 ; ?>
+                    "items": 4
                 },
                 "1200": {
-                    "items": <?php (count($news) < 3) ? count($news): 3 ; ?>
+                    "items": 5
                 }
             }
         }'>
