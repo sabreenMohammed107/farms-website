@@ -174,9 +174,7 @@
                                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.webp')}}"
                                         alt="main-slider-shape-9.webp">
                                 </div>
-                                <h4 class="main-slider__sub-title"><span><img
-                                            src="{{asset('webassets/assets/images/shapes/1.webp.webp')}}"
-                                            class="main-slider__sub-title__icn" alt="1.webp.webp" srcset=""></span>
+                                <h4 class="main-slider__sub-title">
                                     {!! $homedata->title !!}</h4>
                                 <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
                                 <div class="main-slider__btn-box">

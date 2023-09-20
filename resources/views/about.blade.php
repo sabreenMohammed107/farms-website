@@ -223,7 +223,7 @@
 <!--Why Choose One End-->
 
 <!--About One Start-->
-<section class="about-us-one">
+<section class="about-us-one cust-about">
     <div class="about-us-one__shape-11 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
     </div>
@@ -276,7 +276,7 @@
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-10.webp')}}" alt="">
                         </div>
                         <div class="about-us-one__img">
-                            <img src="{{asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="">
+                            <img src="{{asset('webassets/assets/images/resources/about-us-vig.webp')}}" alt="">
                         </div>
 
                     </div>

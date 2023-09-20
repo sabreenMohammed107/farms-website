@@ -73,7 +73,7 @@
                         </div>
                         <div class="footer-widget__about-text-box">
                             <p class="footer-widget__about-text" style="word-spacing: 2px;">نحن نقدم
-                                <br> منتجات جديدة وعالية الجودة كل يوم
+                                <br> منتجات طازجة وعالية الجودة
                             </p>
                         </div>
                         <div class="footer-widget__social-box">
@@ -113,7 +113,8 @@
                         <ul class="list-unstyled footer-widget__contact-list">
                             <li>
                                 <div class="text">
-                                    <p style="direction: ltr"><a title="tel" href="tel:{{$contact->phone}}">{{$contact->phone}} <i
+                                    <p style="direction: ltr"><a title="tel"
+                                            href="tel:{{$contact->phone}}">{{$contact->phone}} <i
                                                 class="fas fa-phone px-1"></i></a></p>
                                     <p style="direction: ltr"><a title="htel"
                                             href="tel:{{$contact->mobile}}">{{$contact->mobile}} <i
