@@ -103,6 +103,16 @@
     .owl-carousel {
         direction: ltr !important;
     }
+    .banner-one__img-1 {
+    position: absolute;
+    top: -139px;
+    transform: rotate(28deg);
+    left: -86px;
+    -moz-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+    -webkit-transform: rotate(28deg);
+}
 </style>
 
 </script>
@@ -174,6 +184,7 @@
                                     <img src="{{asset('webassets/assets/images/shapes/main-slider-shape-9.webp')}}"
                                         alt="main-slider-shape-9.webp">
                                 </div>
+                                <h4 class="main-slider__sub-title">
                                 <h4 class="main-slider__sub-title"><span>
 
                                     {!! $homedata->title !!}</h4>
@@ -348,7 +359,7 @@
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
                         <div class="banner-one__img-1">
-                            <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="">
+                            <img src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="">
                         </div>
 
                         <div class="banner-one__shape-2">
@@ -443,9 +454,9 @@
 <!--Hot Products End-->
 <section class="why-choose-one">
     <div class="why-choose-one__bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.webp')}});">
+        style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y">
+    {{-- <div class="why-choose-one__shape-1 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
             alt="about-one-shape-11.webp">
     </div>
@@ -468,20 +479,20 @@
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}"
             alt="about-one-shape-11.webp">
-    </div>
+    </div> --}}
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-8">
+            <div class="col-xl-6 col-lg-8 ">
                 <div class="why-choose-one__left">
                     <div class="section-title text-left">
                         <span class="section-title__tagline">لماذا تختار
                             <span class="inside-section-title">
                                 {!!$homedata ->why_us_title !!}</span></span>
 
-                        <h2 class="section-title__title">
+                        <h2 class="section-title__title " style="margin-bottom: 150px !important">
                             {!! $homedata ->why_us_details !!}</h2>
                     </div>
-                    <div class="row">
+                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 ">
                             <div class="why-choose-one__single">
                                 <div class="why-choose-one__icon">

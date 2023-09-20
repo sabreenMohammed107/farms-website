@@ -2717,7 +2717,7 @@ ul {
 .about-one__shape-7,
 .about-us-one__shape-7 {
     position: absolute;
-    left: 10px;
+    left: -10%;
     bottom: -50px;
     z-index: -1;
 }
@@ -3013,13 +3013,13 @@ ul {
 }
 .banner-one__img-1 {
     position: absolute;
-    top: -59px;
-    transform: rotate(45deg);
-    left: -50px;
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    top: -209px;
+    transform: rotate(28deg);
+    left: 3px;
+    -moz-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+    -webkit-transform: rotate(28deg);
 }
 .banner-one__shape-1,
 .banner-one__shape-2 {
@@ -3337,13 +3337,13 @@ why-choose-one__img-1 {
     border: 16px solid #fff;
     border-radius: 60px;
     position: absolute;
-    top: -830px;
-    left: -40px;
+    top: -68%;
+    left: 7%;
 }
 .why-choose-one__img-2 {
     position: absolute;
-    top: 386px;
-    left: -40px;
+    top: 66%;
+    left: 7%;
     z-index: -1;
 }
 .why-choose-one__img-2 img {
@@ -10115,12 +10115,12 @@ svg[class*="right"] {
 .about-us-one__shape-4 {
     position: absolute;
     left: 28px;
-    top: 140px;
-    z-index: -1;
+    top: 511px;
+    z-index: 8;
 }
 .about-us-one__shape-8 {
     position: absolute;
-    right: 0;
+    right: 15%;
     top: 256px;
     z-index: -1;
 }
@@ -10128,7 +10128,7 @@ svg[class*="right"] {
     position: absolute;
     left: -70px;
     top: -14px;
-    z-index: -1;
+    z-index: 7;
 }
 .about-us-one__img {
     position: relative;
@@ -10138,8 +10138,9 @@ svg[class*="right"] {
 .about-us-one__img img {
     height: 490px;
     position: absolute;
-    right: -127px;
-    top: 0;
+    right: 37%;
+    top: 46px;
+    z-index: 6;
 }
 .about-us-one__experience-icon {
     position: relative;
@@ -10387,4 +10388,8 @@ svg[class*="right"] {
     height: fit-content;
     width: 245px;
     mix-blend-mode: luminosity;
+}
+
+.about-us-one.cust-about {
+    min-height: 793px !important;
 }

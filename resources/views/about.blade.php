@@ -112,7 +112,7 @@ text-decoration: underline
         <div class="page-header__inner page-header-bg" style="    width: 50%;
         margin: auto;padding:50px 0;">
 
-            <ul class="thm-breadcrumb list-unstyled" style="padding: 40px 0 ">
+            <ul class="thm-breadcrumb list-unstyled" >
                 <li>
                     <h1 style="color: #fff;">من نحن
                     </h1>
@@ -197,9 +197,9 @@ text-decoration: underline
 
 <section class="why-choose-one about-us">
     <div class="why-choose-one__bg"
-        style="background-image: url({{asset('webassets/assets/images/backgrounds/why-choose-one-bg.webp')}});">
+        style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y">
+    {{-- <div class="why-choose-one__shape-1 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}" alt="">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">
@@ -216,7 +216,7 @@ text-decoration: underline
     </div>
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}" alt="">
-    </div>
+    </div> --}}
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-8">
@@ -258,7 +258,7 @@ text-decoration: underline
 <!--Why Choose One End-->
 
 <!--About One Start-->
-<section class="about-us-one">
+<section class="about-us-one cust-about">
     <div class="about-us-one__shape-11 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
     </div>
@@ -311,7 +311,7 @@ text-decoration: underline
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-10.webp')}}" alt="">
                         </div>
                         <div class="about-us-one__img">
-                            <img src="{{asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="">
+                            <img src="{{asset('webassets/assets/images/resources/about-us-vig.webp')}}" alt="">
                         </div>
 
                     </div>
