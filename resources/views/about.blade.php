@@ -190,7 +190,8 @@
             <div class="col-xl-6 col-lg-8">
                 <div class="why-choose-one__left">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline" style="color: var(--ogenix-primary);">لماذا تختار <span class="inside-section-title">{!!$homedata
+                        <span class="section-title__tagline" style="color: var(--ogenix-primary);">لماذا تختار <span
+                                class="inside-section-title">{!!$homedata
                                 ->why_us_title !!}</span></span>
 
                         <h2 class="section-title__title"> {!! $homedata ->why_us_details !!} </h2>
@@ -226,7 +227,7 @@
 <!--Why Choose One End-->
 
 <!--About One Start-->
-<section class="about-us-one cust-about" style="    min-height: auto !important;margin-bottom: 5px;
+<section class="about-us-one cust-about" style="margin-bottom: 5px;
 ">
     {{-- <div class="about-us-one__shape-11 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
@@ -249,21 +250,22 @@
 
             <div class="col-xl-6">
                 <div class="about-us-one__left">
-                    <div class="col-12 col-lg-3 service-image w-100" >
-                        <img class="w-100" style="opacity: 0.7;transform: rotate(45deg);" src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="" srcset="">
-                    </div>
-                    {{-- <div class="about-us-one__img-box wow slideInLeft" data-wow-delay="100ms"
+                    {{-- <div class="col-12 col-lg-3 service-image w-100">
+                        <img class="w-100" style="opacity: 0.7;transform: rotate(45deg);"
+                            src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="" srcset="">
+                    </div> --}}
+                    <div class="about-us-one__img-box wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
 
                         <div class="about-us-one__shape-1">
-                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.webp')}}" alt="">
+                            <img src="{{asset('webassets/assets/images/resources/39.jpg')}}" alt="">
                         </div>
-                         <div class="about-us-one__shape-2">
+                        <div class="about-us-one__shape-2">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.webp')}}" alt="">
                         </div>
-                        <div class="about-us-one__shape-3">
+                        {{-- <div class="about-us-one__shape-3">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-3.webp')}}" alt="">
-                        </div>
+                        </div> --}}
                         <div class="about-us-one__shape-4 float-bob-y">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-4.webp')}}" alt="">
                         </div>
@@ -283,11 +285,11 @@
                         <div class="about-us-one__shape-10 float-bob-x">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-10.webp')}}" alt="">
                         </div>
-                        <div class="about-us-one__img">
+                        {{-- <div class="about-us-one__img">
                             <img src="{{asset('webassets/assets/images/resources/about-us-vig.webp')}}" alt="">
-                        </div>
+                        </div> --}}
 
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </div>
