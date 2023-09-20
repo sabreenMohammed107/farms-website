@@ -190,7 +190,7 @@
             <div class="col-xl-6 col-lg-8">
                 <div class="why-choose-one__left">
                     <div class="section-title text-left">
-                        <span class="section-title__tagline">لماذا تختار <span class="inside-section-title">{!!$homedata
+                        <span class="section-title__tagline" style="color: var(--ogenix-primary);">لماذا تختار <span class="inside-section-title">{!!$homedata
                                 ->why_us_title !!}</span></span>
 
                         <h2 class="section-title__title"> {!! $homedata ->why_us_details !!} </h2>
