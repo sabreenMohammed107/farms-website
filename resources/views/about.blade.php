@@ -72,22 +72,57 @@
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
+<style>
+.page-header-bg1{
+    top: 0;
+    background-position: center;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-header-bg:before {
+    content: "";
+    top: 0;
+    background: linear-gradient(
+        0deg,
+        rgb(0 0 0 / 35%) 0,
+        rgba(0, 0, 0, 0.24) 100%
+    );
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+.thm-breadcrumb li a:hover {
+color: #fff;
+text-decoration: underline
+}
+    </style>
 @extends('layout.webLayout.main')
 
 @section('content')
 <section class="page-header">
-    <div class="page-header-bg"
+    <div class="page-header-bg1"
         style="background-image: url({{asset('webassets/assets/images/backgrounds/47.hero.jpg')}})">
     </div>
     <div class="container">
-        <div class="page-header__inner">
-            <h1>من نحن
-            </h1>
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a title="main" href="{{ url('/') }}">الرئيسية
+        <div class="page-header__inner page-header-bg" style="    width: 50%;
+        margin: auto;padding:50px 0;">
+
+            <ul class="thm-breadcrumb list-unstyled" style="padding: 40px 0 ">
+                <li>
+                    <h1 style="color: #fff;">من نحن
+                    </h1>
+                </li>
+                <br>
+
+                <li><a title="main" href="{{ url('/') }}" style="font-size: 16px">الرئيسية
                     </a></li>
-                <li><span>/</span></li>
-                <li>من نحن
+                <li><span >/</span></li>
+                <li  style="font-size: 16px">من نحن
                 </li>
             </ul>
 

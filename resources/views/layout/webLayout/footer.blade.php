@@ -56,6 +56,16 @@
 </section>
 <!--Subscribe One End-->
 <!--Site Footer Start-->
+<style>
+    @media (max-width: 800px) {
+        .footer-widget__about{
+            text-align: center;
+        }
+
+        .footer-widget__social-box{
+            justify-content: center;        }
+    }
+    </style>
 <footer class="site-footer">
     <div class="site-footer__bg"
         style="background-image: url({{asset('webassets/assets/images/backgrounds/site-footer-bg-img.webp')}});"></div>
@@ -65,7 +75,7 @@
         <div class="site-footer__top">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="footer-widget__column footer-widget__about">
+                    <div class="footer-widget__column footer-widget__about" >
                         <div class="footer-widget__logo">
                             <a title="gmal" href="{{ url('/') }}"><img
                                     src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
@@ -73,10 +83,10 @@
                         </div>
                         <div class="footer-widget__about-text-box">
                             <p class="footer-widget__about-text" style="word-spacing: 2px;">نحن نقدم
-                                <br> منتجات جديدة وعالية الجودة كل يوم
+                                <br> منتجات طازجة وعالية الجودة كل يوم
                             </p>
                         </div>
-                        <div class="footer-widget__social-box">
+                        <div class="footer-widget__social-box" >
                             {{-- <a href="#"><i class="fab fa-twitter"></i></a> --}}
                             <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" target="_blank"
                                 title="facebook"><i class="fab fa-facebook"></i></a>
