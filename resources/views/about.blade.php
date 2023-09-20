@@ -226,11 +226,11 @@
 <!--Why Choose One End-->
 
 <!--About One Start-->
-<section class="about-us-one cust-about" style="    min-height: auto;
+<section class="about-us-one cust-about" style="    min-height: auto;margin-bottom: 5px;
 ">
-    <div class="about-us-one__shape-11 float-bob-y">
+    {{-- <div class="about-us-one__shape-11 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
-    </div>
+    </div> --}}
     <div class="container">
         <div class="row">
 
