@@ -232,6 +232,7 @@
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
     </div> --}}
     <div class="container">
+
         <div class="row">
 
             <div class="col-xl-6">
@@ -248,9 +249,8 @@
 
             <div class="col-xl-6">
                 <div class="about-us-one__left">
-                    <div class="col-12 col-lg-3 service-image" style="">
-                        <img style="max-height: 360px;
-                        transform: rotate(45deg);" src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="" srcset="">
+                    <div class="col-12 col-lg-3 service-image w-100" >
+                        <img class="w-100" style="opacity: 0.7;transform: rotate(45deg);" src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="" srcset="">
                     </div>
                     {{-- <div class="about-us-one__img-box wow slideInLeft" data-wow-delay="100ms"
                         data-wow-duration="2500ms">
