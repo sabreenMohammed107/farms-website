@@ -362,9 +362,9 @@
                             <img src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="">
                         </div>
 
-                        <div class="banner-one__shape-2">
+                        {{-- <div class="banner-one__shape-2">
                             <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.webp')}}" alt="">
-                        </div>
+                        </div> --}}
                         <div class="banner-one__shape-3">
                             <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.webp')}}" alt="">
                         </div>

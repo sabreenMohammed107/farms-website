@@ -84,7 +84,6 @@
                         <div class="footer-widget__about-text-box">
                             <p class="footer-widget__about-text" style="word-spacing: 2px;">نحن نقدم
                                 <br> منتجات طازجة وعالية الجودة كل يوم
-                                <br> منتجات طازجة وعالية الجودة
                             </p>
                         </div>
                         <div class="footer-widget__social-box" >
