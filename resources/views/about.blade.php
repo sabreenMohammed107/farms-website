@@ -258,7 +258,7 @@
                         data-wow-duration="2500ms">
 
                         <div class="about-us-one__shape-1">
-                            <img src="{{asset('webassets/assets/images/resources/39.jpg')}}" alt="">
+                            <img src="{{asset('webassets/assets/images/resources/xG.GomaaFarms-47.jpg')}}" alt="">
                         </div>
                         <div class="about-us-one__shape-2">
                             <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.webp')}}" alt="">
