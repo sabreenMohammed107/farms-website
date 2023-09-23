@@ -72,30 +72,30 @@
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
 
-        </style>
-    @extends('layout.webLayout.main')
+</style>
+@extends('layout.webLayout.main')
 
-    @section('content')
-    <section class="page-header">
-        <div class="page-header-bg"
-            style="background-image: url({{ asset('webassets/assets/images/backgrounds/47.hero.jpg') }})">
+@section('content')
+<section class="page-header">
+    <div class="page-header-bg"
+        style="background-image: url({{ asset('webassets/assets/images/backgrounds/47.hero.jpg') }})">
+    </div>
+
+    <div class="container">
+        <div class="page-header__inner">
+            <h3>تواصل معنا
+            </h3>
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a title="home" href="{{ url('/') }}">الرئيسية
+                    </a></li>
+                <li><span>/</span></li>
+                <li>تواصل معنا
+                </li>
+            </ul>
+
         </div>
-
-        <div class="container">
-            <div class="page-header__inner">
-                <h3>تواصل معنا
-                </h3>
-                <ul class="thm-breadcrumb list-unstyled">
-                    <li><a title="home" href="{{ url('/') }}">الرئيسية
-                        </a></li>
-                    <li><span>/</span></li>
-                    <li>تواصل معنا
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
 <div class="stricky-header stricked-menu main-menu">
     <div class="sticky-header__content"></div><!-- /.sticky-header__content -->

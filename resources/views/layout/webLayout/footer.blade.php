@@ -57,16 +57,45 @@
 <!--Subscribe One End-->
 <!--Site Footer Start-->
 <style>
+    .footer-widget__explore-list.list-unstyled {
+        padding-right: 0;
+    }
+
     @media (max-width: 800px) {
-        .footer-widget__about{
+        .footer-widget__about {
             text-align: center;
         }
 
-        .footer-widget__social-box{
-            justify-content: center;        }
+        .footer-widget__social-box {
+            justify-content: center;
+        }
+
+        .footer-widget__explore-list-box {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .list-unstyled.footer-widget__contact-list {
+            padding-right: 0;
+        }
+
+        .list-unstyled.footer-widget__contact-list li {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-widget__contact-list li::before {
+            left: 35px;
+            right: 35px;
+        }
+
+        .footer-google-map .container {
+            display: flex;
+            justify-content: center;
+        }
     }
-    </style>
-<footer class="site-footer">
+</style>
+<footer class="site-footer  text-center text-md-end">
     <div class="site-footer__bg"
         style="background-image: url({{asset('webassets/assets/images/backgrounds/site-footer-bg-img.webp')}});"></div>
     <div class="site-footer__ripped-paper"
@@ -75,7 +104,7 @@
         <div class="site-footer__top">
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="footer-widget__column footer-widget__about" >
+                    <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__logo">
                             <a title="gmal" href="{{ url('/') }}"><img
                                     src="{{asset('webassets/assets/images/resources/footer-logo.webp')}}"
@@ -86,7 +115,7 @@
                                 <br> منتجات طازجة وعالية الجودة كل يوم
                             </p>
                         </div>
-                        <div class="footer-widget__social-box" >
+                        <div class="footer-widget__social-box">
                             {{-- <a href="#"><i class="fab fa-twitter"></i></a> --}}
                             <a href="https://www.facebook.com/gamalgomaafarm?mibextid=ZbWKwL" target="_blank"
                                 title="facebook"><i class="fab fa-facebook"></i></a>
@@ -96,13 +125,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp " data-wow-delay="200ms">
                     <div class="footer-widget__column footer-widget__explore">
                         <div class="footer-widget__title-box">
                             <h3 class="footer-widget__title">استكشف</h3>
                         </div>
                         <div class="footer-widget__explore-list-box">
-                            <ul class="footer-widget__explore-list list-unstyled">
+                            <ul class="footer-widget__explore-list list-unstyled text-center">
                                 <li><a title="about" href="{{ url('/about') }}">عن الشركة</a></li>
                                 <li><a title="services" href="{{ url('/services') }}">خدماتنا</a></li>
                                 <li><a title="products" href="{{ url('/products') }}">المنتجات</a></li>
