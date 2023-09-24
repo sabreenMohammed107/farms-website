@@ -887,6 +887,9 @@ body {
     .about-us-one.cust-about {
         min-height: 600px !important;
     }
+    .hot-products__inner.list-unstyled {
+        padding-right: 0 !important;
+    }
 }
 @media only screen and (min-width: 1500px) and (max-width: 1700px) {
     .main-menu__search-box,
