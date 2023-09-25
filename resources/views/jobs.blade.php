@@ -124,17 +124,18 @@
                                 <span>{{ $job->email }}</span>
                             </p>
 
-@if ($job->start_date !=null)
-<hr>
-<div class="d-flex justify-content-between">
-    <p class="product-list__text"> تاريخ الإعلان
-        <span> : {{ $job->start_date }}</span>
-    </p>
-    <p class="product-list__text"> تاريخ إنتهاء التقديم
-        <span> : {{ $job->end_date }}</span>
-    </p>
-</div>
-@endif
+                            @if ($job->start_date !=null)
+                            <hr>
+                            <div class="d-flex flex-column justify-content-between">
+                                <p class="product-list__text"> تاريخ الإعلان
+                                    <span> : {{ $job->start_date }}</span>
+                                </p>
+
+                                <p class="product-list__text"> تاريخ إنتهاء التقديم
+                                    <span> : {{ $job->end_date }}</span>
+                                </p>
+                            </div>
+                            @endif
 
 
                         </div>

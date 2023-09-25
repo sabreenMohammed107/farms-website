@@ -149,8 +149,52 @@
                 </div>
             </div>
             <div class="col-12 col-lg-3 service-image">
-                <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="" srcset="">
+                <div class="about-us-one__left">
+                    {{-- <div class="col-12 col-lg-3 service-image w-100">
+                        <img class="w-100" style="opacity: 0.7;transform: rotate(45deg);"
+                            src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="" srcset="">
+                    </div> --}}
+                    <div class="about-us-one__img-box wow slideInLeft" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+
+                        <div class="about-us-one__shape-1">
+                            <img src="{{asset('webassets/assets/images/resources/xG.GomaaFarms-4.jpg')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-2">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-2.webp')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-3 d-block d-md-none">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-1.webp')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-4 float-bob-y  d-none d-lg-block">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-4.webp')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-5 zoominout">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-5.webp')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-6 float-bob-x">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-6.webp')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-7 zoominout">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-7.webp')}}" alt="">
+                        </div>
+                        <div class="about-us-one__shape-8 float-bob-y">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-8.webp')}}" alt="">
+                        </div>
+
+                        <div class="about-us-one__shape-10 float-bob-x">
+                            <img src="{{asset('webassets/assets/images/shapes/about-one-shape-10.webp')}}" alt="">
+                        </div>
+                        {{-- <div class="about-us-one__img  d-block d-md-none">
+                            <img src="{{asset('webassets/assets/images/resources/about-us-vig.webp')}}" alt="">
+                        </div> --}}
+
+                    </div>
+                </div>
             </div>
+            {{-- <div class="col-12 col-lg-3 service-image">
+                <img src="{{ asset('webassets/assets/images/resources/banner-img-1.webp')}}" alt="" srcset="">
+            </div> --}}
         </div>
     </div>
 

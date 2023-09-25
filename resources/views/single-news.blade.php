@@ -84,11 +84,11 @@
 
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
-<style>
-       .owl-carousel{
- direction: ltr !important;
-}
-</style>
+    <style>
+        .owl-carousel {
+            direction: ltr !important;
+        }
+    </style>
 </head>
 @extends('layout.webLayout.main')
 
@@ -183,30 +183,29 @@
             </h2>
         </div>
         <div class=" owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
-                "loop": true,
-                "autoplay": true,
-                "margin": 30,
-                "nav": false,
-                "dots": false,
-                "rtl":true,
-                "smartSpeed": 500,
-                "autoplayTimeout": 2000,
-                "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-                "responsive": {
-                    "0": {
-                        "items": 1
-                    },
-                    "768": {
-                        "items": <?php (count($otherNews) < 2) ? count($otherNews): 2 ; ?>;
-                    },
-                    "992": {
-                        "items":  <?php (count($otherNews) < 3) ? count($otherNews): 3 ; ?>
-                    },
-                    "1200": {
-                        "items":  <?php (count($otherNews) < 3) ? count($otherNews): 3 ; ?>
-                    }
+            "loop": true,
+            "autoplay": true,
+            "margin": 30,
+            "nav": false,
+            "dots": false,
+            "smartSpeed": 500,
+            "autoplayTimeout": 1000,
+            "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+            "responsive": {
+                "0": {
+                    "items": 1
+                },
+                "768": {
+                    "items": 2
+                },
+                "992": {
+                    "items": 3
+                },
+                "1200": {
+                    "items": 3
                 }
-            }'>
+            }
+        }'>
             @foreach ($otherNews as $obj)
             <div class="news-one__single mx-2">
                 <div class="news-one__img-box">
@@ -237,23 +236,27 @@
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
     integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
-    </script>
-     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
-       </script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+</script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+</script>
 
 <script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script>
 <script>
     var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:4,
-      // items change number for slider display on desktop
+owl.owlCarousel({
+    items:4,
+  // items change number for slider display on desktop
 
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true
-    });
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+        onInitialized: function() {
+            $('.hot-product-three__carousel').removeClass('pre-init');
+            $('.hot-product-three__carousel .hot-products__single').css('display', 'block');
+        }
+});
 
-    </script>
+</script>

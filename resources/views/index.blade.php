@@ -103,16 +103,17 @@
     .owl-carousel {
         direction: ltr !important;
     }
+
     .banner-one__img-1 {
-    position: absolute;
-    top: -139px;
-    transform: rotate(28deg);
-    left: -86px;
-    -moz-transform: rotate(28deg);
-    -ms-transform: rotate(28deg);
-    -o-transform: rotate(28deg);
-    -webkit-transform: rotate(28deg);
-}
+        position: absolute;
+        top: -139px;
+        transform: rotate(28deg);
+        left: -86px;
+        -moz-transform: rotate(28deg);
+        -ms-transform: rotate(28deg);
+        -o-transform: rotate(28deg);
+        -webkit-transform: rotate(28deg);
+    }
 </style>
 
 </script>
@@ -185,15 +186,15 @@
                                         alt="main-slider-shape-9.webp">
                                 </div>
                                 <h4 class="main-slider__sub-title">
-                                <h4 class="main-slider__sub-title"><span>
+                                    <h4 class="main-slider__sub-title"><span>
 
-                                    {!! $homedata->title !!}</h4>
-                                <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
-                                <div class="main-slider__btn-box">
-                                    <a href="{{ url('/products') }}" title="إكتشف"
-                                        class="thm-btn main-slider__btn-two">اكتشف
-                                        المنتجات</a>
-                                </div>
+                                            {!! $homedata->title !!}</h4>
+                                    <h2 class="main-slider__title">{!! $homedata->details !!} </h2>
+                                    <div class="main-slider__btn-box">
+                                        <a href="{{ url('/products') }}" title="إكتشف"
+                                            class="thm-btn main-slider__btn-two">اكتشف
+                                            المنتجات</a>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -257,8 +258,8 @@
                 </div>
             </div>
             <div class="col-xl-6 p-2 mt-sm-5 mt-xl-0">
-                <div class="about-one__right">
-                    <div class="section-title text-left">
+                <div class="about-one__right  text-center text-md-end">
+                    <div class="section-title">
                         <span class="section-title__tagline">من نحن</span>
                         <h1 class="section-title__title">{!! $about->title !!} </h1>
                     </div>
@@ -483,8 +484,8 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-8 ">
-                <div class="why-choose-one__left">
-                    <div class="section-title text-left">
+                <div class="why-choose-one__left text-center text-md-end">
+                    <div class="section-title ">
                         <span class="section-title__tagline" style="color: var(--ogenix-primary);">لماذا تختار
                             <span class="inside-section-title">
                                 {!!$homedata ->why_us_title !!}</span></span>
@@ -492,7 +493,7 @@
                         <h2 class="section-title__title " style="margin-bottom: 150px !important">
                             {!! $homedata ->why_us_details !!}</h2>
                     </div>
-                     <div class="row">
+                    <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 ">
                             <div class="why-choose-one__single">
                                 <div class="why-choose-one__icon">

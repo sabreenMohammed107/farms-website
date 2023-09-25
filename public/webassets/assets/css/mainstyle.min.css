@@ -10325,8 +10325,9 @@ svg[class*="right"] {
 }
 .Products-by-types.services .service-image img {
     max-height: 360px;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
 }
+
 .Products-by-types.services .service-image {
     padding: 66px;
     display: flex;
@@ -10392,4 +10393,15 @@ svg[class*="right"] {
 
 .about-us-one.cust-about {
     min-height: 793px !important;
+}
+
+.news-one__img-box .news-one__img img,
+.hot-products__img-box .hot-products__img img {
+    object-fit: cover;
+}
+.Products-by-types.services .service-image .about-us-one__shape-1 {
+    position: relative;
+    left: -73px;
+    top: -42px;
+    z-index: -1;
 }
