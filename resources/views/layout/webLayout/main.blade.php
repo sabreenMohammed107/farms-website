@@ -8,6 +8,7 @@
     top: 0;
     background: linear-gradient( 0deg, rgb(0 0 0 / 56%) 0, rgba(0, 0, 0, 0.24) 100% );
 }
+
 .page-header__inner h3,h1{
     color:#fff;
 }
