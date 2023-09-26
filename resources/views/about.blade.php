@@ -233,8 +233,7 @@
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
     </div> --}}
     <div class="container">
-
-        <div class="row">
+        <div class="row" >
 
             <div class="col-12 col-lg-6">
                 <div class="about-us-one__right">
