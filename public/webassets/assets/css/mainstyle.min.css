@@ -3013,9 +3013,9 @@ ul {
 }
 .banner-one__img-1 {
     position: absolute;
-    top: -209px;
+    top: -183px;
     transform: rotate(28deg);
-    left: 3px;
+    left: 61px;
     -moz-transform: rotate(28deg);
     -ms-transform: rotate(28deg);
     -o-transform: rotate(28deg);
@@ -10404,4 +10404,7 @@ svg[class*="right"] {
     left: -73px;
     top: -42px;
     z-index: -1;
+}
+.banner-one__img-1 img {
+    transform: scaleX(-1);
 }
