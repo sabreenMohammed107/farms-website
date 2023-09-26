@@ -131,7 +131,7 @@ body {
         margin-bottom: 30px;
     }
     .main-slider__img-one {
-        left: 25px;
+        left: 12%;
     }
     .main-slider__shape-3,
     .main-slider__shape-4 {
@@ -713,12 +713,12 @@ body {
         width: 420px;
     }
     .main-slider__img-one {
-        left: -15%;
-        top: 212px;
+        left: 3%;
+        top: 99px;
     }
     .main-slider__shape-9 {
-        right: 62%;
-        top: -16%;
+        right: 15%;
+        top: -34%;
     }
     .main-slider__shape-3 {
         left: 100px !important;
@@ -790,7 +790,7 @@ body {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .main-slider__img-one {
-        left: 80px;
+        left: 21%;
     }
 }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
@@ -954,38 +954,55 @@ svg[class*="right"] {
 }
 @media only screen and (max-width: 1400px) {
     .main-slider__shape-6 {
-        left: 19px;
+        left: -1%;
+        top: 67%;
     }
     .main-slider__shape-3 {
-        left: 300px;
+        left: 14%;
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
     .main-slider__img-one {
-        left: -25%;
-        top: 340px;
+        left: 2%;
+        top: 45px;
+    }
+    .main-slider__shape-7 {
+        top: 0%;
+        left: 36%;
+    }
+    .main-slider__shape-4 {
+        top: 184px;
+        left: -183px;
+    }
+    .main-slider__shape-5 {
+        bottom: 12%;
+        left: 36%;
+    }
+    .main-slider__shape-2 {
+        right: 46%;
+        bottom: 23%;
     }
     .main-slider__shape-3 {
-        left: 35px !important;
-        top: 192px;
+        left: -7px !important;
+        top: 23px;
     }
     .main-slider__shape-1 {
-        top: 230px;
-        right: 266px;
+        top: 70%;
+        right: 10%;
     }
     .main-slider__shape-9 {
-        right: 12%;
-        top: -16%;
+        right: 4%;
+        top: -57%;
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .main-slider__img-one {
-        left: -25%;
-        top: 425px;
+        left: 3%;
+        top: 50px;
     }
     .main-slider__shape-3 {
-        left: 35px !important;
-        top: 286px;
+        left: -48px !important;
+        top: 16px;
     }
 }
 @media only screen and (min-width: 594px) and (max-width: 767px) {

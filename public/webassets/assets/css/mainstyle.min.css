@@ -1970,20 +1970,20 @@ ul {
 }
 .main-slider__shape-1 {
     position: absolute;
-    top: 100px;
-    right: 115px;
+    top: 13%;
+    right: 5%;
     z-index: -1;
 }
 .main-slider__shape-2 {
     position: absolute;
-    right: 260px;
-    bottom: 75px;
+    right: 10%;
+    bottom: 10%;
     z-index: -1;
 }
 .main-slider__shape-3 {
     position: absolute;
     top: 40px;
-    left: 425px;
+    left: 17%;
     z-index: 1;
 }
 .main-slider__shape-4,
@@ -1995,29 +1995,29 @@ ul {
     position: absolute;
 }
 .main-slider__shape-4 {
-    top: 210px;
-    left: 150px;
+    top: 224px;
+    left: 129px;
 }
 .main-slider__shape-5 {
-    bottom: 100px;
-    left: 795px;
+    bottom: 45%;
+    left: 57%;
 }
 .main-slider__shape-6 {
-    top: 80px;
-    left: 190px;
+    top: 45%;
+    left: 10%;
 }
 .main-slider__shape-7 {
-    bottom: 130px;
-    left: 345px;
+    bottom: 66%;
+    left: 12%;
 }
 .main-slider__shape-8 {
-    bottom: -60px;
-    left: 170px;
+    bottom: 29%;
+    left: 45%;
 }
 .main-slider__img-one {
     position: absolute;
     top: 105px;
-    left: 490px;
+    left: 21%;
     transform: translateX(-400px);
     z-index: 1;
 }
@@ -2033,8 +2033,8 @@ ul {
 }
 .main-slider__shape-9 {
     position: absolute;
-    right: 460px;
-    top: 20px;
+    right: 38%;
+    top: -56px;
     z-index: -1;
 }
 .main-slider__btn-box,
