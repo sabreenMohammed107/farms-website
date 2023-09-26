@@ -106,13 +106,17 @@
 
     .banner-one__img-1 {
         position: absolute;
-        top: -139px;
+        top: -138px;
+        left:-181px;
         transform: rotate(28deg);
         left: -86px;
         -moz-transform: rotate(28deg);
         -ms-transform: rotate(28deg);
         -o-transform: rotate(28deg);
         -webkit-transform: rotate(28deg);
+    }
+    .banner-one__img-1 img{
+        transform: scaleX(-1);
     }
 </style>
 
