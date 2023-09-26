@@ -1499,8 +1499,8 @@ body { direction: rtl ; }
   }
 
   100% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
   }
 }
 
@@ -1511,8 +1511,8 @@ body { direction: rtl ; }
   }
 
   100% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
   }
 }
 

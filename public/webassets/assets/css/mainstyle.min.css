@@ -2017,7 +2017,7 @@ ul {
 .main-slider__img-one {
     position: absolute;
     top: 105px;
-    left: 490px;
+    left: 100px;
     transform: translateX(-400px);
     z-index: 1;
 }
