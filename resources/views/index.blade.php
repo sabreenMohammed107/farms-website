@@ -457,7 +457,7 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    {{-- <div class="why-choose-one__shape-1 float-bob-y">
+    <div class="why-choose-one__shape-1 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
             alt="about-one-shape-11.webp">
     </div>
@@ -465,10 +465,11 @@
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}"
             alt="about-one-shape-11.webp">
     </div>
+
     <div class="why-choose-one__shape-3">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-3.webp')}}"
-            alt="about-one-shape-11.webp">
+        <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.webp')}}" alt="about-one-shape-11.webp">
     </div>
+    {{--
     <div class="why-choose-one__shape-4">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.webp')}}"
             alt="about-one-shape-11.webp">
