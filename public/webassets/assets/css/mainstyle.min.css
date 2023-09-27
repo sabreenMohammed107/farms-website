@@ -2182,10 +2182,14 @@ ul {
 .main-slider-three__bg-shape-2,
 .main-slider-three__ripped-paper,
 .testimonial-one__bg-img,
-.why-choose-one__bg,
 .why-choose-two__bg {
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+}
+.why-choose-one__bg {
+    background-repeat: no-repeat;
+    background-position: center left;
     background-size: cover;
 }
 .main-slider-two__sub-title,
