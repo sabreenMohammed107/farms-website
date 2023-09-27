@@ -962,10 +962,6 @@ svg[class*="right"] {
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
-    .main-slider__img-one {
-        left: 2%;
-        top: 45px;
-    }
     .main-slider__shape-7 {
         top: 0%;
         left: 36%;
@@ -996,10 +992,6 @@ svg[class*="right"] {
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .main-slider__img-one {
-        left: 3%;
-        top: 50px;
-    }
     .main-slider__shape-3 {
         left: -48px !important;
         top: 16px;
