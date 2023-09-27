@@ -3308,14 +3308,9 @@ ul {
 }
 .about-us .why-choose-one__shape-3 {
     position: absolute;
-    top: 28%;
-    left: 35%;
-    transform: rotate(45deg);
+    top: 36%;
+    left: 38%;
     z-index: -1;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
 }
 .about-us .why-choose-one__shape-4,
 .why-choose-one__shape-4 {

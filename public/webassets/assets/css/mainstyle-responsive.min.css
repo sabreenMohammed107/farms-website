@@ -710,10 +710,10 @@ body {
         padding: 60px 25px 75px;
     }
     .main-slider__img-one img {
-        width: 420px;
+        width: 390px;
     }
     .main-slider__img-one {
-        left: 3%;
+        left: 0%;
         top: 99px;
     }
     .main-slider__shape-9 {

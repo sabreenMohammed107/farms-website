@@ -167,6 +167,73 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
+    <div class="why-choose-one__shape-1 float-bob-y">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
+            alt="about-one-shape-11.webp">
+    </div>
+    <div class="why-choose-one__shape-2 float-bob-x">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}"
+            alt="about-one-shape-11.webp">
+    </div>
+
+    <div class="why-choose-one__shape-3">
+        <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.webp')}}" alt="about-one-shape-11.webp">
+    </div>
+    {{--
+    <div class="why-choose-one__shape-4">
+        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-4.webp')}}"
+            alt="about-one-shape-11.webp">
+    </div>
+    <div class="why-choose-one__img-1 wow fadeInUp" data-wow-duration="1500ms">
+        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-1.webp')}}"
+            alt="about-one-shape-11.webp">
+    </div>
+    <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
+        <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}"
+            alt="about-one-shape-11.webp">
+    </div> --}}
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-8 ">
+                <div class="why-choose-one__left text-center text-md-end">
+                    <div class="section-title ">
+                        <span class="section-title__tagline" style="color: var(--ogenix-primary);">لماذا تختار
+                            <span class="inside-section-title">
+                                {!!$homedata ->why_us_title !!}</span></span>
+
+                        <h2 class="section-title__title " style="margin-bottom: 150px !important">
+                            {!! $homedata ->why_us_details !!}</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 ">
+                            <div class="why-choose-one__single">
+                                <div class="why-choose-one__icon">
+                                    <span class="icon-organic-food"></span>
+                                </div>
+                                <p class="why-choose-one__title">منتجات عضوية</p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="why-choose-one__single">
+                                <div class="why-choose-one__icon">
+                                    <span class="icon-salad"></span>
+                                </div>
+                                <p class="why-choose-one__title">العناصر الطبيعية</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-4"></div>
+        </div>
+    </div>
+    {{-- <div class="why-choose-one__bg"
+        style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
+    </div> --}}
     {{-- <div class="why-choose-one__shape-1 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}" alt="">
     </div>
@@ -185,7 +252,7 @@
     <div class="why-choose-one__img-2 wow fadeInDown" data-wow-duration="1500ms">
         <img src="{{asset('webassets/assets/images/resources/why-choose-one-img-2.webp')}}" alt="">
     </div> --}}
-    <div class="container">
+    {{-- <div class="container">
         <div class="row">
             <div class="col-xl-6 col-lg-8">
                 <div class="why-choose-one__left">
@@ -222,7 +289,7 @@
             </div>
             <div class="col-xl-6 col-lg-4"></div>
         </div>
-    </div>
+    </div> --}}
 </section>
 <!--Why Choose One End-->
 
@@ -233,7 +300,7 @@
         <img src="{{asset('webassets/assets/images/shapes/about-one-shape-11.webp')}}" alt="">
     </div> --}}
     <div class="container">
-        <div class="row" >
+        <div class="row">
 
             <div class="col-12 col-lg-6">
                 <div class="about-us-one__right">
