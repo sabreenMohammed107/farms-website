@@ -10411,3 +10411,14 @@ svg[class*="right"] {
 .banner-one__img-1 img {
     transform: scaleX(-1);
 }
+.our-products-services .subscribe-one__shape-13.serv-shape {
+    position: absolute;
+    right: -0;
+    bottom: 0;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.our-products-services .subscribe-one__shape-13.serv-shape img {
+    transform: rotate(180deg);
+}

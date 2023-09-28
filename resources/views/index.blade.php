@@ -344,19 +344,6 @@
 </section>
 <!--Brand One End-->
 
-<style>
-    .our-products-services .subscribe-one__shape-13.serv-shape {
-        position: absolute;
-        right: -0;
-        bottom: 0;
-        opacity: 0.4;
-        z-index: -1;
-    }
-
-    .our-products-services .subscribe-one__shape-13.serv-shape img {
-        transform: rotate(180deg);
-    }
-</style>
 <!-- our services -->
 <section class="our-products-services">
     <div class="container">
