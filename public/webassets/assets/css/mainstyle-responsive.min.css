@@ -794,14 +794,17 @@ body {
     }
 }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+    .banner-one__img-1 {
+        width: 43%;
+    }
     .main-header-three__top,
     .main-header-two__contact-list,
     .main-header__top {
         display: none;
     }
-    .our-products-services .banner-one__img-1 {
+    /* .our-products-services .banner-one__img-1 {
         left: -211px;
-    }
+    } */
     .main-menu__wrapper-inner {
         justify-content: flex-end;
         padding: 29.5px 255px 29.5px 30px;
