@@ -167,7 +167,7 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y">
+    <div class="why-choose-one__shape-1 float-bob-x">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
             alt="about-one-shape-11.webp">
     </div>
@@ -176,7 +176,7 @@
             alt="about-one-shape-11.webp">
     </div>
 
-    <div class="why-choose-one__shape-3">
+    <div class="why-choose-one__shape-3 d-none d-lg-block">
         <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.webp')}}" alt="about-one-shape-11.webp">
     </div>
     {{--
