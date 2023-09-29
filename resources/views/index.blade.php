@@ -495,7 +495,7 @@
                             <span class="inside-section-title">
                                 {!!$homedata ->why_us_title !!}</span></span>
 
-                        <h2 class="section-title__title " style="margin-bottom: 150px !important">
+                        <h2 class="section-title__title " style="margin-bottom: 150px">
                             {!! $homedata ->why_us_details !!}</h2>
                     </div>
                     <div class="row">

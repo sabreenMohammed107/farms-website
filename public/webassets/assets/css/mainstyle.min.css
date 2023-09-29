@@ -3016,13 +3016,15 @@ ul {
     overflow: hidden;
 }
 .banner-one__img-1 {
-    width: 36%;
-    height: 100%;
+    width: 43%;
+    height: 145%;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -134px;
+    left: -188px;
+    border-top-left-radius: 50%;
+    transform: scaleX(-1) rotate(-24deg);
 }
 .banner-one__shape-1,
 .banner-one__shape-2 {
@@ -3043,6 +3045,7 @@ ul {
 .banner-one__shape-2 {
     left: 139px;
     top: 31%;
+    z-index: -2;
 }
 .banner-one__shape-3 {
     position: absolute;
