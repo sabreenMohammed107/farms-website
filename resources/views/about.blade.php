@@ -188,7 +188,7 @@ background: linear-gradient( 0deg, rgb(255 253 253 / 99%) 0, rgba(0, 0, 0, 0.24)
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y">
+    <div class="why-choose-one__shape-1 float-bob-x">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
             alt="about-one-shape-11.webp">
     </div>
@@ -197,7 +197,7 @@ background: linear-gradient( 0deg, rgb(255 253 253 / 99%) 0, rgba(0, 0, 0, 0.24)
             alt="about-one-shape-11.webp">
     </div>
 
-    <div class="why-choose-one__shape-3">
+    <div class="why-choose-one__shape-3 d-none d-lg-block">
         <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.webp')}}" alt="about-one-shape-11.webp">
     </div>
     {{--

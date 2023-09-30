@@ -104,7 +104,7 @@
         direction: ltr !important;
     }
 
-    .banner-one__img-1 {
+    /* .banner-one__img-1 {
         position: absolute;
         top: -139px;
         transform: rotate(28deg);
@@ -113,7 +113,7 @@
         -ms-transform: rotate(28deg);
         -o-transform: rotate(28deg);
         -webkit-transform: rotate(28deg);
-    }
+    } */
 </style>
 
 </script>
@@ -344,7 +344,6 @@
 </section>
 <!--Brand One End-->
 
-
 <!-- our services -->
 <section class="our-products-services">
     <div class="container">
@@ -359,14 +358,19 @@
                 <div class="banner-one__left wow slideInLeft animated" data-wow-delay="50ms" data-wow-duration="2500ms"
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
-                        <div class="banner-one__img-1">
-                            <img src="{{ asset('webassets/assets/images/resources/39.jpg')}}" alt="">
+                        <div class="banner-one__img-1"
+                            style="background-image: url({{ asset('webassets/assets/images/resources/39.jpg') }})">
+
+                        </div>
+                        <div class="subscribe-one__shape-13 float-bob-x serv-shape">
+                            <img src="{{ asset('webassets/assets/images/shapes/subscribe-one-shape-3.webp')}}"
+                                alt="subscribe-one-shape">
                         </div>
 
-                        {{-- <div class="banner-one__shape-2">
+                        <div class="banner-one__shape-2">
                             <img src="{{ asset('webassets/assets/images/shapes/banner-shape-2.webp')}}" alt="">
-                        </div> --}}
-                        <div class="banner-one__shape-3">
+                        </div>
+                        <div class="banner-one__shape-3 zoominout">
                             <img src="{{ asset('webassets/assets/images/shapes/banner-shape-3.webp')}}" alt="">
                         </div>
                         <p class="banner-one__tagline">عضوي 100٪</p>
@@ -457,7 +461,7 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y">
+    <div class="why-choose-one__shape-1 float-bob-x">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
             alt="about-one-shape-11.webp">
     </div>
@@ -466,7 +470,7 @@
             alt="about-one-shape-11.webp">
     </div>
 
-    <div class="why-choose-one__shape-3">
+    <div class="why-choose-one__shape-3 d-none d-lg-block">
         <img src="{{asset('webassets/assets/images/shapes/subscribe-one-shape-6.webp')}}" alt="about-one-shape-11.webp">
     </div>
     {{--
@@ -491,7 +495,7 @@
                             <span class="inside-section-title">
                                 {!!$homedata ->why_us_title !!}</span></span>
 
-                        <h2 class="section-title__title " style="margin-bottom: 150px !important">
+                        <h2 class="section-title__title " style="margin-bottom: 150px">
                             {!! $homedata ->why_us_details !!}</h2>
                     </div>
                     <div class="row">

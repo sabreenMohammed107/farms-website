@@ -794,14 +794,17 @@ body {
     }
 }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
+    .banner-one__img-1 {
+        width: 43%;
+    }
     .main-header-three__top,
     .main-header-two__contact-list,
     .main-header__top {
         display: none;
     }
-    .our-products-services .banner-one__img-1 {
+    /* .our-products-services .banner-one__img-1 {
         left: -211px;
-    }
+    } */
     .main-menu__wrapper-inner {
         justify-content: flex-end;
         padding: 29.5px 255px 29.5px 30px;
@@ -962,6 +965,28 @@ svg[class*="right"] {
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
+    .why-choose-one__left .section-title {
+        background-color: rgba(0, 0, 0, 0.3);
+        text-align: center;
+        border-radius: 5px;
+        padding: 30px 15px 1px 15px;
+    }
+    .why-choose-one__left .section-title__title {
+        margin-bottom: 35px !important;
+    }
+    .why-choose-one__shape-1 img {
+        transform: scaleX(-1) rotate(90deg);
+        -webkit-transform: scaleX(-1) rotate(90deg);
+        -moz-transform: scaleX(-1) rotate(90deg);
+        -ms-transform: scaleX(-1) rotate(90deg);
+        -o-transform: scaleX(-1) rotate(90deg);
+    }
+    .why-choose-one__shape-1 {
+        position: absolute;
+        top: -127px;
+        right: 227px;
+        z-index: -1;
+    }
     .main-slider__shape-7 {
         top: 0%;
         left: 36%;
