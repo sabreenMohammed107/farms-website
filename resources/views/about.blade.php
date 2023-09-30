@@ -72,18 +72,45 @@
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle.min.css')}}" />
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
+<style>
 
+    .page-header-bg:before {
+    content: "";
+    top: 0;
+    background: linear-gradient( 0deg, rgb(0 0 0 / 0%) 0, rgba(0, 0, 0, 0.24) 100% ) !important;
+}
+ .page-header-bg-1 {
+    /* display: inline-block; */
+    width: 20%;
+    margin: auto;
+padding: 5px 0;
+border-radius: 5px;
+/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+background: linear-gradient( 0deg, rgb(255 253 253 / 99%) 0, rgba(0, 0, 0, 0.24) 100% );}
+.page-header-bg-1 h3{
+
+    font-size: 40px;
+    letter-spacing: 2px;
+
+
+
+    text-transform: uppercase;
+    color: black !important;
+  text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen !important;
+}
+    </style>
 @extends('layout.webLayout.main')
 
+
 @section('content')
-@section('content')
+
 <section class="page-header">
     <div class="page-header-bg"
         style="background-image: url({{ asset('webassets/assets/images/backgrounds/47.hero.jpg') }})">
     </div>
 
     <div class="container">
-        <div class="page-header__inner">
+        <div class="page-header__inner page-header-bg-1">
             <h3>من نحن
             </h3>
 

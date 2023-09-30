@@ -87,13 +87,13 @@
         <div class="page-header__inner">
             <h3>الخدمات
             </h3>
-            <ul class="thm-breadcrumb list-unstyled">
+            {{-- <ul class="thm-breadcrumb list-unstyled">
                 <li><a title="home" href="{{ url('/') }}">الرئيسية
                     </a></li>
                 <li><span>/</span></li>
                 <li>خدماتنا
                 </li>
-            </ul>
+            </ul> --}}
 
         </div>
     </div>
