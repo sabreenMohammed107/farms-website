@@ -1073,7 +1073,19 @@ svg[class*="right"] {
 
 }
 
-@media only screen and (max-width:450px){.main-header__logo{padding:0!important}}@media only screen and (max-width:1400px){.main-slider__shape-6{left:19px}.main-slider__shape-3{left:300px}}@media only screen and (min-width:320px) and (max-width:550px){.main-slider__img-one{left:-25%;top:340px}.main-slider__shape-3{left:35px!important;top:192px}.main-slider__shape-1{top:230px;right:266px}.main-slider__shape-9{right:12%;top:-16%}}@media only screen and (min-width:320px) and (max-width:480px){.main-slider__img-one{left:-25%;top:425px}.main-slider__shape-3{left:35px!important;top:286px}}
-.main-slider__img-one{left:25px}.main-slider__shape-3,.main-slider__shape-4{left:35px}.main-slider__shape-9{right:325px}.main-menu__wrapper-inner{justify-content:flex-end;padding:29.5px 255px 29.5px 30px}.main-menu-two .mobile-nav__toggler{display:inline-block;padding:15px 0}.main-header-three__right{max-width:760px}.main-menu-three .mobile-nav__toggler{display:inline-block;padding:30px 0}}@media only screen and (min-width:767px) and (max-width:991px){.counter-one__single::before,.deal-one__right,.feature-one__single:before,.feature-three__single:before,.process__line,.subscribe-one__shape-6,.testimonial-one__bg-img-2,.why-choose-one__img-1,.why-choose-one__img-2{display:none}
+
+
+                @media only screen and (min-width:320px) and (max-width:550px){
+                    .main-slider__img-one{
+                        left:-25%;top:340px}
+                        .main-slider__shape-3{
+                            left:35px!important;top:192px}
+                            .main-slider .container {padding-bottom: 100px}
+                            .main-slider__shape-1{top:230px;right:266px}
+                            .main-slider__shape-9{right:12%;top:-16%}}
+                            @media only screen and (min-width:320px) and (max-width:480px){
+                                .main-slider__img-one{left:-25%;top:425px}.main-slider__shape-3{left:35px!important;top:286px}}
+.main-slider__img-one{left:25px}.main-slider__shape-3,.main-slider__shape-4{left:35px}.main-slider__shape-9{right:325px}
+
 
 
