@@ -1082,7 +1082,13 @@ svg[class*="right"] {
                             left:35px!important;top:192px}
                             .main-slider .container {padding-top: 200px}
                             .main-slider__shape-1{top:230px;right:266px}
-                            .main-slider__shape-9{right:12%;top:-16%}}
+                            .main-slider__shape-9{right:12%;top:-16%}
+
+                            .main-slider__content{
+                                text-align: center;
+                            }
+
+                        }
                             @media only screen and (min-width:320px) and (max-width:480px){
                                 .main-slider__img-one{left:-25%;top:425px}.main-slider__shape-3{left:35px!important;top:286px}}
 .main-slider__img-one{left:25px}.main-slider__shape-3,.main-slider__shape-4{left:35px}.main-slider__shape-9{right:325px}
