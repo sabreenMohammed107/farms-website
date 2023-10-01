@@ -3022,9 +3022,20 @@ ul {
     background-size: contain;
     position: absolute;
     top: -134px;
-    left: -188px;
-    border-top-left-radius: 50%;
-    transform: scaleX(-1) rotate(-24deg);
+    left: -150px;
+    transform: rotate(19deg);
+    overflow: hidden;
+}
+.banner-one__img-1 .banner-one_image {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-17deg);
+    position: absolute;
+    top: 36px;
+    right: -120px;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 .banner-one__shape-1,
 .banner-one__shape-2 {
@@ -3289,9 +3300,9 @@ ul {
     right: 0;
     z-index: -1;
 }
-.why-choose-one__shape-1 img {
+/* .why-choose-one__shape-1 img {
     transform: scaleX(-1);
-}
+} */
 .why-choose-one__shape-2 {
     position: absolute;
     bottom: -27px;

@@ -104,6 +104,16 @@
         direction: ltr !important;
     }
 
+    /* .banner-one__img-1::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: url(attr('data-bg')) 0 0 repeat;
+        transform: rotate(30deg);
+    } */
+
     /* .banner-one__img-1 {
         position: absolute;
         top: -139px;
@@ -358,8 +368,10 @@
                 <div class="banner-one__left wow slideInLeft animated" data-wow-delay="50ms" data-wow-duration="2500ms"
                     style="visibility: visible; animation-duration: 2500ms; animation-delay: 100ms; animation-name: slideInLeft;">
                     <div class="banner-one__inner">
-                        <div class="banner-one__img-1"
-                            style="background-image: url({{ asset('webassets/assets/images/resources/39.jpg') }})">
+                        <div class="banner-one__img-1">
+                            <div class="banner-one_image"
+                                style="background-image: url('webassets/assets/images/resources/39.jpg')">
+                            </div>
 
                         </div>
                         <div class="subscribe-one__shape-13 float-bob-x serv-shape">
@@ -461,9 +473,8 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-x">
-        <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-1.webp')}}"
-            alt="about-one-shape-11.webp">
+    <div class="why-choose-one__shape-1 float-bob-y d-none d-md-block">
+        <img src="{{asset('webassets/assets/images/shapes/shape-why-us.png')}}" alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">
         <img src="{{asset('webassets/assets/images/shapes/why-choose-one-shape-2.webp')}}"

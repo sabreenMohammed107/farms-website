@@ -975,11 +975,7 @@ svg[class*="right"] {
         margin-bottom: 35px !important;
     }
     .why-choose-one__shape-1 img {
-        transform: scaleX(-1) rotate(90deg);
-        -webkit-transform: scaleX(-1) rotate(90deg);
-        -moz-transform: scaleX(-1) rotate(90deg);
-        -ms-transform: scaleX(-1) rotate(90deg);
-        -o-transform: scaleX(-1) rotate(90deg);
+        transform: rotate(-82deg);
     }
     .why-choose-one__shape-1 {
         position: absolute;
@@ -1069,30 +1065,50 @@ svg[class*="right"] {
         position: absolute;
         right: -65px;
     }
-
-
 }
 
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+    .main-slider__img-one {
+        left: -25%;
+        top: 340px;
+    }
+    .main-slider__shape-3 {
+        left: 35px !important;
+        top: 192px;
+    }
+    .main-slider .container {
+        padding-top: 200px;
+    }
+    .main-slider__shape-1 {
+        top: 230px;
+        right: 266px;
+    }
+    .main-slider__shape-9 {
+        right: 12%;
+        top: -16%;
+    }
 
-
-                @media only screen and (min-width:320px) and (max-width:550px){
-                    .main-slider__img-one{
-                        left:-25%;top:340px}
-                        .main-slider__shape-3{
-                            left:35px!important;top:192px}
-                            .main-slider .container {padding-top: 200px}
-                            .main-slider__shape-1{top:230px;right:266px}
-                            .main-slider__shape-9{right:12%;top:-16%}
-
-                            .main-slider__content{
-                                text-align: center;
-                            }
-
-                        }
-                            @media only screen and (min-width:320px) and (max-width:480px){
-                                .main-slider__img-one{left:-25%;top:425px}.main-slider__shape-3{left:35px!important;top:286px}}
-.main-slider__img-one{left:25px}.main-slider__shape-3,.main-slider__shape-4{left:35px}.main-slider__shape-9{right:325px}
-
-
-
-
+    .main-slider__content {
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .main-slider__img-one {
+        left: -25%;
+        top: 425px;
+    }
+    .main-slider__shape-3 {
+        left: 35px !important;
+        top: 286px;
+    }
+}
+.main-slider__img-one {
+    left: 25px;
+}
+.main-slider__shape-3,
+.main-slider__shape-4 {
+    left: 35px;
+}
+.main-slider__shape-9 {
+    right: 325px;
+}
