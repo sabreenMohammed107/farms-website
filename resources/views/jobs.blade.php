@@ -76,17 +76,9 @@
     </div>
 
     <div class="container">
-        <div class="page-header__inner">
-            <h1> الوظائف
-            </h1>
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a title="home" href="{{ url('/') }}">الرئيسية
-                    </a></li>
-                <li><span>/</span></li>
-                <li> وظائف
-                </li>
-            </ul>
-
+        <div class="page-header__inner page-header-bg-1">
+            <h3>الوظائف
+            </h3>
         </div>
     </div>
 </section>

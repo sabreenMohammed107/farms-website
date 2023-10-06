@@ -85,18 +85,11 @@
     </div>
 
     <div class="container">
-        <div class="page-header__inner">
-            <h1>{!! $product->name !!}
-            </h1>
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a title="home" href="{{ url('/') }}">الرئيسية
-                    </a></li>
-                <li><span>/</span></li>
-                <li>منتجاتنا
-                </li>
-            </ul>
-
+        <div class="page-header__inner page-header-bg-1">
+            <h3>{!! $product->name !!}
+            </h3>
         </div>
+
     </div>
 </section>
 <!--Page Header End-->

@@ -82,17 +82,9 @@
     </div>
 
     <div class="container">
-        <div class="page-header__inner">
+        <div class="page-header__inner page-header-bg-1">
             <h3>تواصل معنا
             </h3>
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a title="home" href="{{ url('/') }}">الرئيسية
-                    </a></li>
-                <li><span>/</span></li>
-                <li>تواصل معنا
-                </li>
-            </ul>
-
         </div>
     </div>
 </section>

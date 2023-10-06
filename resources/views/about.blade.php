@@ -73,33 +73,7 @@
     <link rel="stylesheet" href="{{asset('webassets/assets/css/mainstyle-responsive.min.css')}}" />
 </head>
 <style>
-    .page-header-bg:before {
-        content: "";
-        top: 0;
-        background: linear-gradient(0deg, rgb(0 0 0 / 0%) 0, rgba(0, 0, 0, 0.24) 100%) !important;
-    }
 
-    .page-header-bg-1 {
-        /* display: inline-block; */
-        width: 20%;
-        margin: auto;
-        padding: 5px 0;
-        border-radius: 5px;
-        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-        background: linear-gradient(0deg, rgb(255 253 253 / 99%) 0, rgba(0, 0, 0, 0.24) 100%);
-    }
-
-    .page-header-bg-1 h3 {
-
-        font-size: 40px;
-        letter-spacing: 2px;
-
-
-
-        text-transform: uppercase;
-        color: black !important;
-        text-shadow: 1px 1px 2px black, 0 0 25px green, 0 0 5px darkgreen !important;
-    }
 </style>
 @extends('layout.webLayout.main')
 
@@ -115,8 +89,6 @@
         <div class="page-header__inner page-header-bg-1">
             <h3>من نحن
             </h3>
-
-
         </div>
     </div>
 </section>
@@ -190,7 +162,7 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y d-none d-md-block">
+    <div class="why-choose-one__shape-1 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/shape-why-us.png')}}" alt="about-one-shape-11.webp">
     </div>
     {{-- <div class="why-choose-one__shape-1 float-bob-x">

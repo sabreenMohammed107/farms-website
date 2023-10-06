@@ -99,17 +99,9 @@
     </div>
 
     <div class="container">
-        <div class="page-header__inner">
-            <h1>{!! $row->name !!}
-            </h1>
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="{{ url('/') }}">الرئيسية
-                    </a></li>
-                <li><span>/</span></li>
-                <li>الأخبار
-                </li>
-            </ul>
-
+        <div class="page-header__inner page-header-bg-1">
+            <h3>{!! $row->name !!}
+            </h3>
         </div>
     </div>
 </section>

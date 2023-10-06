@@ -473,7 +473,7 @@
     <div class="why-choose-one__bg"
         style="background-image: url({{asset('webassets/assets/images/resources/test.jpg')}});">
     </div>
-    <div class="why-choose-one__shape-1 float-bob-y d-none d-md-block">
+    <div class="why-choose-one__shape-1 float-bob-y">
         <img src="{{asset('webassets/assets/images/shapes/shape-why-us.png')}}" alt="about-one-shape-11.webp">
     </div>
     <div class="why-choose-one__shape-2 float-bob-x">

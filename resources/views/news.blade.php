@@ -84,18 +84,11 @@
     </div>
 
     <div class="container">
-        <div class="page-header__inner">
-            <h1>الأخبار
-            </h1>
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a title="home" href="{{ url('/') }}">الرئيسية
-                    </a></li>
-                <li><span>/</span></li>
-                <li>الأخبار
-                </li>
-            </ul>
-
+        <div class="page-header__inner page-header-bg-1">
+            <h3>الأخبار
+            </h3>
         </div>
+
     </div>
 </section>
 <!--Page Header End-->

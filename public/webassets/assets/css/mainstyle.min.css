@@ -10440,3 +10440,28 @@ svg[class*="right"] {
 .our-products-services .subscribe-one__shape-13.serv-shape img {
     transform: rotate(180deg);
 }
+.page-header-bg:before {
+    content: "";
+    top: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.42) 0,
+        rgba(0, 0, 0, 0.24) 100%
+    ) !important;
+}
+
+.page-header-bg-1 {
+    /* display: inline-block; */
+
+    margin: auto;
+    padding: 5px 0;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* background: linear-gradient(0deg, rgb(255 253 253 / 99%) 0, rgba(0, 0, 0, 0.24) 100%); */
+}
+
+.page-header-bg-1 h3 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}

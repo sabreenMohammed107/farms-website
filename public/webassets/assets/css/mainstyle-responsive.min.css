@@ -962,8 +962,19 @@ svg[class*="right"] {
         left: 14%;
     }
 }
-
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+    .why-choose-one__bg {
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+    }
+}
 @media only screen and (min-width: 320px) and (max-width: 550px) {
+    .why-choose-one__bg {
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+    }
     .why-choose-one__left .section-title {
         background-color: rgba(0, 0, 0, 0.3);
         text-align: center;
@@ -978,8 +989,8 @@ svg[class*="right"] {
     }
     .why-choose-one__shape-1 {
         position: absolute;
-        top: -127px;
-        right: 227px;
+        top: -34px;
+        right: 130px;
         z-index: -1;
     }
     .main-slider__shape-7 {
