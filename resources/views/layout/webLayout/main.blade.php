@@ -33,8 +33,9 @@ text-decoration: underline
     <div class="page-wrapper">
         @include('layout.webLayout.header')
         @yield('content')
+
         @include('layout.webLayout.footer')
-        {{-- @include('layout.webLayout.footerScript') --}}
+         @include('layout.webLayout.mobile')
 </body>
 
 </html>
