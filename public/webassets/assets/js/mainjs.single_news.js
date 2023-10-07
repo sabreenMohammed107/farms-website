@@ -49,15 +49,15 @@
             cursorinner.style.top = y + "px";
         });
 
-        document.addEventListener("mousedown", function () {
-            cursor.classList.add("click");
-            cursorinner.classList.add("custom-cursor__innerhover");
-        });
+        // document.addEventListener("mousedown", function () {
+        //     cursor.classList.add("click");
+        //     cursorinner.classList.add("custom-cursor__innerhover");
+        // });
 
-        document.addEventListener("mouseup", function () {
-            cursor.classList.remove("click");
-            cursorinner.classList.remove("custom-cursor__innerhover");
-        });
+        // document.addEventListener("mouseup", function () {
+        //     cursor.classList.remove("click");
+        //     cursorinner.classList.remove("custom-cursor__innerhover");
+        // });
 
         a.forEach((item) => {
             item.addEventListener("mouseover", () => {

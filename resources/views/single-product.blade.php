@@ -228,7 +228,7 @@
 </section>
 <!--Subscribe One Start-->
 @endsection
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+<script async src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
 </script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"

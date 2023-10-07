@@ -602,7 +602,7 @@
 <!--Blog One End-->
 
 @endsection
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+<script async src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
 </script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
@@ -613,13 +613,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{-- <script async src="{{asset('webassets/assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script> --}}
 
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
+<script async src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js">
 </script>
-<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
+<script async src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
 </script>
 <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 <script>
-
     var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:4,
