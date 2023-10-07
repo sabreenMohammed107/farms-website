@@ -197,4 +197,5 @@
     integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {{-- <script async src="{{asset('webassets/assets/vendors/jarallax/jarallax.min.js')}}"></script> --}}
-<script async src="{{asset('webassets/assets/js/mainjs.single_product.js')}}"></script>
+{{-- <script async src="{{asset('webassets/assets/js/mainjs.single_product.js')}}"></script> --}}
+<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
