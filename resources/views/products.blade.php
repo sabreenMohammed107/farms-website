@@ -212,5 +212,5 @@
 <script async src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
 </script>
 {{-- <script async src="{{asset('webassets/assets/vendors/jarallax/jarallax.min.js')}}"></script> --}}
-<script async src="{{asset('webassets/assets/js/mainjs.single_product.js')}}"></script>
-{{-- <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script> --}}
+{{-- <script async src="{{asset('webassets/assets/js/mainjs.single_product.js')}}"></script> --}}
+<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>

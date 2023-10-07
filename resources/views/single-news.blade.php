@@ -232,8 +232,9 @@
 </script>
 <script async src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js">
 </script>
+<script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 
-<script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script>
+{{-- <script async src="{{asset('webassets/assets/js/mainjs.single_news.js')}}"></script> --}}
 <script>
     var owl = $('.owl-carousel');
 owl.owlCarousel({
