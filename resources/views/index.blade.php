@@ -127,7 +127,7 @@
     } */
 </style>
 
-</script>
+
 @extends('layout.webLayout.main')
 
 @section('content')
