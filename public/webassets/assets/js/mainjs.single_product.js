@@ -101,9 +101,9 @@
             self.find("button").on("click", function (e) {
                 e.preventDefault();
                 let self = $(this);
-                self.showClass("expanded");
-                self.parent().showClass("expanded");
-                self.parent().parent().children("ul").showToggle();
+                self.toggleClass("expanded");
+                self.parent().toggleClass("expanded");
+                self.parent().parent().children("ul").slideToggle();
             });
         });
     }
@@ -112,7 +112,7 @@
         $(".mobile-nav__toggler").on("click", function (e) {
             e.preventDefault();
             $(".mobile-nav__wrapper").toggleClass("expanded");
-            $("body").toggleClass("locked");
+            // $("body").toggleClass("locked");
         });
     }
 
