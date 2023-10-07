@@ -131,7 +131,7 @@
     integrity="sha512-Tkt/sYlAym9X81DPqqbCjU6bMl9HmsehhtxjnZu0K1TN9Ygu8h2D7jZbn59lbDNbbIG7DUukGkjKJbp/wDpKGg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script> --}}
-<script async src="https://code.jquery.com/jquery-3.6.4.min.js"
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
 </script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"
