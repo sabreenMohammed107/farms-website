@@ -101,9 +101,9 @@
             self.find("button").on("click", function (e) {
                 e.preventDefault();
                 let self = $(this);
-                self.addClass("expanded");
-                self.parent().addClass("expanded");
-                self.parent().parent().children("ul").slideToggle();
+                self.toggleClass("expanded");
+                self.parent().toggleClass("expanded");
+                self.parent().parent().children("ul").fadeIn();
             });
         });
     }
@@ -111,7 +111,7 @@
     if ($(".mobile-nav__toggler").length) {
         $(".mobile-nav__toggler").on("click", function (e) {
             e.preventDefault();
-            $(".mobile-nav__wrapper").addClass("expanded");
+            $(".mobile-nav__wrapper").toggleClass("expanded");
             $("body").toggleClass("locked");
         });
     }
