@@ -104,6 +104,7 @@
         direction: ltr !important;
     }
 
+
     /* .banner-one__img-1::before {
         content: "";
         position: absolute;
