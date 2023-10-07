@@ -619,6 +619,7 @@
 </script>
 <script async src="{{asset('webassets/assets/js/mainjs.js')}}"></script>
 <script>
+
     var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:4,
