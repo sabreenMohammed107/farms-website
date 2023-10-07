@@ -35,6 +35,7 @@ text-decoration: underline
         @yield('content')
 
         @include('layout.webLayout.footer')
+    </div>
          @include('layout.webLayout.mobile')
 </body>
 
