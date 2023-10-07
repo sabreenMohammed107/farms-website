@@ -1128,7 +1128,7 @@ svg[class*="right"] {
 }
 @media only screen and (min-width: 414px) and (max-width: 480px) {
     .main-slider__img-one {
-        left: 8%;
+        left: 4%;
         top: 36%;
     }
     .main-slider__shape-3 {
@@ -1142,9 +1142,42 @@ svg[class*="right"] {
         top: 41%;
         width: 100%;
     }
+    .main-slider__img-one img {
+        width: 370px;
+    }
     .main-slider__shape-3 {
         left: 1% !important;
         top: 143px;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 390px) {
+    .main-slider__img-one {
+        left: -1%;
+        top: 41%;
+        width: 100%;
+    }
+    .main-slider__img-one img {
+        width: 365px;
+    }
+}
+@media only screen and (min-width: 340px) and (max-width: 360px) {
+    /* .main-slider__img-one {
+        left: -1%;
+        top: 41%;
+        width: 100%;
+    } */
+    .main-slider__img-one img {
+        width: 330px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 340px) {
+    .main-slider__img-one {
+        left: -1%;
+        top: 41%;
+        width: 100%;
+    }
+    .main-slider__img-one img {
+        width: 320px;
     }
 }
 
