@@ -108,22 +108,22 @@
         });
     }
 
-    // if ($(".mobile-nav__toggler").length) {
-    //     $(".mobile-nav__toggler").on("click", function (e) {
-    //         e.preventDefault();
-    //         $(".mobile-nav__wrapper").toggleClass("expanded");
-    //         $("body").toggleClass("locked");
-    //     });
-    // }
+    if ($(".mobile-nav__toggler").length) {
+        $(".mobile-nav__toggler").on("click", function (e) {
+            e.preventDefault();
+            $(".mobile-nav__wrapper").toggleClass("expanded");
+            $("body").toggleClass("locked");
+        });
+    }
 
-    // if ($(".search-toggler").length) {
-    //     $(".search-toggler").on("click", function (e) {
-    //         e.preventDefault();
-    //         $(".search-popup").toggleClass("active");
-    //         $(".mobile-nav__wrapper").removeClass("expanded");
-    //         $("body").toggleClass("locked");
-    //     });
-    // }
+    if ($(".search-toggler").length) {
+        $(".search-toggler").on("click", function (e) {
+            e.preventDefault();
+            $(".search-popup").toggleClass("active");
+            $(".mobile-nav__wrapper").removeClass("expanded");
+            $("body").toggleClass("locked");
+        });
+    }
 
     if ($(".dynamic-year").length) {
         let date = new Date();
