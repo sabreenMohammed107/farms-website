@@ -165,8 +165,8 @@
         let mainNavUL = $(".service-details__sidebar-service-list");
         dynamicCurrentMenuClass(mainNavUL);
     }
-
     if ($(".main-menu__list").length && $(".mobile-nav__container").length) {
+        console.log($(".main-menu__list").length);
         let navContent = document.querySelector(".main-menu__list").outerHTML;
         let mobileNavContainer = document.querySelector(
             ".mobile-nav__container"
