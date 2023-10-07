@@ -198,7 +198,7 @@
                 let self = $(this);
                 self.toggleClass("expanded");
                 self.parent().toggleClass("expanded");
-                self.parent().parent().children("ul").slideToggle();
+                self.parent().parent().children("ul").slideShow();
             });
         });
     }
