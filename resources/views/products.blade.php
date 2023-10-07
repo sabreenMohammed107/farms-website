@@ -85,7 +85,7 @@
 
     <div class="container">
         <div class="page-header__inner page-header-bg-1">
-            <h3>كل المنتجات
+            <h3> المنتجات
             </h3>
         </div>
 
