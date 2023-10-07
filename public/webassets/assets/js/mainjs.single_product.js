@@ -101,9 +101,9 @@
             self.find("button").on("click", function (e) {
                 e.preventDefault();
                 let self = $(this);
-                self.toggleClass("expanded");
-                self.parent().toggleClass("expanded");
-                self.parent().parent().children("ul").slideToggle();
+                self.showClass("expanded");
+                self.parent().showClass("expanded");
+                self.parent().parent().children("ul").showToggle();
             });
         });
     }
